@@ -1,0 +1,719 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FFC7775E282E929300AF4E8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC7775D282E929300AF4E8A /* AppDelegate.swift */; };
+		FFC77760282E929300AF4E8A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC7775F282E929300AF4E8A /* SceneDelegate.swift */; };
+		FFC77762282E929300AF4E8A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC77761282E929300AF4E8A /* ViewController.swift */; };
+		FFC77765282E929300AF4E8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFC77763282E929300AF4E8A /* Main.storyboard */; };
+		FFC77767282E929500AF4E8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFC77766282E929500AF4E8A /* Assets.xcassets */; };
+		FFC7776A282E929500AF4E8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFC77768282E929500AF4E8A /* LaunchScreen.storyboard */; };
+		FFC77775282E929500AF4E8A /* TampaJejakTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC77774282E929500AF4E8A /* TampaJejakTests.swift */; };
+		FFC7777F282E929500AF4E8A /* TampaJejakUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC7777E282E929500AF4E8A /* TampaJejakUITests.swift */; };
+		FFC77781282E929500AF4E8A /* TampaJejakUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC77780282E929500AF4E8A /* TampaJejakUITestsLaunchTests.swift */; };
+		FFC7778F282E95E900AF4E8A /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC7778E282E95E900AF4E8A /* Coordinator.swift */; };
+		FFC7779B282E9BBC00AF4E8A /* QRCodeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC7779A282E9BBC00AF4E8A /* QRCodeService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FFC77771282E929500AF4E8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFC77752282E929200AF4E8A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FFC77759282E929200AF4E8A;
+			remoteInfo = TampaJejak;
+		};
+		FFC7777B282E929500AF4E8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFC77752282E929200AF4E8A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FFC77759282E929200AF4E8A;
+			remoteInfo = TampaJejak;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FFC7775A282E929300AF4E8A /* TampaJejak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TampaJejak.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFC7775D282E929300AF4E8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FFC7775F282E929300AF4E8A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FFC77761282E929300AF4E8A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FFC77764282E929300AF4E8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FFC77766282E929500AF4E8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FFC77769282E929500AF4E8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FFC7776B282E929500AF4E8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFC77770282E929500AF4E8A /* TampaJejakTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TampaJejakTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFC77774282E929500AF4E8A /* TampaJejakTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TampaJejakTests.swift; sourceTree = "<group>"; };
+		FFC7777A282E929500AF4E8A /* TampaJejakUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TampaJejakUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFC7777E282E929500AF4E8A /* TampaJejakUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TampaJejakUITests.swift; sourceTree = "<group>"; };
+		FFC77780282E929500AF4E8A /* TampaJejakUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TampaJejakUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FFC7778E282E95E900AF4E8A /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		FFC7779A282E9BBC00AF4E8A /* QRCodeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FFC77757282E929200AF4E8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFC7776D282E929500AF4E8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFC77777282E929500AF4E8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FFC77751282E929200AF4E8A = {
+			isa = PBXGroup;
+			children = (
+				FFC7775C282E929300AF4E8A /* TampaJejak */,
+				FFC77773282E929500AF4E8A /* TampaJejakTests */,
+				FFC7777D282E929500AF4E8A /* TampaJejakUITests */,
+				FFC7775B282E929300AF4E8A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FFC7775B282E929300AF4E8A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFC7775A282E929300AF4E8A /* TampaJejak.app */,
+				FFC77770282E929500AF4E8A /* TampaJejakTests.xctest */,
+				FFC7777A282E929500AF4E8A /* TampaJejakUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FFC7775C282E929300AF4E8A /* TampaJejak */ = {
+			isa = PBXGroup;
+			children = (
+				FFC77798282E999700AF4E8A /* Services */,
+				FFC77791282E971300AF4E8A /* Presentation */,
+				FFC77790282E970F00AF4E8A /* Models */,
+				FFC7778D282E95D600AF4E8A /* Root */,
+				FFC77761282E929300AF4E8A /* ViewController.swift */,
+				FFC77763282E929300AF4E8A /* Main.storyboard */,
+				FFC77766282E929500AF4E8A /* Assets.xcassets */,
+				FFC77768282E929500AF4E8A /* LaunchScreen.storyboard */,
+				FFC7776B282E929500AF4E8A /* Info.plist */,
+			);
+			path = TampaJejak;
+			sourceTree = "<group>";
+		};
+		FFC77773282E929500AF4E8A /* TampaJejakTests */ = {
+			isa = PBXGroup;
+			children = (
+				FFC77774282E929500AF4E8A /* TampaJejakTests.swift */,
+			);
+			path = TampaJejakTests;
+			sourceTree = "<group>";
+		};
+		FFC7777D282E929500AF4E8A /* TampaJejakUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FFC7777E282E929500AF4E8A /* TampaJejakUITests.swift */,
+				FFC77780282E929500AF4E8A /* TampaJejakUITestsLaunchTests.swift */,
+			);
+			path = TampaJejakUITests;
+			sourceTree = "<group>";
+		};
+		FFC7778D282E95D600AF4E8A /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				FFC7775F282E929300AF4E8A /* SceneDelegate.swift */,
+				FFC7775D282E929300AF4E8A /* AppDelegate.swift */,
+				FFC7778E282E95E900AF4E8A /* Coordinator.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		FFC77790282E970F00AF4E8A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FFC77791282E971300AF4E8A /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				FFC77796282E973400AF4E8A /* TapBar */,
+				FFC77793282E972100AF4E8A /* Auth */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		FFC77792282E971900AF4E8A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		FFC77793282E972100AF4E8A /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				FFC77795282E972B00AF4E8A /* SignIn */,
+				FFC77794282E972600AF4E8A /* Login */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		FFC77794282E972600AF4E8A /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		FFC77795282E972B00AF4E8A /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		FFC77796282E973400AF4E8A /* TapBar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TapBar;
+			sourceTree = "<group>";
+		};
+		FFC77798282E999700AF4E8A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FFC77799282E999E00AF4E8A /* QRCode */,
+				FFC77792282E971900AF4E8A /* Network */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		FFC77799282E999E00AF4E8A /* QRCode */ = {
+			isa = PBXGroup;
+			children = (
+				FFC7779A282E9BBC00AF4E8A /* QRCodeService.swift */,
+			);
+			path = QRCode;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FFC77759282E929200AF4E8A /* TampaJejak */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFC77784282E929500AF4E8A /* Build configuration list for PBXNativeTarget "TampaJejak" */;
+			buildPhases = (
+				FFC77756282E929200AF4E8A /* Sources */,
+				FFC77757282E929200AF4E8A /* Frameworks */,
+				FFC77758282E929200AF4E8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TampaJejak;
+			productName = TampaJejak;
+			productReference = FFC7775A282E929300AF4E8A /* TampaJejak.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FFC7776F282E929500AF4E8A /* TampaJejakTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFC77787282E929500AF4E8A /* Build configuration list for PBXNativeTarget "TampaJejakTests" */;
+			buildPhases = (
+				FFC7776C282E929500AF4E8A /* Sources */,
+				FFC7776D282E929500AF4E8A /* Frameworks */,
+				FFC7776E282E929500AF4E8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FFC77772282E929500AF4E8A /* PBXTargetDependency */,
+			);
+			name = TampaJejakTests;
+			productName = TampaJejakTests;
+			productReference = FFC77770282E929500AF4E8A /* TampaJejakTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FFC77779282E929500AF4E8A /* TampaJejakUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFC7778A282E929500AF4E8A /* Build configuration list for PBXNativeTarget "TampaJejakUITests" */;
+			buildPhases = (
+				FFC77776282E929500AF4E8A /* Sources */,
+				FFC77777282E929500AF4E8A /* Frameworks */,
+				FFC77778282E929500AF4E8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FFC7777C282E929500AF4E8A /* PBXTargetDependency */,
+			);
+			name = TampaJejakUITests;
+			productName = TampaJejakUITests;
+			productReference = FFC7777A282E929500AF4E8A /* TampaJejakUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FFC77752282E929200AF4E8A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					FFC77759282E929200AF4E8A = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					FFC7776F282E929500AF4E8A = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = FFC77759282E929200AF4E8A;
+					};
+					FFC77779282E929500AF4E8A = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = FFC77759282E929200AF4E8A;
+					};
+				};
+			};
+			buildConfigurationList = FFC77755282E929200AF4E8A /* Build configuration list for PBXProject "TampaJejak" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FFC77751282E929200AF4E8A;
+			productRefGroup = FFC7775B282E929300AF4E8A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FFC77759282E929200AF4E8A /* TampaJejak */,
+				FFC7776F282E929500AF4E8A /* TampaJejakTests */,
+				FFC77779282E929500AF4E8A /* TampaJejakUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FFC77758282E929200AF4E8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFC7776A282E929500AF4E8A /* LaunchScreen.storyboard in Resources */,
+				FFC77767282E929500AF4E8A /* Assets.xcassets in Resources */,
+				FFC77765282E929300AF4E8A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFC7776E282E929500AF4E8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFC77778282E929500AF4E8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FFC77756282E929200AF4E8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFC7778F282E95E900AF4E8A /* Coordinator.swift in Sources */,
+				FFC77762282E929300AF4E8A /* ViewController.swift in Sources */,
+				FFC7775E282E929300AF4E8A /* AppDelegate.swift in Sources */,
+				FFC7779B282E9BBC00AF4E8A /* QRCodeService.swift in Sources */,
+				FFC77760282E929300AF4E8A /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFC7776C282E929500AF4E8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFC77775282E929500AF4E8A /* TampaJejakTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFC77776282E929500AF4E8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFC77781282E929500AF4E8A /* TampaJejakUITestsLaunchTests.swift in Sources */,
+				FFC7777F282E929500AF4E8A /* TampaJejakUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FFC77772282E929500AF4E8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FFC77759282E929200AF4E8A /* TampaJejak */;
+			targetProxy = FFC77771282E929500AF4E8A /* PBXContainerItemProxy */;
+		};
+		FFC7777C282E929500AF4E8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FFC77759282E929200AF4E8A /* TampaJejak */;
+			targetProxy = FFC7777B282E929500AF4E8A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FFC77763282E929300AF4E8A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFC77764282E929300AF4E8A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FFC77768282E929500AF4E8A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFC77769282E929500AF4E8A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FFC77782282E929500AF4E8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FFC77783282E929500AF4E8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FFC77785282E929500AF4E8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BLGCGGKJB5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TampaJejak/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jejak.tampa.TampaJejak;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		FFC77786282E929500AF4E8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BLGCGGKJB5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TampaJejak/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jejak.tampa.TampaJejak;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		FFC77788282E929500AF4E8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BLGCGGKJB5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jejak.tampa.TampaJejakTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TampaJejak.app/TampaJejak";
+			};
+			name = Debug;
+		};
+		FFC77789282E929500AF4E8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BLGCGGKJB5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jejak.tampa.TampaJejakTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TampaJejak.app/TampaJejak";
+			};
+			name = Release;
+		};
+		FFC7778B282E929500AF4E8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BLGCGGKJB5;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jejak.tampa.TampaJejakUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TampaJejak;
+			};
+			name = Debug;
+		};
+		FFC7778C282E929500AF4E8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BLGCGGKJB5;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jejak.tampa.TampaJejakUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TampaJejak;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FFC77755282E929200AF4E8A /* Build configuration list for PBXProject "TampaJejak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFC77782282E929500AF4E8A /* Debug */,
+				FFC77783282E929500AF4E8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFC77784282E929500AF4E8A /* Build configuration list for PBXNativeTarget "TampaJejak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFC77785282E929500AF4E8A /* Debug */,
+				FFC77786282E929500AF4E8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFC77787282E929500AF4E8A /* Build configuration list for PBXNativeTarget "TampaJejakTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFC77788282E929500AF4E8A /* Debug */,
+				FFC77789282E929500AF4E8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFC7778A282E929500AF4E8A /* Build configuration list for PBXNativeTarget "TampaJejakUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFC7778B282E929500AF4E8A /* Debug */,
+				FFC7778C282E929500AF4E8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FFC77752282E929200AF4E8A /* Project object */;
+}
