@@ -3,9 +3,9 @@ Tampa Jejak is bla bla bla
 
 # Enviroment
 
-= Minimum IOS Version = IOS 15.0
 - Minimum MacOS Version = Monterey 12.1.0
 - Minimum XCode Version = XCode 13.0
+- Minimum IOS Version = IOS 15.0
 
 # How to Start
 1. First, make sure that you have a device (either a Macbook, iMAC, or Hackintosh) that runs on MacOS Monterey 12.1.0 or bigger
