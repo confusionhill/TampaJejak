@@ -7,22 +7,39 @@
 
 import UIKit
 
-class RegisterViewController: UIViewController {
+class RegisterViewController: BaseViewController {
+    @IBOutlet weak var fullNameField: UITextField!
+    @IBOutlet weak var usernameField: UITextField!
+    @IBOutlet weak var emailField: UITextField!
+    @IBOutlet weak var passwordField: UITextField!
+    @IBOutlet weak var rePasswordField: UITextField!
+    @IBOutlet weak var phoneField: UITextField!
+    @IBOutlet weak var genderButton: UIButton!
+    @IBOutlet weak var registerButton: UIButton!
+    
+    weak var launchRef: FakeLaunchOuput?
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.isHidden = false
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemPink
+        self.title = "Create your account"
+        self.navigationController?.navigationBar.prefersLargeTitles = true
+        view.backgroundColor = .white
+        registerButton.setRounded()
     }
 
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func didTapRegister(_ sender: UIButton) {
+        self.launchRef?.didTapLogin()
     }
-    */
+}
 
+extension RegisterViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+            self.view.endEditing(true)
+            return false
+    }
 }

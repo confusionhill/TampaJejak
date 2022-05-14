@@ -22,6 +22,13 @@
 		FF1A89EB282FB6A1009C7815 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF1A89E7282FB6A1009C7815 /* RegisterViewController.xib */; };
 		FF1A89EC282FB6A1009C7815 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF1A89E7282FB6A1009C7815 /* RegisterViewController.xib */; };
 		FF1A89ED282FB6A1009C7815 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF1A89E7282FB6A1009C7815 /* RegisterViewController.xib */; };
+		FF1A89F4282FC309009C7815 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A89F3282FC309009C7815 /* UIViewExt.swift */; };
+		FF1A89F6282FC782009C7815 /* UIColorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A89F5282FC782009C7815 /* UIColorExt.swift */; };
+		FF1A89F9282FD061009C7815 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A89F8282FD061009C7815 /* SignInViewModel.swift */; };
+		FF1A8A04282FE34F009C7815 /* UIButtonExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A8A03282FE34F009C7815 /* UIButtonExt.swift */; };
+		FF1A8A06282FE811009C7815 /* UITextfieldExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A8A05282FE811009C7815 /* UITextfieldExt.swift */; };
+		FF1A8A08282FE958009C7815 /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A8A07282FE958009C7815 /* UIViewControllerExt.swift */; };
+		FF1A8A0C282FF678009C7815 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A8A0B282FF678009C7815 /* BaseViewController.swift */; };
 		FF872B96282FAF90009D6604 /* FakeLaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF872B94282FAF90009D6604 /* FakeLaunchScreenViewController.swift */; };
 		FF872B97282FAF90009D6604 /* FakeLaunchScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF872B95282FAF90009D6604 /* FakeLaunchScreenViewController.xib */; };
 		FFC7775E282E929300AF4E8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC7775D282E929300AF4E8A /* AppDelegate.swift */; };
@@ -58,6 +65,13 @@
 		FF1A89DB282FB22F009C7815 /* SignInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
 		FF1A89E6282FB6A1009C7815 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		FF1A89E7282FB6A1009C7815 /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		FF1A89F3282FC309009C7815 /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
+		FF1A89F5282FC782009C7815 /* UIColorExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExt.swift; sourceTree = "<group>"; };
+		FF1A89F8282FD061009C7815 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		FF1A8A03282FE34F009C7815 /* UIButtonExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExt.swift; sourceTree = "<group>"; };
+		FF1A8A05282FE811009C7815 /* UITextfieldExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextfieldExt.swift; sourceTree = "<group>"; };
+		FF1A8A07282FE958009C7815 /* UIViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
+		FF1A8A0B282FF678009C7815 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		FF872B94282FAF90009D6604 /* FakeLaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeLaunchScreenViewController.swift; sourceTree = "<group>"; };
 		FF872B95282FAF90009D6604 /* FakeLaunchScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FakeLaunchScreenViewController.xib; sourceTree = "<group>"; };
 		FFC7775A282E929300AF4E8A /* TampaJejak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TampaJejak.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,6 +121,41 @@
 			path = Auth;
 			sourceTree = "<group>";
 		};
+		FF1A89F2282FC2FD009C7815 /* Extention */ = {
+			isa = PBXGroup;
+			children = (
+				FF1A89F3282FC309009C7815 /* UIViewExt.swift */,
+				FF1A89F5282FC782009C7815 /* UIColorExt.swift */,
+				FF1A8A03282FE34F009C7815 /* UIButtonExt.swift */,
+				FF1A8A05282FE811009C7815 /* UITextfieldExt.swift */,
+				FF1A8A07282FE958009C7815 /* UIViewControllerExt.swift */,
+			);
+			path = Extention;
+			sourceTree = "<group>";
+		};
+		FF1A89F7282FD03B009C7815 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FF1A89F8282FD061009C7815 /* SignInViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FF1A8A09282FEC82009C7815 /* Picker */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Picker;
+			sourceTree = "<group>";
+		};
+		FF1A8A0A282FF667009C7815 /* Reusables */ = {
+			isa = PBXGroup;
+			children = (
+				FF1A8A0B282FF678009C7815 /* BaseViewController.swift */,
+			);
+			path = Reusables;
+			sourceTree = "<group>";
+		};
 		FF77B6FF282EA53A008503BD /* TapBarComponent */ = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +195,8 @@
 		FFC7775C282E929300AF4E8A /* TampaJejak */ = {
 			isa = PBXGroup;
 			children = (
+				FF1A8A0A282FF667009C7815 /* Reusables */,
+				FF1A89F2282FC2FD009C7815 /* Extention */,
 				FFC77798282E999700AF4E8A /* Services */,
 				FFC77791282E971300AF4E8A /* Presentation */,
 				FFC77790282E970F00AF4E8A /* Models */,
@@ -193,6 +244,7 @@
 		FFC77791282E971300AF4E8A /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				FF1A8A09282FEC82009C7815 /* Picker */,
 				FF872B93282FAF79009D6604 /* LaunchScreen */,
 				FFC77796282E973400AF4E8A /* TapBar */,
 				FFC77793282E972100AF4E8A /* Auth */,
@@ -219,6 +271,7 @@
 		FFC77794282E972600AF4E8A /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				FF1A89F7282FD03B009C7815 /* ViewModel */,
 				FF1A89DA282FB22F009C7815 /* SignInViewController.swift */,
 				FF1A89DB282FB22F009C7815 /* SignInViewController.xib */,
 			);
@@ -397,13 +450,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF1A89F4282FC309009C7815 /* UIViewExt.swift in Sources */,
+				FF1A8A06282FE811009C7815 /* UITextfieldExt.swift in Sources */,
 				FF1A89DC282FB22F009C7815 /* SignInViewController.swift in Sources */,
 				FF1A89D7282FB143009C7815 /* UserSharedInstance.swift in Sources */,
+				FF1A89F6282FC782009C7815 /* UIColorExt.swift in Sources */,
+				FF1A8A0C282FF678009C7815 /* BaseViewController.swift in Sources */,
 				FF872B96282FAF90009D6604 /* FakeLaunchScreenViewController.swift in Sources */,
 				FF1A89E8282FB6A1009C7815 /* RegisterViewController.swift in Sources */,
 				FFC7778F282E95E900AF4E8A /* Coordinator.swift in Sources */,
+				FF1A8A04282FE34F009C7815 /* UIButtonExt.swift in Sources */,
 				FFC7775E282E929300AF4E8A /* AppDelegate.swift in Sources */,
+				FF1A89F9282FD061009C7815 /* SignInViewModel.swift in Sources */,
 				FFC7779B282E9BBC00AF4E8A /* QRCodeService.swift in Sources */,
+				FF1A8A08282FE958009C7815 /* UIViewControllerExt.swift in Sources */,
 				FFC77760282E929300AF4E8A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
