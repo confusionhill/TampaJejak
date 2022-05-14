@@ -29,7 +29,7 @@ extension UIColor {
         return UIColor(named: "secondarygreen") ?? UIColor(red: 0.63, green: 0.89, blue: 0.85, alpha: 1.00)
     }
     
-    static var alternateejak: UIColor {
+    static var alternatejejak: UIColor {
         return UIColor(red: 0.91, green: 0.94, blue: 0.48, alpha: 1.00)
     }
 }

@@ -29,6 +29,9 @@
 		FF1A8A06282FE811009C7815 /* UITextfieldExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A8A05282FE811009C7815 /* UITextfieldExt.swift */; };
 		FF1A8A08282FE958009C7815 /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A8A07282FE958009C7815 /* UIViewControllerExt.swift */; };
 		FF1A8A0C282FF678009C7815 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A8A0B282FF678009C7815 /* BaseViewController.swift */; };
+		FF1A8A0F282FFB11009C7815 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A8A0E282FFB11009C7815 /* RegisterViewModel.swift */; };
+		FF1A8A11282FFCC1009C7815 /* PickerDisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A8A10282FFCC1009C7815 /* PickerDisplayViewController.swift */; };
+		FF1A8A1328300242009C7815 /* PickerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A8A1228300242009C7815 /* PickerModel.swift */; };
 		FF872B96282FAF90009D6604 /* FakeLaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF872B94282FAF90009D6604 /* FakeLaunchScreenViewController.swift */; };
 		FF872B97282FAF90009D6604 /* FakeLaunchScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF872B95282FAF90009D6604 /* FakeLaunchScreenViewController.xib */; };
 		FFC7775E282E929300AF4E8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC7775D282E929300AF4E8A /* AppDelegate.swift */; };
@@ -72,6 +75,9 @@
 		FF1A8A05282FE811009C7815 /* UITextfieldExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextfieldExt.swift; sourceTree = "<group>"; };
 		FF1A8A07282FE958009C7815 /* UIViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
 		FF1A8A0B282FF678009C7815 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		FF1A8A0E282FFB11009C7815 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		FF1A8A10282FFCC1009C7815 /* PickerDisplayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerDisplayViewController.swift; sourceTree = "<group>"; };
+		FF1A8A1228300242009C7815 /* PickerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerModel.swift; sourceTree = "<group>"; };
 		FF872B94282FAF90009D6604 /* FakeLaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeLaunchScreenViewController.swift; sourceTree = "<group>"; };
 		FF872B95282FAF90009D6604 /* FakeLaunchScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FakeLaunchScreenViewController.xib; sourceTree = "<group>"; };
 		FFC7775A282E929300AF4E8A /* TampaJejak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TampaJejak.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -144,6 +150,8 @@
 		FF1A8A09282FEC82009C7815 /* Picker */ = {
 			isa = PBXGroup;
 			children = (
+				FF1A8A10282FFCC1009C7815 /* PickerDisplayViewController.swift */,
+				FF1A8A1228300242009C7815 /* PickerModel.swift */,
 			);
 			path = Picker;
 			sourceTree = "<group>";
@@ -154,6 +162,14 @@
 				FF1A8A0B282FF678009C7815 /* BaseViewController.swift */,
 			);
 			path = Reusables;
+			sourceTree = "<group>";
+		};
+		FF1A8A0D282FFB03009C7815 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FF1A8A0E282FFB11009C7815 /* RegisterViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		FF77B6FF282EA53A008503BD /* TapBarComponent */ = {
@@ -281,6 +297,7 @@
 		FFC77795282E972B00AF4E8A /* Register */ = {
 			isa = PBXGroup;
 			children = (
+				FF1A8A0D282FFB03009C7815 /* ViewModel */,
 				FF1A89E6282FB6A1009C7815 /* RegisterViewController.swift */,
 				FF1A89E7282FB6A1009C7815 /* RegisterViewController.xib */,
 			);
@@ -453,8 +470,11 @@
 				FF1A89F4282FC309009C7815 /* UIViewExt.swift in Sources */,
 				FF1A8A06282FE811009C7815 /* UITextfieldExt.swift in Sources */,
 				FF1A89DC282FB22F009C7815 /* SignInViewController.swift in Sources */,
+				FF1A8A1328300242009C7815 /* PickerModel.swift in Sources */,
+				FF1A8A0F282FFB11009C7815 /* RegisterViewModel.swift in Sources */,
 				FF1A89D7282FB143009C7815 /* UserSharedInstance.swift in Sources */,
 				FF1A89F6282FC782009C7815 /* UIColorExt.swift in Sources */,
+				FF1A8A11282FFCC1009C7815 /* PickerDisplayViewController.swift in Sources */,
 				FF1A8A0C282FF678009C7815 /* BaseViewController.swift in Sources */,
 				FF872B96282FAF90009D6604 /* FakeLaunchScreenViewController.swift in Sources */,
 				FF1A89E8282FB6A1009C7815 /* RegisterViewController.swift in Sources */,
