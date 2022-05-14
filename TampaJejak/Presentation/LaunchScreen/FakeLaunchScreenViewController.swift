@@ -15,7 +15,6 @@ protocol FakeLaunchOuput: AnyObject {
 class FakeLaunchScreenViewController: UIViewController {
     private var authPage: SignInViewController = {
         let vc = SignInViewController(nibName: "SignInViewController", bundle: nil)
-        vc.modalPresentationStyle = .fullScreen
         return vc
     }()
     
@@ -31,7 +30,9 @@ class FakeLaunchScreenViewController: UIViewController {
     @objc func launchInitScreen() {
         let state: Bool = true
         if state {
-            self.present(authPage, animated: true, completion: nil)
+            let navCon = UINavigationController(rootViewController: authPage)
+            navCon.modalPresentationStyle = .fullScreen
+            self.present(navCon, animated: true, completion: nil)
         } else {
             
         }
@@ -53,6 +54,8 @@ extension FakeLaunchScreenViewController: FakeLaunchOuput {
     
     func didTapLogout() {
         self.dismiss(animated: true, completion: nil)
-        self.present(authPage, animated: true, completion: nil)
+        let navCon = UINavigationController(rootViewController: authPage)
+        navCon.modalPresentationStyle = .fullScreen
+        self.present(navCon, animated: true, completion: nil)
     }
 }
