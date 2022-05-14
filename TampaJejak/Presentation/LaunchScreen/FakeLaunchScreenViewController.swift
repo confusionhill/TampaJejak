@@ -44,7 +44,8 @@ extension FakeLaunchScreenViewController: FakeLaunchOuput {
         self.dismiss(animated: true, completion: nil)
         
         //TODO: Change to Home VC
-        let vc = RegisterViewController()
+        let vc = BaseViewController()
+        vc.view.backgroundColor = .systemPink
         vc.modalPresentationStyle = .fullScreen
         vc.modalTransitionStyle = .crossDissolve
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
