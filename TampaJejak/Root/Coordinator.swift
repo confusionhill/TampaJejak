@@ -9,18 +9,14 @@ import UIKit
 
 final class RootCoordinator {
     private var window: UIWindow?
-    public let shared: RootCoordinator = RootCoordinator()
+    
+    public init (window: UIWindow?){
+        self.window = window
+    }
     
     public func start() {
-        
-    }
-    
-    func navigateToAuth() {
-        
-    }
-    
-    func navigateToHome() {
-        
+        self.window?.rootViewController = FakeLaunchScreenViewController(nibName: "FakeLaunchScreenViewController", bundle: nil)
+        self.window?.makeKeyAndVisible()
     }
     
     private func chageRootVC(viewController vc: UIViewController) {

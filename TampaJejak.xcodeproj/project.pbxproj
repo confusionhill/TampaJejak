@@ -7,10 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF1A89D7282FB143009C7815 /* UserSharedInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A89D6282FB143009C7815 /* UserSharedInstance.swift */; };
+		FF1A89D8282FB143009C7815 /* UserSharedInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A89D6282FB143009C7815 /* UserSharedInstance.swift */; };
+		FF1A89D9282FB143009C7815 /* UserSharedInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A89D6282FB143009C7815 /* UserSharedInstance.swift */; };
+		FF1A89DC282FB22F009C7815 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A89DA282FB22F009C7815 /* SignInViewController.swift */; };
+		FF1A89DD282FB22F009C7815 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A89DA282FB22F009C7815 /* SignInViewController.swift */; };
+		FF1A89DE282FB22F009C7815 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A89DA282FB22F009C7815 /* SignInViewController.swift */; };
+		FF1A89DF282FB22F009C7815 /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF1A89DB282FB22F009C7815 /* SignInViewController.xib */; };
+		FF1A89E0282FB22F009C7815 /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF1A89DB282FB22F009C7815 /* SignInViewController.xib */; };
+		FF1A89E1282FB22F009C7815 /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF1A89DB282FB22F009C7815 /* SignInViewController.xib */; };
+		FF1A89E8282FB6A1009C7815 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A89E6282FB6A1009C7815 /* RegisterViewController.swift */; };
+		FF1A89E9282FB6A1009C7815 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A89E6282FB6A1009C7815 /* RegisterViewController.swift */; };
+		FF1A89EA282FB6A1009C7815 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A89E6282FB6A1009C7815 /* RegisterViewController.swift */; };
+		FF1A89EB282FB6A1009C7815 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF1A89E7282FB6A1009C7815 /* RegisterViewController.xib */; };
+		FF1A89EC282FB6A1009C7815 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF1A89E7282FB6A1009C7815 /* RegisterViewController.xib */; };
+		FF1A89ED282FB6A1009C7815 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF1A89E7282FB6A1009C7815 /* RegisterViewController.xib */; };
+		FF872B96282FAF90009D6604 /* FakeLaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF872B94282FAF90009D6604 /* FakeLaunchScreenViewController.swift */; };
+		FF872B97282FAF90009D6604 /* FakeLaunchScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF872B95282FAF90009D6604 /* FakeLaunchScreenViewController.xib */; };
 		FFC7775E282E929300AF4E8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC7775D282E929300AF4E8A /* AppDelegate.swift */; };
 		FFC77760282E929300AF4E8A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC7775F282E929300AF4E8A /* SceneDelegate.swift */; };
-		FFC77762282E929300AF4E8A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC77761282E929300AF4E8A /* ViewController.swift */; };
-		FFC77765282E929300AF4E8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFC77763282E929300AF4E8A /* Main.storyboard */; };
 		FFC77767282E929500AF4E8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFC77766282E929500AF4E8A /* Assets.xcassets */; };
 		FFC7776A282E929500AF4E8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFC77768282E929500AF4E8A /* LaunchScreen.storyboard */; };
 		FFC77775282E929500AF4E8A /* TampaJejakTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC77774282E929500AF4E8A /* TampaJejakTests.swift */; };
@@ -38,14 +53,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FF1A89D6282FB143009C7815 /* UserSharedInstance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSharedInstance.swift; sourceTree = "<group>"; };
+		FF1A89DA282FB22F009C7815 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		FF1A89DB282FB22F009C7815 /* SignInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
+		FF1A89E6282FB6A1009C7815 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		FF1A89E7282FB6A1009C7815 /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		FF872B94282FAF90009D6604 /* FakeLaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeLaunchScreenViewController.swift; sourceTree = "<group>"; };
+		FF872B95282FAF90009D6604 /* FakeLaunchScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FakeLaunchScreenViewController.xib; sourceTree = "<group>"; };
 		FFC7775A282E929300AF4E8A /* TampaJejak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TampaJejak.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFC7775D282E929300AF4E8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFC7775F282E929300AF4E8A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FFC77761282E929300AF4E8A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FFC77764282E929300AF4E8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FFC77766282E929500AF4E8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FFC77769282E929500AF4E8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		FFC7776B282E929500AF4E8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FFC77770282E929500AF4E8A /* TampaJejakTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TampaJejakTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFC77774282E929500AF4E8A /* TampaJejakTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TampaJejakTests.swift; sourceTree = "<group>"; };
 		FFC7777A282E929500AF4E8A /* TampaJejakUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TampaJejakUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,6 +99,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FF1A89D5282FB12F009C7815 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				FF1A89D6282FB143009C7815 /* UserSharedInstance.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		FF77B6FF282EA53A008503BD /* TapBarComponent */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TapBarComponent;
+			sourceTree = "<group>";
+		};
+		FF872B93282FAF79009D6604 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				FF872B94282FAF90009D6604 /* FakeLaunchScreenViewController.swift */,
+				FF872B95282FAF90009D6604 /* FakeLaunchScreenViewController.xib */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
 		FFC77751282E929200AF4E8A = {
 			isa = PBXGroup;
 			children = (
@@ -107,11 +150,8 @@
 				FFC77791282E971300AF4E8A /* Presentation */,
 				FFC77790282E970F00AF4E8A /* Models */,
 				FFC7778D282E95D600AF4E8A /* Root */,
-				FFC77761282E929300AF4E8A /* ViewController.swift */,
-				FFC77763282E929300AF4E8A /* Main.storyboard */,
 				FFC77766282E929500AF4E8A /* Assets.xcassets */,
 				FFC77768282E929500AF4E8A /* LaunchScreen.storyboard */,
-				FFC7776B282E929500AF4E8A /* Info.plist */,
 			);
 			path = TampaJejak;
 			sourceTree = "<group>";
@@ -153,6 +193,7 @@
 		FFC77791282E971300AF4E8A /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				FF872B93282FAF79009D6604 /* LaunchScreen */,
 				FFC77796282E973400AF4E8A /* TapBar */,
 				FFC77793282E972100AF4E8A /* Auth */,
 			);
@@ -169,7 +210,7 @@
 		FFC77793282E972100AF4E8A /* Auth */ = {
 			isa = PBXGroup;
 			children = (
-				FFC77795282E972B00AF4E8A /* SignIn */,
+				FFC77795282E972B00AF4E8A /* Register */,
 				FFC77794282E972600AF4E8A /* Login */,
 			);
 			path = Auth;
@@ -178,20 +219,25 @@
 		FFC77794282E972600AF4E8A /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				FF1A89DA282FB22F009C7815 /* SignInViewController.swift */,
+				FF1A89DB282FB22F009C7815 /* SignInViewController.xib */,
 			);
 			path = Login;
 			sourceTree = "<group>";
 		};
-		FFC77795282E972B00AF4E8A /* SignIn */ = {
+		FFC77795282E972B00AF4E8A /* Register */ = {
 			isa = PBXGroup;
 			children = (
+				FF1A89E6282FB6A1009C7815 /* RegisterViewController.swift */,
+				FF1A89E7282FB6A1009C7815 /* RegisterViewController.xib */,
 			);
-			path = SignIn;
+			path = Register;
 			sourceTree = "<group>";
 		};
 		FFC77796282E973400AF4E8A /* TapBar */ = {
 			isa = PBXGroup;
 			children = (
+				FF77B6FF282EA53A008503BD /* TapBarComponent */,
 			);
 			path = TapBar;
 			sourceTree = "<group>";
@@ -199,6 +245,7 @@
 		FFC77798282E999700AF4E8A /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				FF1A89D5282FB12F009C7815 /* Auth */,
 				FFC77799282E999E00AF4E8A /* QRCode */,
 				FFC77792282E971900AF4E8A /* Network */,
 			);
@@ -317,9 +364,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF1A89DF282FB22F009C7815 /* SignInViewController.xib in Resources */,
+				FF1A89EB282FB6A1009C7815 /* RegisterViewController.xib in Resources */,
+				FF872B97282FAF90009D6604 /* FakeLaunchScreenViewController.xib in Resources */,
 				FFC7776A282E929500AF4E8A /* LaunchScreen.storyboard in Resources */,
 				FFC77767282E929500AF4E8A /* Assets.xcassets in Resources */,
-				FFC77765282E929300AF4E8A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,6 +376,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF1A89E0282FB22F009C7815 /* SignInViewController.xib in Resources */,
+				FF1A89EC282FB6A1009C7815 /* RegisterViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +385,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF1A89E1282FB22F009C7815 /* SignInViewController.xib in Resources */,
+				FF1A89ED282FB6A1009C7815 /* RegisterViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,8 +397,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF1A89DC282FB22F009C7815 /* SignInViewController.swift in Sources */,
+				FF1A89D7282FB143009C7815 /* UserSharedInstance.swift in Sources */,
+				FF872B96282FAF90009D6604 /* FakeLaunchScreenViewController.swift in Sources */,
+				FF1A89E8282FB6A1009C7815 /* RegisterViewController.swift in Sources */,
 				FFC7778F282E95E900AF4E8A /* Coordinator.swift in Sources */,
-				FFC77762282E929300AF4E8A /* ViewController.swift in Sources */,
 				FFC7775E282E929300AF4E8A /* AppDelegate.swift in Sources */,
 				FFC7779B282E9BBC00AF4E8A /* QRCodeService.swift in Sources */,
 				FFC77760282E929300AF4E8A /* SceneDelegate.swift in Sources */,
@@ -356,7 +412,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF1A89D8282FB143009C7815 /* UserSharedInstance.swift in Sources */,
 				FFC77775282E929500AF4E8A /* TampaJejakTests.swift in Sources */,
+				FF1A89DD282FB22F009C7815 /* SignInViewController.swift in Sources */,
+				FF1A89E9282FB6A1009C7815 /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +423,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF1A89DE282FB22F009C7815 /* SignInViewController.swift in Sources */,
+				FF1A89EA282FB6A1009C7815 /* RegisterViewController.swift in Sources */,
+				FF1A89D9282FB143009C7815 /* UserSharedInstance.swift in Sources */,
 				FFC77781282E929500AF4E8A /* TampaJejakUITestsLaunchTests.swift in Sources */,
 				FFC7777F282E929500AF4E8A /* TampaJejakUITests.swift in Sources */,
 			);
@@ -385,14 +447,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		FFC77763282E929300AF4E8A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FFC77764282E929300AF4E8A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FFC77768282E929500AF4E8A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -532,7 +586,6 @@
 				INFOPLIST_FILE = TampaJejak/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -561,7 +614,6 @@
 				INFOPLIST_FILE = TampaJejak/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
