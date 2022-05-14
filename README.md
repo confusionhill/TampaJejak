@@ -21,3 +21,11 @@ Tampa Jejak is bla bla bla
 2. Swift 5.5
 3. Objective-C
 4. Cocoapods
+
+# Tested on
+1. iPhone 13 Pro :white_check_mark:
+2. iPhone 12 :white_check_mark:
+3. iPhone 11 :white_check_mark:
+4. iPhone 12 mini :white_check_mark:
+5. iPhone 8 Plus :white_check_mark:
+6. iPhone 8 :white_check_mark:
