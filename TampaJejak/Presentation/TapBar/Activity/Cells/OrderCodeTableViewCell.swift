@@ -8,6 +8,8 @@
 import UIKit
 
 class OrderCodeTableViewCell: UITableViewCell {
+    
+    public static let identifier = "OrderCodeTableViewCell"
 
     override func awakeFromNib() {
         super.awakeFromNib()

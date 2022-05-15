@@ -60,6 +60,9 @@
 		FF1A8A542830EC08009C7815 /* OrderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF1A8A522830EC08009C7815 /* OrderTableViewCell.xib */; };
 		FF1A8A582830EEBA009C7815 /* OrderCodeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A8A562830EEBA009C7815 /* OrderCodeTableViewCell.swift */; };
 		FF1A8A592830EEBA009C7815 /* OrderCodeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF1A8A572830EEBA009C7815 /* OrderCodeTableViewCell.xib */; };
+		FF1A8A5C2830F25C009C7815 /* TrackOrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A8A5A2830F25C009C7815 /* TrackOrderTableViewCell.swift */; };
+		FF1A8A5D2830F25C009C7815 /* TrackOrderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF1A8A5B2830F25C009C7815 /* TrackOrderTableViewCell.xib */; };
+		FF1A8A5F2830F3F1009C7815 /* CartService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A8A5E2830F3F1009C7815 /* CartService.swift */; };
 		FF872B96282FAF90009D6604 /* FakeLaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF872B94282FAF90009D6604 /* FakeLaunchScreenViewController.swift */; };
 		FF872B97282FAF90009D6604 /* FakeLaunchScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF872B95282FAF90009D6604 /* FakeLaunchScreenViewController.xib */; };
 		FFC7775E282E929300AF4E8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC7775D282E929300AF4E8A /* AppDelegate.swift */; };
@@ -134,6 +137,9 @@
 		FF1A8A522830EC08009C7815 /* OrderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderTableViewCell.xib; sourceTree = "<group>"; };
 		FF1A8A562830EEBA009C7815 /* OrderCodeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCodeTableViewCell.swift; sourceTree = "<group>"; };
 		FF1A8A572830EEBA009C7815 /* OrderCodeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderCodeTableViewCell.xib; sourceTree = "<group>"; };
+		FF1A8A5A2830F25C009C7815 /* TrackOrderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackOrderTableViewCell.swift; sourceTree = "<group>"; };
+		FF1A8A5B2830F25C009C7815 /* TrackOrderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrackOrderTableViewCell.xib; sourceTree = "<group>"; };
+		FF1A8A5E2830F3F1009C7815 /* CartService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartService.swift; sourceTree = "<group>"; };
 		FF872B94282FAF90009D6604 /* FakeLaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeLaunchScreenViewController.swift; sourceTree = "<group>"; };
 		FF872B95282FAF90009D6604 /* FakeLaunchScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FakeLaunchScreenViewController.xib; sourceTree = "<group>"; };
 		FFC7775A282E929300AF4E8A /* TampaJejak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TampaJejak.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -294,6 +300,7 @@
 		FF1A8A2A28303C8C009C7815 /* Cart */ = {
 			isa = PBXGroup;
 			children = (
+				FF1A8A5E2830F3F1009C7815 /* CartService.swift */,
 			);
 			path = Cart;
 			sourceTree = "<group>";
@@ -349,6 +356,8 @@
 			children = (
 				FF1A8A562830EEBA009C7815 /* OrderCodeTableViewCell.swift */,
 				FF1A8A572830EEBA009C7815 /* OrderCodeTableViewCell.xib */,
+				FF1A8A5A2830F25C009C7815 /* TrackOrderTableViewCell.swift */,
+				FF1A8A5B2830F25C009C7815 /* TrackOrderTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -622,6 +631,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF1A8A5D2830F25C009C7815 /* TrackOrderTableViewCell.xib in Resources */,
 				FF1A89DF282FB22F009C7815 /* SignInViewController.xib in Resources */,
 				FF1A8A2E28303CBA009C7815 /* HomeHeaderTableViewCell.xib in Resources */,
 				FF1A8A592830EEBA009C7815 /* OrderCodeTableViewCell.xib in Resources */,
@@ -672,10 +682,12 @@
 				FF1A8A22283016C8009C7815 /* HomeViewModel.swift in Sources */,
 				FF1A8A06282FE811009C7815 /* UITextfieldExt.swift in Sources */,
 				FF1A89DC282FB22F009C7815 /* SignInViewController.swift in Sources */,
+				FF1A8A5F2830F3F1009C7815 /* CartService.swift in Sources */,
 				FF1A8A1328300242009C7815 /* PickerModel.swift in Sources */,
 				FF1A8A0F282FFB11009C7815 /* RegisterViewModel.swift in Sources */,
 				FF1A8A1D2830164F009C7815 /* HomeViewController.swift in Sources */,
 				FF1A89D7282FB143009C7815 /* UserSharedInstance.swift in Sources */,
+				FF1A8A5C2830F25C009C7815 /* TrackOrderTableViewCell.swift in Sources */,
 				FF1A8A4C2830E804009C7815 /* ActivityViewController.swift in Sources */,
 				FF1A89F6282FC782009C7815 /* UIColorExt.swift in Sources */,
 				FF1A8A3128304569009C7815 /* CarouselTableViewCell.swift in Sources */,

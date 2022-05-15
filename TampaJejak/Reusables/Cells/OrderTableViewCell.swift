@@ -10,10 +10,13 @@ import UIKit
 class OrderTableViewCell: UITableViewCell {
     
     public static let identifier = "OrderTableViewCell"
+    
+    @IBOutlet weak var foodImage: UIImageView!
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        foodImage.layer.cornerRadius = 20
+        foodImage.layer.masksToBounds = true
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
