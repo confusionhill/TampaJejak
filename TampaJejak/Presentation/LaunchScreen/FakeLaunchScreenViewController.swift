@@ -18,9 +18,17 @@ class FakeLaunchScreenViewController: UIViewController {
         return vc
     }()
     
+    private var tabBar: TabBarViewController = {
+        let vc = TabBarViewController()
+        vc.modalPresentationStyle = .fullScreen
+        vc.modalTransitionStyle = .crossDissolve
+        return vc
+    }()
+    
     override func loadView() {
         super.loadView()
         self.authPage.launchRef = self
+        self.tabBar.launchRef = self
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,13 +36,12 @@ class FakeLaunchScreenViewController: UIViewController {
     }
     
     @objc func launchInitScreen() {
-        let state: Bool = true
-        if state {
+        if UserSharedInstance.shared.userState {
             let navCon = UINavigationController(rootViewController: authPage)
             navCon.modalPresentationStyle = .fullScreen
             self.present(navCon, animated: true, completion: nil)
         } else {
-            
+            self.present(self.tabBar, animated: true, completion: nil)
         }
     }
 }
@@ -42,14 +49,9 @@ class FakeLaunchScreenViewController: UIViewController {
 extension FakeLaunchScreenViewController: FakeLaunchOuput {
     func didTapLogin() {
         self.dismiss(animated: true, completion: nil)
-        
-        //TODO: Change to Home VC
-        let vc = BaseViewController()
-        vc.view.backgroundColor = .systemPink
-        vc.modalPresentationStyle = .fullScreen
-        vc.modalTransitionStyle = .crossDissolve
+
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-            self.present(vc, animated: true, completion: nil)
+            self.present(self.tabBar, animated: true, completion: nil)
         }
     }
     

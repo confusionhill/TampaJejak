@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CarouselCollectionViewCell" customModule="TampaJejak" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="327" height="163"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="327" height="163"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ayam" translatesAutoresizingMaskIntoConstraints="NO" id="MFt-9c-Tur">
+                        <rect key="frame" x="0.0" y="0.0" width="327" height="163"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="darkBrush" translatesAutoresizingMaskIntoConstraints="NO" id="pZT-JQ-28H">
+                        <rect key="frame" x="0.0" y="59" width="327" height="104"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Soto Betawi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A3N-mK-tdO">
+                        <rect key="frame" x="8" y="125" width="299" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="299" id="AHn-Su-F3w"/>
+                            <constraint firstAttribute="height" constant="18" id="bxa-LN-4RN"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rp 25.000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uxe-5Y-HB4">
+                        <rect key="frame" x="9" y="108" width="298" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="298" id="LnH-h4-Mla"/>
+                            <constraint firstAttribute="height" constant="16" id="pWR-L5-lxB"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="MFt-9c-Tur" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="5v7-DW-VYS"/>
+                <constraint firstItem="A3N-mK-tdO" firstAttribute="top" secondItem="uxe-5Y-HB4" secondAttribute="bottom" constant="1" id="61D-aC-0OC"/>
+                <constraint firstItem="pZT-JQ-28H" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="59" id="BTh-8r-JkF"/>
+                <constraint firstItem="A3N-mK-tdO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="G6e-1V-K4y"/>
+                <constraint firstItem="MFt-9c-Tur" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Wym-Rs-7vV"/>
+                <constraint firstItem="pZT-JQ-28H" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="aHd-KY-aDk"/>
+                <constraint firstAttribute="bottom" secondItem="pZT-JQ-28H" secondAttribute="bottom" id="fQM-Xk-Y9w"/>
+                <constraint firstAttribute="trailing" secondItem="pZT-JQ-28H" secondAttribute="trailing" id="gUx-xs-mRJ"/>
+                <constraint firstAttribute="trailing" secondItem="A3N-mK-tdO" secondAttribute="trailing" constant="20" id="gZ7-Ch-YUB"/>
+                <constraint firstAttribute="trailing" secondItem="uxe-5Y-HB4" secondAttribute="trailing" constant="20" id="goq-vG-OkJ"/>
+                <constraint firstAttribute="bottom" secondItem="MFt-9c-Tur" secondAttribute="bottom" id="kcp-Xr-fxN"/>
+                <constraint firstAttribute="bottom" secondItem="A3N-mK-tdO" secondAttribute="bottom" constant="20" id="nSb-R4-gxp"/>
+                <constraint firstAttribute="trailing" secondItem="MFt-9c-Tur" secondAttribute="trailing" id="s5m-Hq-AgB"/>
+                <constraint firstItem="uxe-5Y-HB4" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="9" id="vVf-7P-sSz"/>
+            </constraints>
+            <size key="customSize" width="279" height="105"/>
+            <connections>
+                <outlet property="foodImageView" destination="MFt-9c-Tur" id="03R-2E-jea"/>
+            </connections>
+            <point key="canvasLocation" x="303.62318840579712" y="98.102678571428569"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ayam" width="337" height="174"/>
+        <image name="darkBrush" width="327" height="102"/>
+    </resources>
+</document>

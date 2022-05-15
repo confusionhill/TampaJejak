@@ -9,4 +9,8 @@ import Foundation
 
 final class UserSharedInstance {
     public static let shared = UserSharedInstance()
+    
+    public var userState: Bool {
+        return true
+    }
 }

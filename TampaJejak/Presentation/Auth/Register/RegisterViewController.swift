@@ -16,6 +16,7 @@ class RegisterViewController: BaseViewController {
     @IBOutlet weak var phoneField: UITextField!
     @IBOutlet weak var genderButton: UIButton!
     @IBOutlet weak var registerButton: UIButton!
+    @IBOutlet weak var loginLabel: UILabel!
     
     lazy var eyeButton: UIButton = {
         let button = UIButton(frame: CGRect(
@@ -110,6 +111,23 @@ class RegisterViewController: BaseViewController {
             UIImage(systemName: viewModel.isPassSecure ? "eye.slash.fill" : "eye.fill")?.withTintColor(.secondaryLabel,renderingMode: .alwaysOriginal),
             for: .normal)
     }
+    
+    private func setupLoginLabel() {
+        let attributedText = NSMutableAttributedString(string: "Already have an account?", attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 15)])
+        attributedText.append(NSAttributedString(string: " Sign in!",attributes: [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 15), NSAttributedString.Key.foregroundColor: UIColor.primarygreen]))
+        loginLabel.attributedText = attributedText
+        loginLabel.numberOfLines = 1
+        loginLabel.textAlignment = .center
+        
+        self.loginLabel.isUserInteractionEnabled = true
+        let tapgesture = UITapGestureRecognizer(target: self, action: #selector(self.didTapLoginLabel))
+        tapgesture.numberOfTapsRequired = 1
+        self.loginLabel.addGestureRecognizer(tapgesture)
+    }
+    
+    @objc func didTapLoginLabel() {
+        self.navigationController?.popViewController(animated: true)
+    }
 }
 
 extension RegisterViewController: UITextFieldDelegate {
@@ -128,6 +146,7 @@ extension RegisterViewController: RegisterVMOutput {
         registerButton.setRounded()
         self.setupGenderButton()
         self.setupFields()
+        setupLoginLabel()
     }
     
     

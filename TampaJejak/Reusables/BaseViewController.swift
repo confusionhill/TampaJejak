@@ -9,8 +9,18 @@ import UIKit
 
 class BaseViewController: UIViewController {
     
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+    }
+    
     override func loadView() {
         super.loadView()
+        let tabBarAppearance: UITabBarAppearance = UITabBarAppearance()
+        tabBarAppearance.configureWithDefaultBackground()
+        tabBarAppearance.backgroundColor = UIColor.white
+        UITabBar.appearance().standardAppearance = tabBarAppearance
+        UITabBar.appearance().scrollEdgeAppearance = tabBarAppearance
+        view.backgroundColor = .baseColor
     }
 
     override func viewDidLoad() {

@@ -1,0 +1,58 @@
+//
+//  PlainCarouselTableViewCell.swift
+//  TampaJejak
+//
+//  Created by Farhandika on 15/05/22.
+//
+
+import UIKit
+
+class PlainCarouselTableViewCell: BaseTableViewCell {
+    
+    @IBOutlet weak var collectionView: UICollectionView!
+    public static let identifier = "PlainCarouselTableViewCell"
+
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        self.collectionView.delegate = self
+        self.collectionView.dataSource = self
+        self.collectionView.register(UINib(nibName: MainFoodCollectionViewCell.identifier, bundle: nil), forCellWithReuseIdentifier: MainFoodCollectionViewCell.identifier)
+        collectionView.backgroundColor = .baseColor
+    }
+
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+
+        // Configure the view for the selected state
+    }
+    
+}
+
+extension PlainCarouselTableViewCell: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+           return UIEdgeInsets(top: 5, left: 17, bottom: 0, right: 17)
+    }
+}
+
+extension PlainCarouselTableViewCell: UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 3
+    }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MainFoodCollectionViewCell.identifier, for: indexPath) as! MainFoodCollectionViewCell
+        cell.layer.cornerRadius = 20
+        cell.layer.masksToBounds = true
+        cell.backgroundColor = .white
+        return cell
+    }
+    
+    
+}
+
+extension PlainCarouselTableViewCell: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: UIScreen.main.bounds.width/2 - 20 , height: collectionView.frame.size.height - 20 )
+    }
+}

@@ -62,7 +62,7 @@ class SignInViewController: UIViewController {
     
     private func setupRegisterLabel() {
         let attributedText = NSMutableAttributedString(string: "Didn’t have an account?", attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 15)])
-        attributedText.append(NSAttributedString(string: " Sign Up!",attributes: [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 15), NSAttributedString.Key.foregroundColor: UIColor.systemPink]))
+        attributedText.append(NSAttributedString(string: " Sign Up!",attributes: [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 15), NSAttributedString.Key.foregroundColor: UIColor.primarygreen]))
         registerLabel.attributedText = attributedText
         registerLabel.numberOfLines = 1
         registerLabel.textAlignment = .center
@@ -125,6 +125,7 @@ class SignInViewController: UIViewController {
         vc.launchRef = self.launchRef
         self.navigationController?.pushViewController(vc, animated: true)
     }
+
 }
 
 extension SignInViewController: SignInVMOutput {

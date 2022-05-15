@@ -32,6 +32,27 @@
 		FF1A8A0F282FFB11009C7815 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A8A0E282FFB11009C7815 /* RegisterViewModel.swift */; };
 		FF1A8A11282FFCC1009C7815 /* PickerDisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A8A10282FFCC1009C7815 /* PickerDisplayViewController.swift */; };
 		FF1A8A1328300242009C7815 /* PickerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A8A1228300242009C7815 /* PickerModel.swift */; };
+		FF1A8A152830153C009C7815 /* TapBarConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A8A142830153C009C7815 /* TapBarConstant.swift */; };
+		FF1A8A17283015C5009C7815 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A8A16283015C5009C7815 /* TabBarViewController.swift */; };
+		FF1A8A1D2830164F009C7815 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A8A1B2830164F009C7815 /* HomeViewController.swift */; };
+		FF1A8A1E2830164F009C7815 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF1A8A1C2830164F009C7815 /* HomeViewController.xib */; };
+		FF1A8A22283016C8009C7815 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A8A21283016C8009C7815 /* HomeViewModel.swift */; };
+		FF1A8A2528301825009C7815 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A8A2328301825009C7815 /* AccountViewController.swift */; };
+		FF1A8A2628301825009C7815 /* AccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF1A8A2428301825009C7815 /* AccountViewController.xib */; };
+		FF1A8A292830188E009C7815 /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A8A282830188D009C7815 /* QRCodeViewController.swift */; };
+		FF1A8A2D28303CBA009C7815 /* HomeHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A8A2B28303CBA009C7815 /* HomeHeaderTableViewCell.swift */; };
+		FF1A8A2E28303CBA009C7815 /* HomeHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF1A8A2C28303CBA009C7815 /* HomeHeaderTableViewCell.xib */; };
+		FF1A8A3128304569009C7815 /* CarouselTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A8A2F28304569009C7815 /* CarouselTableViewCell.swift */; };
+		FF1A8A3228304569009C7815 /* CarouselTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF1A8A3028304569009C7815 /* CarouselTableViewCell.xib */; };
+		FF1A8A342830AF03009C7815 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A8A332830AF03009C7815 /* HeaderView.swift */; };
+		FF1A8A382830C954009C7815 /* CarouselCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A8A362830C954009C7815 /* CarouselCollectionViewCell.swift */; };
+		FF1A8A392830C954009C7815 /* CarouselCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF1A8A372830C954009C7815 /* CarouselCollectionViewCell.xib */; };
+		FF1A8A3D2830DA13009C7815 /* MainFoodCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A8A3B2830DA13009C7815 /* MainFoodCollectionViewCell.swift */; };
+		FF1A8A3E2830DA13009C7815 /* MainFoodCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF1A8A3C2830DA13009C7815 /* MainFoodCollectionViewCell.xib */; };
+		FF1A8A432830DC3A009C7815 /* PlainCarouselTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A8A412830DC3A009C7815 /* PlainCarouselTableViewCell.swift */; };
+		FF1A8A442830DC3A009C7815 /* PlainCarouselTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF1A8A422830DC3A009C7815 /* PlainCarouselTableViewCell.xib */; };
+		FF1A8A462830E662009C7815 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A8A452830E661009C7815 /* BaseTableViewCell.swift */; };
+		FF1A8A482830E717009C7815 /* BaseCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A8A472830E717009C7815 /* BaseCollectionView.swift */; };
 		FF872B96282FAF90009D6604 /* FakeLaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF872B94282FAF90009D6604 /* FakeLaunchScreenViewController.swift */; };
 		FF872B97282FAF90009D6604 /* FakeLaunchScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF872B95282FAF90009D6604 /* FakeLaunchScreenViewController.xib */; };
 		FFC7775E282E929300AF4E8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC7775D282E929300AF4E8A /* AppDelegate.swift */; };
@@ -78,6 +99,27 @@
 		FF1A8A0E282FFB11009C7815 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		FF1A8A10282FFCC1009C7815 /* PickerDisplayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerDisplayViewController.swift; sourceTree = "<group>"; };
 		FF1A8A1228300242009C7815 /* PickerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerModel.swift; sourceTree = "<group>"; };
+		FF1A8A142830153C009C7815 /* TapBarConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TapBarConstant.swift; path = TampaJejak/Presentation/Picker/TapBarConstant.swift; sourceTree = SOURCE_ROOT; };
+		FF1A8A16283015C5009C7815 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TabBarViewController.swift; path = TampaJejak/Presentation/Picker/TabBarViewController.swift; sourceTree = SOURCE_ROOT; };
+		FF1A8A1B2830164F009C7815 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		FF1A8A1C2830164F009C7815 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		FF1A8A21283016C8009C7815 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		FF1A8A2328301825009C7815 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		FF1A8A2428301825009C7815 /* AccountViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountViewController.xib; sourceTree = "<group>"; };
+		FF1A8A282830188D009C7815 /* QRCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
+		FF1A8A2B28303CBA009C7815 /* HomeHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		FF1A8A2C28303CBA009C7815 /* HomeHeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeHeaderTableViewCell.xib; sourceTree = "<group>"; };
+		FF1A8A2F28304569009C7815 /* CarouselTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselTableViewCell.swift; sourceTree = "<group>"; };
+		FF1A8A3028304569009C7815 /* CarouselTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarouselTableViewCell.xib; sourceTree = "<group>"; };
+		FF1A8A332830AF03009C7815 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		FF1A8A362830C954009C7815 /* CarouselCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselCollectionViewCell.swift; sourceTree = "<group>"; };
+		FF1A8A372830C954009C7815 /* CarouselCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarouselCollectionViewCell.xib; sourceTree = "<group>"; };
+		FF1A8A3B2830DA13009C7815 /* MainFoodCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFoodCollectionViewCell.swift; sourceTree = "<group>"; };
+		FF1A8A3C2830DA13009C7815 /* MainFoodCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainFoodCollectionViewCell.xib; sourceTree = "<group>"; };
+		FF1A8A412830DC3A009C7815 /* PlainCarouselTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlainCarouselTableViewCell.swift; sourceTree = "<group>"; };
+		FF1A8A422830DC3A009C7815 /* PlainCarouselTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlainCarouselTableViewCell.xib; sourceTree = "<group>"; };
+		FF1A8A452830E661009C7815 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
+		FF1A8A472830E717009C7815 /* BaseCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionView.swift; sourceTree = "<group>"; };
 		FF872B94282FAF90009D6604 /* FakeLaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeLaunchScreenViewController.swift; sourceTree = "<group>"; };
 		FF872B95282FAF90009D6604 /* FakeLaunchScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FakeLaunchScreenViewController.xib; sourceTree = "<group>"; };
 		FFC7775A282E929300AF4E8A /* TampaJejak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TampaJejak.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -159,7 +201,10 @@
 		FF1A8A0A282FF667009C7815 /* Reusables */ = {
 			isa = PBXGroup;
 			children = (
+				FF1A8A3A2830D9EB009C7815 /* Cells */,
 				FF1A8A0B282FF678009C7815 /* BaseViewController.swift */,
+				FF1A8A452830E661009C7815 /* BaseTableViewCell.swift */,
+				FF1A8A472830E717009C7815 /* BaseCollectionView.swift */,
 			);
 			path = Reusables;
 			sourceTree = "<group>";
@@ -172,9 +217,110 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		FF1A8A18283015D1009C7815 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				FF1A8A20283016BC009C7815 /* ViewModel */,
+				FF1A8A1F283016B4009C7815 /* Cells */,
+				FF1A8A1B2830164F009C7815 /* HomeViewController.swift */,
+				FF1A8A1C2830164F009C7815 /* HomeViewController.xib */,
+				FF1A8A332830AF03009C7815 /* HeaderView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		FF1A8A19283015D8009C7815 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				FF1A8A2328301825009C7815 /* AccountViewController.swift */,
+				FF1A8A2428301825009C7815 /* AccountViewController.xib */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		FF1A8A1A283015F9009C7815 /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Activity;
+			sourceTree = "<group>";
+		};
+		FF1A8A1F283016B4009C7815 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FF1A8A492830E768009C7815 /* Category */,
+				FF1A8A3F2830DC19009C7815 /* PlainCarousel */,
+				FF1A8A352830C938009C7815 /* Carousel */,
+				FF1A8A2B28303CBA009C7815 /* HomeHeaderTableViewCell.swift */,
+				FF1A8A2C28303CBA009C7815 /* HomeHeaderTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		FF1A8A20283016BC009C7815 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FF1A8A21283016C8009C7815 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FF1A8A272830187B009C7815 /* QrCode */ = {
+			isa = PBXGroup;
+			children = (
+				FF1A8A282830188D009C7815 /* QRCodeViewController.swift */,
+			);
+			path = QrCode;
+			sourceTree = "<group>";
+		};
+		FF1A8A2A28303C8C009C7815 /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cart;
+			sourceTree = "<group>";
+		};
+		FF1A8A352830C938009C7815 /* Carousel */ = {
+			isa = PBXGroup;
+			children = (
+				FF1A8A2F28304569009C7815 /* CarouselTableViewCell.swift */,
+				FF1A8A3028304569009C7815 /* CarouselTableViewCell.xib */,
+				FF1A8A362830C954009C7815 /* CarouselCollectionViewCell.swift */,
+				FF1A8A372830C954009C7815 /* CarouselCollectionViewCell.xib */,
+			);
+			path = Carousel;
+			sourceTree = "<group>";
+		};
+		FF1A8A3A2830D9EB009C7815 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FF1A8A3B2830DA13009C7815 /* MainFoodCollectionViewCell.swift */,
+				FF1A8A3C2830DA13009C7815 /* MainFoodCollectionViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		FF1A8A3F2830DC19009C7815 /* PlainCarousel */ = {
+			isa = PBXGroup;
+			children = (
+				FF1A8A412830DC3A009C7815 /* PlainCarouselTableViewCell.swift */,
+				FF1A8A422830DC3A009C7815 /* PlainCarouselTableViewCell.xib */,
+			);
+			path = PlainCarousel;
+			sourceTree = "<group>";
+		};
+		FF1A8A492830E768009C7815 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		FF77B6FF282EA53A008503BD /* TapBarComponent */ = {
 			isa = PBXGroup;
 			children = (
+				FF1A8A142830153C009C7815 /* TapBarConstant.swift */,
+				FF1A8A16283015C5009C7815 /* TabBarViewController.swift */,
 			);
 			path = TapBarComponent;
 			sourceTree = "<group>";
@@ -260,6 +406,7 @@
 		FFC77791282E971300AF4E8A /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				FF1A8A272830187B009C7815 /* QrCode */,
 				FF1A8A09282FEC82009C7815 /* Picker */,
 				FF872B93282FAF79009D6604 /* LaunchScreen */,
 				FFC77796282E973400AF4E8A /* TapBar */,
@@ -307,6 +454,9 @@
 		FFC77796282E973400AF4E8A /* TapBar */ = {
 			isa = PBXGroup;
 			children = (
+				FF1A8A1A283015F9009C7815 /* Activity */,
+				FF1A8A19283015D8009C7815 /* Account */,
+				FF1A8A18283015D1009C7815 /* Home */,
 				FF77B6FF282EA53A008503BD /* TapBarComponent */,
 			);
 			path = TapBar;
@@ -315,6 +465,7 @@
 		FFC77798282E999700AF4E8A /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				FF1A8A2A28303C8C009C7815 /* Cart */,
 				FF1A89D5282FB12F009C7815 /* Auth */,
 				FFC77799282E999E00AF4E8A /* QRCode */,
 				FFC77792282E971900AF4E8A /* Network */,
@@ -435,10 +586,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF1A89DF282FB22F009C7815 /* SignInViewController.xib in Resources */,
+				FF1A8A2E28303CBA009C7815 /* HomeHeaderTableViewCell.xib in Resources */,
+				FF1A8A392830C954009C7815 /* CarouselCollectionViewCell.xib in Resources */,
+				FF1A8A3228304569009C7815 /* CarouselTableViewCell.xib in Resources */,
+				FF1A8A2628301825009C7815 /* AccountViewController.xib in Resources */,
 				FF1A89EB282FB6A1009C7815 /* RegisterViewController.xib in Resources */,
 				FF872B97282FAF90009D6604 /* FakeLaunchScreenViewController.xib in Resources */,
+				FF1A8A3E2830DA13009C7815 /* MainFoodCollectionViewCell.xib in Resources */,
+				FF1A8A442830DC3A009C7815 /* PlainCarouselTableViewCell.xib in Resources */,
 				FFC7776A282E929500AF4E8A /* LaunchScreen.storyboard in Resources */,
 				FFC77767282E929500AF4E8A /* Assets.xcassets in Resources */,
+				FF1A8A1E2830164F009C7815 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,22 +625,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF1A8A382830C954009C7815 /* CarouselCollectionViewCell.swift in Sources */,
 				FF1A89F4282FC309009C7815 /* UIViewExt.swift in Sources */,
+				FF1A8A3D2830DA13009C7815 /* MainFoodCollectionViewCell.swift in Sources */,
+				FF1A8A22283016C8009C7815 /* HomeViewModel.swift in Sources */,
 				FF1A8A06282FE811009C7815 /* UITextfieldExt.swift in Sources */,
 				FF1A89DC282FB22F009C7815 /* SignInViewController.swift in Sources */,
 				FF1A8A1328300242009C7815 /* PickerModel.swift in Sources */,
 				FF1A8A0F282FFB11009C7815 /* RegisterViewModel.swift in Sources */,
+				FF1A8A1D2830164F009C7815 /* HomeViewController.swift in Sources */,
 				FF1A89D7282FB143009C7815 /* UserSharedInstance.swift in Sources */,
 				FF1A89F6282FC782009C7815 /* UIColorExt.swift in Sources */,
+				FF1A8A3128304569009C7815 /* CarouselTableViewCell.swift in Sources */,
 				FF1A8A11282FFCC1009C7815 /* PickerDisplayViewController.swift in Sources */,
+				FF1A8A17283015C5009C7815 /* TabBarViewController.swift in Sources */,
 				FF1A8A0C282FF678009C7815 /* BaseViewController.swift in Sources */,
 				FF872B96282FAF90009D6604 /* FakeLaunchScreenViewController.swift in Sources */,
 				FF1A89E8282FB6A1009C7815 /* RegisterViewController.swift in Sources */,
 				FFC7778F282E95E900AF4E8A /* Coordinator.swift in Sources */,
 				FF1A8A04282FE34F009C7815 /* UIButtonExt.swift in Sources */,
+				FF1A8A2528301825009C7815 /* AccountViewController.swift in Sources */,
+				FF1A8A462830E662009C7815 /* BaseTableViewCell.swift in Sources */,
+				FF1A8A482830E717009C7815 /* BaseCollectionView.swift in Sources */,
 				FFC7775E282E929300AF4E8A /* AppDelegate.swift in Sources */,
+				FF1A8A342830AF03009C7815 /* HeaderView.swift in Sources */,
+				FF1A8A292830188E009C7815 /* QRCodeViewController.swift in Sources */,
 				FF1A89F9282FD061009C7815 /* SignInViewModel.swift in Sources */,
+				FF1A8A432830DC3A009C7815 /* PlainCarouselTableViewCell.swift in Sources */,
 				FFC7779B282E9BBC00AF4E8A /* QRCodeService.swift in Sources */,
+				FF1A8A2D28303CBA009C7815 /* HomeHeaderTableViewCell.swift in Sources */,
+				FF1A8A152830153C009C7815 /* TapBarConstant.swift in Sources */,
 				FF1A8A08282FE958009C7815 /* UIViewControllerExt.swift in Sources */,
 				FFC77760282E929300AF4E8A /* SceneDelegate.swift in Sources */,
 			);

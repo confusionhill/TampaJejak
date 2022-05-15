@@ -14,6 +14,7 @@
                 <outlet property="emailField" destination="UIT-ha-OTk" id="1fM-6g-JVi"/>
                 <outlet property="fullNameField" destination="ygW-53-Rug" id="ZaN-i0-wPG"/>
                 <outlet property="genderButton" destination="On8-1t-Z9I" id="eeg-53-ard"/>
+                <outlet property="loginLabel" destination="9Lp-6d-Y7R" id="SKJ-Jz-bUN"/>
                 <outlet property="passwordField" destination="RW1-tG-tDU" id="WVH-BW-Mwq"/>
                 <outlet property="phoneField" destination="HC3-wk-2Ad" id="II6-NU-dtl"/>
                 <outlet property="rePasswordField" destination="GxG-Wz-5HM" id="qBd-sV-aMV"/>
@@ -150,7 +151,7 @@
     </objects>
     <resources>
         <namedColor name="primarygreen">
-            <color red="0.02" green="0.59999999999999998" blue="0.56000000000000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.019999999552965164" green="0.60000002384185791" blue="0.56000000238418579" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="placeholderTextColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
