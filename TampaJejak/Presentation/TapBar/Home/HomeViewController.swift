@@ -35,6 +35,13 @@ class HomeViewController: BaseViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func didTapCartButton(_ sender: UIButton) {
+        let vc = CartViewController(nibName: "CartViewController", bundle: nil)
+        let nav = UINavigationController(rootViewController: vc)
+        nav.modalPresentationStyle = .fullScreen
+        self.present(nav, animated: true, completion: nil)
+    }
+    
     private func setupTableView() {
         tableView.backgroundColor = .baseColor
         tableView.sectionHeaderTopPadding = 0

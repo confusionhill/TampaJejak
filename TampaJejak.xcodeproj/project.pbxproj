@@ -63,6 +63,11 @@
 		FF1A8A5C2830F25C009C7815 /* TrackOrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A8A5A2830F25C009C7815 /* TrackOrderTableViewCell.swift */; };
 		FF1A8A5D2830F25C009C7815 /* TrackOrderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF1A8A5B2830F25C009C7815 /* TrackOrderTableViewCell.xib */; };
 		FF1A8A5F2830F3F1009C7815 /* CartService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A8A5E2830F3F1009C7815 /* CartService.swift */; };
+		FF1A8A632830F712009C7815 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A8A612830F712009C7815 /* CartViewController.swift */; };
+		FF1A8A642830F712009C7815 /* CartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF1A8A622830F712009C7815 /* CartViewController.xib */; };
+		FF1A8A662830F98A009C7815 /* FoodModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A8A652830F98A009C7815 /* FoodModel.swift */; };
+		FF1A8A692830F9F0009C7815 /* FoodStatic.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A8A682830F9F0009C7815 /* FoodStatic.swift */; };
+		FF1A8A6B2830FA20009C7815 /* OrderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A8A6A2830FA20009C7815 /* OrderModel.swift */; };
 		FF872B96282FAF90009D6604 /* FakeLaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF872B94282FAF90009D6604 /* FakeLaunchScreenViewController.swift */; };
 		FF872B97282FAF90009D6604 /* FakeLaunchScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF872B95282FAF90009D6604 /* FakeLaunchScreenViewController.xib */; };
 		FFC7775E282E929300AF4E8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC7775D282E929300AF4E8A /* AppDelegate.swift */; };
@@ -140,6 +145,11 @@
 		FF1A8A5A2830F25C009C7815 /* TrackOrderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackOrderTableViewCell.swift; sourceTree = "<group>"; };
 		FF1A8A5B2830F25C009C7815 /* TrackOrderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrackOrderTableViewCell.xib; sourceTree = "<group>"; };
 		FF1A8A5E2830F3F1009C7815 /* CartService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartService.swift; sourceTree = "<group>"; };
+		FF1A8A612830F712009C7815 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		FF1A8A622830F712009C7815 /* CartViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CartViewController.xib; sourceTree = "<group>"; };
+		FF1A8A652830F98A009C7815 /* FoodModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodModel.swift; sourceTree = "<group>"; };
+		FF1A8A682830F9F0009C7815 /* FoodStatic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodStatic.swift; sourceTree = "<group>"; };
+		FF1A8A6A2830FA20009C7815 /* OrderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderModel.swift; sourceTree = "<group>"; };
 		FF872B94282FAF90009D6604 /* FakeLaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeLaunchScreenViewController.swift; sourceTree = "<group>"; };
 		FF872B95282FAF90009D6604 /* FakeLaunchScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FakeLaunchScreenViewController.xib; sourceTree = "<group>"; };
 		FFC7775A282E929300AF4E8A /* TampaJejak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TampaJejak.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -362,6 +372,23 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		FF1A8A602830F6F2009C7815 /* CartPath */ = {
+			isa = PBXGroup;
+			children = (
+				FF1A8A612830F712009C7815 /* CartViewController.swift */,
+				FF1A8A622830F712009C7815 /* CartViewController.xib */,
+			);
+			path = CartPath;
+			sourceTree = "<group>";
+		};
+		FF1A8A672830F9E1009C7815 /* StaticData */ = {
+			isa = PBXGroup;
+			children = (
+				FF1A8A682830F9F0009C7815 /* FoodStatic.swift */,
+			);
+			path = StaticData;
+			sourceTree = "<group>";
+		};
 		FF77B6FF282EA53A008503BD /* TapBarComponent */ = {
 			isa = PBXGroup;
 			children = (
@@ -445,6 +472,8 @@
 		FFC77790282E970F00AF4E8A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				FF1A8A652830F98A009C7815 /* FoodModel.swift */,
+				FF1A8A6A2830FA20009C7815 /* OrderModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -452,6 +481,7 @@
 		FFC77791282E971300AF4E8A /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				FF1A8A602830F6F2009C7815 /* CartPath */,
 				FF1A8A272830187B009C7815 /* QrCode */,
 				FF1A8A09282FEC82009C7815 /* Picker */,
 				FF872B93282FAF79009D6604 /* LaunchScreen */,
@@ -511,6 +541,7 @@
 		FFC77798282E999700AF4E8A /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				FF1A8A672830F9E1009C7815 /* StaticData */,
 				FF1A8A2A28303C8C009C7815 /* Cart */,
 				FF1A89D5282FB12F009C7815 /* Auth */,
 				FFC77799282E999E00AF4E8A /* QRCode */,
@@ -633,6 +664,7 @@
 			files = (
 				FF1A8A5D2830F25C009C7815 /* TrackOrderTableViewCell.xib in Resources */,
 				FF1A89DF282FB22F009C7815 /* SignInViewController.xib in Resources */,
+				FF1A8A642830F712009C7815 /* CartViewController.xib in Resources */,
 				FF1A8A2E28303CBA009C7815 /* HomeHeaderTableViewCell.xib in Resources */,
 				FF1A8A592830EEBA009C7815 /* OrderCodeTableViewCell.xib in Resources */,
 				FF1A8A392830C954009C7815 /* CarouselCollectionViewCell.xib in Resources */,
@@ -685,6 +717,7 @@
 				FF1A8A5F2830F3F1009C7815 /* CartService.swift in Sources */,
 				FF1A8A1328300242009C7815 /* PickerModel.swift in Sources */,
 				FF1A8A0F282FFB11009C7815 /* RegisterViewModel.swift in Sources */,
+				FF1A8A6B2830FA20009C7815 /* OrderModel.swift in Sources */,
 				FF1A8A1D2830164F009C7815 /* HomeViewController.swift in Sources */,
 				FF1A89D7282FB143009C7815 /* UserSharedInstance.swift in Sources */,
 				FF1A8A5C2830F25C009C7815 /* TrackOrderTableViewCell.swift in Sources */,
@@ -694,8 +727,10 @@
 				FF1A8A11282FFCC1009C7815 /* PickerDisplayViewController.swift in Sources */,
 				FF1A8A17283015C5009C7815 /* TabBarViewController.swift in Sources */,
 				FF1A8A0C282FF678009C7815 /* BaseViewController.swift in Sources */,
+				FF1A8A632830F712009C7815 /* CartViewController.swift in Sources */,
 				FF872B96282FAF90009D6604 /* FakeLaunchScreenViewController.swift in Sources */,
 				FF1A89E8282FB6A1009C7815 /* RegisterViewController.swift in Sources */,
+				FF1A8A692830F9F0009C7815 /* FoodStatic.swift in Sources */,
 				FFC7778F282E95E900AF4E8A /* Coordinator.swift in Sources */,
 				FF1A8A04282FE34F009C7815 /* UIButtonExt.swift in Sources */,
 				FF1A8A2528301825009C7815 /* AccountViewController.swift in Sources */,
@@ -709,6 +744,7 @@
 				FF1A8A432830DC3A009C7815 /* PlainCarouselTableViewCell.swift in Sources */,
 				FFC7779B282E9BBC00AF4E8A /* QRCodeService.swift in Sources */,
 				FF1A8A2D28303CBA009C7815 /* HomeHeaderTableViewCell.swift in Sources */,
+				FF1A8A662830F98A009C7815 /* FoodModel.swift in Sources */,
 				FF1A8A532830EC08009C7815 /* OrderTableViewCell.swift in Sources */,
 				FF1A8A152830153C009C7815 /* TapBarConstant.swift in Sources */,
 				FF1A8A08282FE958009C7815 /* UIViewControllerExt.swift in Sources */,
