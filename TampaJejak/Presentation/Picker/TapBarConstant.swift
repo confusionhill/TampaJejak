@@ -8,7 +8,7 @@
 import UIKit
 
 public enum TapBarConstant: String, CaseIterable {
-    case Home,Account
+    case Home,Activity,Account
     
     var viewController: UIViewController {
         switch self {
@@ -16,6 +16,8 @@ public enum TapBarConstant: String, CaseIterable {
             return HomeViewController(nibName: "HomeViewController", bundle: nil)
         case .Account:
             return AccountViewController(nibName: "AccountViewController", bundle: nil)
+        case .Activity :
+            return ActivityViewController(nibName: "ActivityViewController", bundle: nil)
         }
     }
     

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AccountViewController: UIViewController {
+class AccountViewController: BaseViewController {
     public weak var tabBarRef: TabBarDelegate?
 
     override func viewDidLoad() {

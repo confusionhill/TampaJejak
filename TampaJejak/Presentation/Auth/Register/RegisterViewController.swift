@@ -140,7 +140,6 @@ extension RegisterViewController: UITextFieldDelegate {
 extension RegisterViewController: RegisterVMOutput {
     func setupViews() {
         self.title = "Create your account"
-        self.navigationController?.navigationBar.prefersLargeTitles = true
         view.backgroundColor = .white
         eyeButton.addTarget(self, action: #selector(self.eyeButtonTapped(_:)), for: .touchUpInside)
         registerButton.setRounded()

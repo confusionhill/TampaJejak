@@ -53,6 +53,13 @@
 		FF1A8A442830DC3A009C7815 /* PlainCarouselTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF1A8A422830DC3A009C7815 /* PlainCarouselTableViewCell.xib */; };
 		FF1A8A462830E662009C7815 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A8A452830E661009C7815 /* BaseTableViewCell.swift */; };
 		FF1A8A482830E717009C7815 /* BaseCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A8A472830E717009C7815 /* BaseCollectionView.swift */; };
+		FF1A8A4C2830E804009C7815 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A8A4A2830E804009C7815 /* ActivityViewController.swift */; };
+		FF1A8A4D2830E804009C7815 /* ActivityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF1A8A4B2830E804009C7815 /* ActivityViewController.xib */; };
+		FF1A8A502830E8AF009C7815 /* ActivityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A8A4F2830E8AF009C7815 /* ActivityViewModel.swift */; };
+		FF1A8A532830EC08009C7815 /* OrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A8A512830EC08009C7815 /* OrderTableViewCell.swift */; };
+		FF1A8A542830EC08009C7815 /* OrderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF1A8A522830EC08009C7815 /* OrderTableViewCell.xib */; };
+		FF1A8A582830EEBA009C7815 /* OrderCodeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A8A562830EEBA009C7815 /* OrderCodeTableViewCell.swift */; };
+		FF1A8A592830EEBA009C7815 /* OrderCodeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF1A8A572830EEBA009C7815 /* OrderCodeTableViewCell.xib */; };
 		FF872B96282FAF90009D6604 /* FakeLaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF872B94282FAF90009D6604 /* FakeLaunchScreenViewController.swift */; };
 		FF872B97282FAF90009D6604 /* FakeLaunchScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF872B95282FAF90009D6604 /* FakeLaunchScreenViewController.xib */; };
 		FFC7775E282E929300AF4E8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC7775D282E929300AF4E8A /* AppDelegate.swift */; };
@@ -120,6 +127,13 @@
 		FF1A8A422830DC3A009C7815 /* PlainCarouselTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlainCarouselTableViewCell.xib; sourceTree = "<group>"; };
 		FF1A8A452830E661009C7815 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
 		FF1A8A472830E717009C7815 /* BaseCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionView.swift; sourceTree = "<group>"; };
+		FF1A8A4A2830E804009C7815 /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
+		FF1A8A4B2830E804009C7815 /* ActivityViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivityViewController.xib; sourceTree = "<group>"; };
+		FF1A8A4F2830E8AF009C7815 /* ActivityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewModel.swift; sourceTree = "<group>"; };
+		FF1A8A512830EC08009C7815 /* OrderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewCell.swift; sourceTree = "<group>"; };
+		FF1A8A522830EC08009C7815 /* OrderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderTableViewCell.xib; sourceTree = "<group>"; };
+		FF1A8A562830EEBA009C7815 /* OrderCodeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCodeTableViewCell.swift; sourceTree = "<group>"; };
+		FF1A8A572830EEBA009C7815 /* OrderCodeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderCodeTableViewCell.xib; sourceTree = "<group>"; };
 		FF872B94282FAF90009D6604 /* FakeLaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeLaunchScreenViewController.swift; sourceTree = "<group>"; };
 		FF872B95282FAF90009D6604 /* FakeLaunchScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FakeLaunchScreenViewController.xib; sourceTree = "<group>"; };
 		FFC7775A282E929300AF4E8A /* TampaJejak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TampaJejak.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -241,6 +255,10 @@
 		FF1A8A1A283015F9009C7815 /* Activity */ = {
 			isa = PBXGroup;
 			children = (
+				FF1A8A552830EEAA009C7815 /* Cells */,
+				FF1A8A4E2830E8A3009C7815 /* ViewModel */,
+				FF1A8A4A2830E804009C7815 /* ActivityViewController.swift */,
+				FF1A8A4B2830E804009C7815 /* ActivityViewController.xib */,
 			);
 			path = Activity;
 			sourceTree = "<group>";
@@ -296,6 +314,8 @@
 			children = (
 				FF1A8A3B2830DA13009C7815 /* MainFoodCollectionViewCell.swift */,
 				FF1A8A3C2830DA13009C7815 /* MainFoodCollectionViewCell.xib */,
+				FF1A8A512830EC08009C7815 /* OrderTableViewCell.swift */,
+				FF1A8A522830EC08009C7815 /* OrderTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -314,6 +334,23 @@
 			children = (
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		FF1A8A4E2830E8A3009C7815 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FF1A8A4F2830E8AF009C7815 /* ActivityViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FF1A8A552830EEAA009C7815 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FF1A8A562830EEBA009C7815 /* OrderCodeTableViewCell.swift */,
+				FF1A8A572830EEBA009C7815 /* OrderCodeTableViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		FF77B6FF282EA53A008503BD /* TapBarComponent */ = {
@@ -587,15 +624,18 @@
 			files = (
 				FF1A89DF282FB22F009C7815 /* SignInViewController.xib in Resources */,
 				FF1A8A2E28303CBA009C7815 /* HomeHeaderTableViewCell.xib in Resources */,
+				FF1A8A592830EEBA009C7815 /* OrderCodeTableViewCell.xib in Resources */,
 				FF1A8A392830C954009C7815 /* CarouselCollectionViewCell.xib in Resources */,
 				FF1A8A3228304569009C7815 /* CarouselTableViewCell.xib in Resources */,
 				FF1A8A2628301825009C7815 /* AccountViewController.xib in Resources */,
 				FF1A89EB282FB6A1009C7815 /* RegisterViewController.xib in Resources */,
 				FF872B97282FAF90009D6604 /* FakeLaunchScreenViewController.xib in Resources */,
+				FF1A8A4D2830E804009C7815 /* ActivityViewController.xib in Resources */,
 				FF1A8A3E2830DA13009C7815 /* MainFoodCollectionViewCell.xib in Resources */,
 				FF1A8A442830DC3A009C7815 /* PlainCarouselTableViewCell.xib in Resources */,
 				FFC7776A282E929500AF4E8A /* LaunchScreen.storyboard in Resources */,
 				FFC77767282E929500AF4E8A /* Assets.xcassets in Resources */,
+				FF1A8A542830EC08009C7815 /* OrderTableViewCell.xib in Resources */,
 				FF1A8A1E2830164F009C7815 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -626,6 +666,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF1A8A382830C954009C7815 /* CarouselCollectionViewCell.swift in Sources */,
+				FF1A8A582830EEBA009C7815 /* OrderCodeTableViewCell.swift in Sources */,
 				FF1A89F4282FC309009C7815 /* UIViewExt.swift in Sources */,
 				FF1A8A3D2830DA13009C7815 /* MainFoodCollectionViewCell.swift in Sources */,
 				FF1A8A22283016C8009C7815 /* HomeViewModel.swift in Sources */,
@@ -635,6 +676,7 @@
 				FF1A8A0F282FFB11009C7815 /* RegisterViewModel.swift in Sources */,
 				FF1A8A1D2830164F009C7815 /* HomeViewController.swift in Sources */,
 				FF1A89D7282FB143009C7815 /* UserSharedInstance.swift in Sources */,
+				FF1A8A4C2830E804009C7815 /* ActivityViewController.swift in Sources */,
 				FF1A89F6282FC782009C7815 /* UIColorExt.swift in Sources */,
 				FF1A8A3128304569009C7815 /* CarouselTableViewCell.swift in Sources */,
 				FF1A8A11282FFCC1009C7815 /* PickerDisplayViewController.swift in Sources */,
@@ -647,6 +689,7 @@
 				FF1A8A2528301825009C7815 /* AccountViewController.swift in Sources */,
 				FF1A8A462830E662009C7815 /* BaseTableViewCell.swift in Sources */,
 				FF1A8A482830E717009C7815 /* BaseCollectionView.swift in Sources */,
+				FF1A8A502830E8AF009C7815 /* ActivityViewModel.swift in Sources */,
 				FFC7775E282E929300AF4E8A /* AppDelegate.swift in Sources */,
 				FF1A8A342830AF03009C7815 /* HeaderView.swift in Sources */,
 				FF1A8A292830188E009C7815 /* QRCodeViewController.swift in Sources */,
@@ -654,6 +697,7 @@
 				FF1A8A432830DC3A009C7815 /* PlainCarouselTableViewCell.swift in Sources */,
 				FFC7779B282E9BBC00AF4E8A /* QRCodeService.swift in Sources */,
 				FF1A8A2D28303CBA009C7815 /* HomeHeaderTableViewCell.swift in Sources */,
+				FF1A8A532830EC08009C7815 /* OrderTableViewCell.swift in Sources */,
 				FF1A8A152830153C009C7815 /* TapBarConstant.swift in Sources */,
 				FF1A8A08282FE958009C7815 /* UIViewControllerExt.swift in Sources */,
 				FFC77760282E929300AF4E8A /* SceneDelegate.swift in Sources */,
