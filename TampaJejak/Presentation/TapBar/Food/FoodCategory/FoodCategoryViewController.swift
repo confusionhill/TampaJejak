@@ -14,26 +14,28 @@ class FoodCategoryViewController: BaseViewController {
     
     weak var delegate: HomeViewControllerDelegate?
     
-    init(foodID id: String) {
+    var viewModel: FoodCategoryViewModel!
+    
+    init(foodID id: String?) {
         super.init(nibName: "FoodCategoryViewController", bundle: nil)
+        FoodCategoryViewModel.config(vc: self, foodID: id)
     }
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
+        FoodCategoryViewModel.config(vc: self, foodID: nil)
     }
     
     override func loadView() {
         super.loadView()
-        self.title = "Categrory"
+        self.title = "Category"
         navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .close, target: self, action: #selector(self.didTapExitCategory))
         self.collectionView.backgroundColor = .baseColor
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.navigationBar.prefersLargeTitles = false
-        self.setupCart()
-        self.setupCollectionView()
+        viewModel.viewDidLoad()
     }
     
     private func setupCart() {
@@ -57,7 +59,15 @@ class FoodCategoryViewController: BaseViewController {
     @objc func didTapExitCategory() {
         self.delegate?.didTapExit()
     }
-
+    
+    @IBAction func didTapCart(_ sender: UIButton) {
+        let vc = CartViewController(nibName: "CartViewController", bundle: nil)
+        vc.delegate = self.delegate
+        let nav = UINavigationController(rootViewController: vc)
+        nav.modalPresentationStyle = .fullScreen
+        self.present(nav, animated: true, completion: nil)
+    }
+    
 }
 
 extension FoodCategoryViewController: UICollectionViewDataSource {
@@ -84,12 +94,7 @@ extension FoodCategoryViewController: UICollectionViewDelegate {
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let vc = BaseViewController()
-        vc.view.backgroundColor = .white
-        if let sheet = vc.sheetPresentationController {
-            sheet.detents = [.medium(),.large()]
-        }
-        self.present(vc, animated: true, completion: nil)
+        self.openFoodInfo(foodID: " ")
     }
 }
 
@@ -99,5 +104,22 @@ extension FoodCategoryViewController: UICollectionViewDelegateFlowLayout {
             return CGSize(width: collectionView.layer.bounds.width - 34, height: 120)
         }
         return CGSize(width: UIScreen.main.bounds.width/2 - 25 , height: 195 )
+    }
+}
+
+extension FoodCategoryViewController: FoodCategoryViewModelOutput {
+    func setupViews() {
+        self.navigationController?.navigationBar.prefersLargeTitles = false
+        self.setupCart()
+        self.setupCollectionView()
+    }
+    
+    func openFoodInfo(foodID: String) {
+        let vc = BaseViewController()
+        vc.view.backgroundColor = .white
+        if let sheet = vc.sheetPresentationController {
+            sheet.detents = [.medium(),.large()]
+        }
+        self.present(vc, animated: true, completion: nil)
     }
 }

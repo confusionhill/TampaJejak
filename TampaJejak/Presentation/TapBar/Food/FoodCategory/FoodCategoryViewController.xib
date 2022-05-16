@@ -40,6 +40,9 @@
                     </constraints>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                    <connections>
+                        <action selector="didTapCart:" destination="-1" eventType="touchUpInside" id="pp3-gf-rFk"/>
+                    </connections>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

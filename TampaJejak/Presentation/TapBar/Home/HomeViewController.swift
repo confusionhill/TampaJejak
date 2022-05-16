@@ -45,6 +45,7 @@ class HomeViewController: BaseViewController {
     
     @IBAction func didTapCartButton(_ sender: UIButton) {
         let vc = CartViewController(nibName: "CartViewController", bundle: nil)
+        vc.delegate = self
         let nav = UINavigationController(rootViewController: vc)
         nav.modalPresentationStyle = .fullScreen
         self.present(nav, animated: true, completion: nil)
