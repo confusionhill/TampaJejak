@@ -12,6 +12,8 @@ class CarouselTableViewCell: BaseTableViewCell {
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var pager: UIPageControl!
     
+    weak var homeOutput: HomeViewControllerOutput?
+    
     public static let identifier = "CarouselTableViewCell"
 
     override func awakeFromNib() {
@@ -36,6 +38,10 @@ class CarouselTableViewCell: BaseTableViewCell {
 extension CarouselTableViewCell: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
            return UIEdgeInsets(top: 5, left: 17, bottom: 0, right: 17)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.homeOutput?.didTapFood(foodID: "")
     }
 }
 

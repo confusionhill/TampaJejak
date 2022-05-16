@@ -7,6 +7,14 @@
 
 import UIKit
 
+protocol HomeViewControllerDelegate: AnyObject {
+    func didTapExit()
+}
+
+protocol HomeViewControllerOutput: AnyObject {
+    func didTapFood(foodID id: String)
+}
+
 class HomeViewController: BaseViewController {
     
     @IBOutlet var tableView: UITableView!
@@ -65,9 +73,7 @@ class HomeViewController: BaseViewController {
             UIImage(
                 systemName: "cart.fill")?.withTintColor(.white, renderingMode: .alwaysOriginal),
             for: .normal)
-        self.cartButton.layer.masksToBounds = true
-        self.cartButton.layer.cornerRadius = 0.5 * cartButton.bounds.size.width
-        self.cartButton.clipsToBounds = true
+        self.cartButton.setCircular()
     }
 }
 
@@ -93,18 +99,20 @@ extension HomeViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.section == 0 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: HomeHeaderTableViewCell.identifier, for: indexPath)
+            let cell = tableView.dequeueReusableCell(withIdentifier: HomeHeaderTableViewCell.identifier, for: indexPath) as! HomeHeaderTableViewCell
             cell.selectionStyle = .none
             return cell
         }
         if indexPath.section == 1 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: CarouselTableViewCell.identifier, for: indexPath)
+            let cell = tableView.dequeueReusableCell(withIdentifier: CarouselTableViewCell.identifier, for: indexPath) as! CarouselTableViewCell
             cell.selectionStyle = .none
+            cell.homeOutput = self
             return cell
         }
         if indexPath.section == 2 {
             let cell = tableView.dequeueReusableCell(withIdentifier: PlainCarouselTableViewCell.identifier, for: indexPath) as! PlainCarouselTableViewCell
             cell.selectionStyle = .none
+            cell.homeOutput = self
             return cell
         }
         
@@ -131,5 +139,22 @@ extension HomeViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         if section == 0 { return 0 }
         return UITableView.automaticDimension
+    }
+}
+
+
+extension HomeViewController: HomeViewControllerOutput {
+    func didTapFood(foodID id: String) {
+        let vc = FoodCategoryViewController(foodID: id)
+        vc.delegate = self
+        let navCon = UINavigationController(rootViewController: vc)
+        navCon.modalPresentationStyle = .fullScreen
+        self.present(navCon, animated: true, completion: nil)
+    }
+}
+
+extension HomeViewController: HomeViewControllerDelegate {
+    func didTapExit() {
+        self.dismiss(animated: true, completion: nil)
     }
 }

@@ -11,6 +11,8 @@ class PlainCarouselTableViewCell: BaseTableViewCell {
     
     @IBOutlet weak var collectionView: UICollectionView!
     public static let identifier = "PlainCarouselTableViewCell"
+    
+    weak var homeOutput: HomeViewControllerOutput?
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -31,6 +33,10 @@ class PlainCarouselTableViewCell: BaseTableViewCell {
 extension PlainCarouselTableViewCell: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
            return UIEdgeInsets(top: 5, left: 17, bottom: 0, right: 17)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.homeOutput?.didTapFood(foodID: "")
     }
 }
 
