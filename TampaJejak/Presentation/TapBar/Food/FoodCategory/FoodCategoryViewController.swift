@@ -44,7 +44,7 @@ class FoodCategoryViewController: BaseViewController {
             UIImage(
                 systemName: "cart.fill")?.withTintColor(.white, renderingMode: .alwaysOriginal),
             for: .normal)
-        self.cartButton.setCircular()
+        //self.cartButton.setCircular()
     }
     
     private func setupCollectionView() {
@@ -115,11 +115,17 @@ extension FoodCategoryViewController: FoodCategoryViewModelOutput {
     }
     
     func openFoodInfo(foodID: String) {
-        let vc = BaseViewController()
+        let vc = FoodInfoViewController(foodID: foodID,output: self)
         vc.view.backgroundColor = .white
         if let sheet = vc.sheetPresentationController {
-            sheet.detents = [.medium(),.large()]
+            sheet.detents = [.large()]
         }
         self.present(vc, animated: true, completion: nil)
+    }
+}
+
+extension FoodCategoryViewController: FoodInfoViewControllerOutput {
+    func didTapAddCart() {
+        self.dismiss(animated: true, completion: nil)
     }
 }

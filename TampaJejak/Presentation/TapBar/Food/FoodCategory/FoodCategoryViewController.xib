@@ -35,8 +35,8 @@
                     <rect key="frame" x="338" y="782" width="60" height="60"/>
                     <color key="backgroundColor" name="primarygreen"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="60" id="Vpd-cd-kAp"/>
-                        <constraint firstAttribute="height" constant="60" id="Ykv-uU-hEa"/>
+                        <constraint firstAttribute="width" constant="60" id="QFo-P2-h9X"/>
+                        <constraint firstAttribute="height" constant="60" id="dc8-PS-s37"/>
                     </constraints>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="Button"/>

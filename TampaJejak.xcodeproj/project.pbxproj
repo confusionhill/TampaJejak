@@ -73,8 +73,11 @@
 		FF522E1128328B4300892055 /* FoodCategoryHeaderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF522E0F28328B4300892055 /* FoodCategoryHeaderCollectionViewCell.swift */; };
 		FF522E1228328B4300892055 /* FoodCategoryHeaderCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF522E1028328B4300892055 /* FoodCategoryHeaderCollectionViewCell.xib */; };
 		FF68F4C72832CB3D00F28643 /* FoodCategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF68F4C62832CB3D00F28643 /* FoodCategoryViewModel.swift */; };
+		FF68F4CA2832D1F400F28643 /* LaunchScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF68F4C92832D1F400F28643 /* LaunchScreenViewModel.swift */; };
 		FF872B96282FAF90009D6604 /* FakeLaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF872B94282FAF90009D6604 /* FakeLaunchScreenViewController.swift */; };
 		FF872B97282FAF90009D6604 /* FakeLaunchScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF872B95282FAF90009D6604 /* FakeLaunchScreenViewController.xib */; };
+		FFB07E7E2833F89A001F9773 /* FoodInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB07E7C2833F89A001F9773 /* FoodInfoViewController.swift */; };
+		FFB07E7F2833F89A001F9773 /* FoodInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFB07E7D2833F89A001F9773 /* FoodInfoViewController.xib */; };
 		FFC7775E282E929300AF4E8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC7775D282E929300AF4E8A /* AppDelegate.swift */; };
 		FFC77760282E929300AF4E8A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC7775F282E929300AF4E8A /* SceneDelegate.swift */; };
 		FFC77767282E929500AF4E8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFC77766282E929500AF4E8A /* Assets.xcassets */; };
@@ -160,8 +163,11 @@
 		FF522E0F28328B4300892055 /* FoodCategoryHeaderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCategoryHeaderCollectionViewCell.swift; sourceTree = "<group>"; };
 		FF522E1028328B4300892055 /* FoodCategoryHeaderCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodCategoryHeaderCollectionViewCell.xib; sourceTree = "<group>"; };
 		FF68F4C62832CB3D00F28643 /* FoodCategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCategoryViewModel.swift; sourceTree = "<group>"; };
+		FF68F4C92832D1F400F28643 /* LaunchScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewModel.swift; sourceTree = "<group>"; };
 		FF872B94282FAF90009D6604 /* FakeLaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeLaunchScreenViewController.swift; sourceTree = "<group>"; };
 		FF872B95282FAF90009D6604 /* FakeLaunchScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FakeLaunchScreenViewController.xib; sourceTree = "<group>"; };
+		FFB07E7C2833F89A001F9773 /* FoodInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodInfoViewController.swift; sourceTree = "<group>"; };
+		FFB07E7D2833F89A001F9773 /* FoodInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodInfoViewController.xib; sourceTree = "<group>"; };
 		FFC7775A282E929300AF4E8A /* TampaJejak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TampaJejak.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFC7775D282E929300AF4E8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFC7775F282E929300AF4E8A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -422,6 +428,8 @@
 		FF1A8A6E28318FD8009C7815 /* FoodInfo */ = {
 			isa = PBXGroup;
 			children = (
+				FFB07E7C2833F89A001F9773 /* FoodInfoViewController.swift */,
+				FFB07E7D2833F89A001F9773 /* FoodInfoViewController.xib */,
 			);
 			path = FoodInfo;
 			sourceTree = "<group>";
@@ -443,6 +451,14 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		FF68F4C82832D1E800F28643 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FF68F4C92832D1F400F28643 /* LaunchScreenViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		FF77B6FF282EA53A008503BD /* TapBarComponent */ = {
 			isa = PBXGroup;
 			children = (
@@ -455,6 +471,7 @@
 		FF872B93282FAF79009D6604 /* LaunchScreen */ = {
 			isa = PBXGroup;
 			children = (
+				FF68F4C82832D1E800F28643 /* ViewModel */,
 				FF872B94282FAF90009D6604 /* FakeLaunchScreenViewController.swift */,
 				FF872B95282FAF90009D6604 /* FakeLaunchScreenViewController.xib */,
 			);
@@ -731,6 +748,7 @@
 				FF1A8A4D2830E804009C7815 /* ActivityViewController.xib in Resources */,
 				FF1A8A3E2830DA13009C7815 /* MainFoodCollectionViewCell.xib in Resources */,
 				FF1A8A442830DC3A009C7815 /* PlainCarouselTableViewCell.xib in Resources */,
+				FFB07E7F2833F89A001F9773 /* FoodInfoViewController.xib in Resources */,
 				FFC7776A282E929500AF4E8A /* LaunchScreen.storyboard in Resources */,
 				FF1A8A7228318FE9009C7815 /* FoodCategoryViewController.xib in Resources */,
 				FFC77767282E929500AF4E8A /* Assets.xcassets in Resources */,
@@ -777,6 +795,7 @@
 				FF1A8A1328300242009C7815 /* PickerModel.swift in Sources */,
 				FF1A8A0F282FFB11009C7815 /* RegisterViewModel.swift in Sources */,
 				FF1A8A6B2830FA20009C7815 /* OrderModel.swift in Sources */,
+				FF68F4CA2832D1F400F28643 /* LaunchScreenViewModel.swift in Sources */,
 				FF1A8A1D2830164F009C7815 /* HomeViewController.swift in Sources */,
 				FF1A89D7282FB143009C7815 /* UserSharedInstance.swift in Sources */,
 				FF1A8A5C2830F25C009C7815 /* TrackOrderTableViewCell.swift in Sources */,
@@ -809,6 +828,7 @@
 				FF1A8A152830153C009C7815 /* TapBarConstant.swift in Sources */,
 				FF1A8A08282FE958009C7815 /* UIViewControllerExt.swift in Sources */,
 				FFC77760282E929300AF4E8A /* SceneDelegate.swift in Sources */,
+				FFB07E7E2833F89A001F9773 /* FoodInfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
