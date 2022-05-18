@@ -1,6 +1,7 @@
 # TampaJejak
 Tampa Jejak is bla bla bla
 
+For the person who want to check if i do any commit, CHECK THE DEVELOPMENT BRANCH
 # Enviroment
 
 - Minimum MacOS Version = Monterey 12.1.0
