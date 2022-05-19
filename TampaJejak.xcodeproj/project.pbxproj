@@ -70,6 +70,8 @@
 		FF1A8A6B2830FA20009C7815 /* OrderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A8A6A2830FA20009C7815 /* OrderModel.swift */; };
 		FF1A8A7128318FE9009C7815 /* FoodCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A8A6F28318FE9009C7815 /* FoodCategoryViewController.swift */; };
 		FF1A8A7228318FE9009C7815 /* FoodCategoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF1A8A7028318FE9009C7815 /* FoodCategoryViewController.xib */; };
+		FF315D252834031200140B6D /* CartInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF315D232834031200140B6D /* CartInfoTableViewCell.swift */; };
+		FF315D262834031200140B6D /* CartInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF315D242834031200140B6D /* CartInfoTableViewCell.xib */; };
 		FF522E1128328B4300892055 /* FoodCategoryHeaderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF522E0F28328B4300892055 /* FoodCategoryHeaderCollectionViewCell.swift */; };
 		FF522E1228328B4300892055 /* FoodCategoryHeaderCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF522E1028328B4300892055 /* FoodCategoryHeaderCollectionViewCell.xib */; };
 		FF68F4C72832CB3D00F28643 /* FoodCategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF68F4C62832CB3D00F28643 /* FoodCategoryViewModel.swift */; };
@@ -160,6 +162,8 @@
 		FF1A8A6A2830FA20009C7815 /* OrderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderModel.swift; sourceTree = "<group>"; };
 		FF1A8A6F28318FE9009C7815 /* FoodCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCategoryViewController.swift; sourceTree = "<group>"; };
 		FF1A8A7028318FE9009C7815 /* FoodCategoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodCategoryViewController.xib; sourceTree = "<group>"; };
+		FF315D232834031200140B6D /* CartInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartInfoTableViewCell.swift; sourceTree = "<group>"; };
+		FF315D242834031200140B6D /* CartInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CartInfoTableViewCell.xib; sourceTree = "<group>"; };
 		FF522E0F28328B4300892055 /* FoodCategoryHeaderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCategoryHeaderCollectionViewCell.swift; sourceTree = "<group>"; };
 		FF522E1028328B4300892055 /* FoodCategoryHeaderCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodCategoryHeaderCollectionViewCell.xib; sourceTree = "<group>"; };
 		FF68F4C62832CB3D00F28643 /* FoodCategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCategoryViewModel.swift; sourceTree = "<group>"; };
@@ -391,6 +395,7 @@
 		FF1A8A602830F6F2009C7815 /* CartPath */ = {
 			isa = PBXGroup;
 			children = (
+				FF315D22283402F800140B6D /* Cell */,
 				FF1A8A612830F712009C7815 /* CartViewController.swift */,
 				FF1A8A622830F712009C7815 /* CartViewController.xib */,
 			);
@@ -432,6 +437,15 @@
 				FFB07E7D2833F89A001F9773 /* FoodInfoViewController.xib */,
 			);
 			path = FoodInfo;
+			sourceTree = "<group>";
+		};
+		FF315D22283402F800140B6D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FF315D232834031200140B6D /* CartInfoTableViewCell.swift */,
+				FF315D242834031200140B6D /* CartInfoTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		FF522E0E28328B2500892055 /* Cells */ = {
@@ -737,6 +751,7 @@
 				FF1A8A5D2830F25C009C7815 /* TrackOrderTableViewCell.xib in Resources */,
 				FF1A89DF282FB22F009C7815 /* SignInViewController.xib in Resources */,
 				FF1A8A642830F712009C7815 /* CartViewController.xib in Resources */,
+				FF315D262834031200140B6D /* CartInfoTableViewCell.xib in Resources */,
 				FF1A8A2E28303CBA009C7815 /* HomeHeaderTableViewCell.xib in Resources */,
 				FF1A8A592830EEBA009C7815 /* OrderCodeTableViewCell.xib in Resources */,
 				FF1A8A392830C954009C7815 /* CarouselCollectionViewCell.xib in Resources */,
@@ -797,6 +812,7 @@
 				FF1A8A6B2830FA20009C7815 /* OrderModel.swift in Sources */,
 				FF68F4CA2832D1F400F28643 /* LaunchScreenViewModel.swift in Sources */,
 				FF1A8A1D2830164F009C7815 /* HomeViewController.swift in Sources */,
+				FF315D252834031200140B6D /* CartInfoTableViewCell.swift in Sources */,
 				FF1A89D7282FB143009C7815 /* UserSharedInstance.swift in Sources */,
 				FF1A8A5C2830F25C009C7815 /* TrackOrderTableViewCell.swift in Sources */,
 				FF522E1128328B4300892055 /* FoodCategoryHeaderCollectionViewCell.swift in Sources */,
