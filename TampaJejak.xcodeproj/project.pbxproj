@@ -72,6 +72,8 @@
 		FF1A8A7228318FE9009C7815 /* FoodCategoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF1A8A7028318FE9009C7815 /* FoodCategoryViewController.xib */; };
 		FF315D252834031200140B6D /* CartInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF315D232834031200140B6D /* CartInfoTableViewCell.swift */; };
 		FF315D262834031200140B6D /* CartInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF315D242834031200140B6D /* CartInfoTableViewCell.xib */; };
+		FF4EF3D0283BF21D004913A1 /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4EF3CE283BF21C004913A1 /* CheckoutViewController.swift */; };
+		FF4EF3D1283BF21D004913A1 /* CheckoutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF4EF3CF283BF21D004913A1 /* CheckoutViewController.xib */; };
 		FF522E1128328B4300892055 /* FoodCategoryHeaderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF522E0F28328B4300892055 /* FoodCategoryHeaderCollectionViewCell.swift */; };
 		FF522E1228328B4300892055 /* FoodCategoryHeaderCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF522E1028328B4300892055 /* FoodCategoryHeaderCollectionViewCell.xib */; };
 		FF68F4C72832CB3D00F28643 /* FoodCategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF68F4C62832CB3D00F28643 /* FoodCategoryViewModel.swift */; };
@@ -164,6 +166,8 @@
 		FF1A8A7028318FE9009C7815 /* FoodCategoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodCategoryViewController.xib; sourceTree = "<group>"; };
 		FF315D232834031200140B6D /* CartInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartInfoTableViewCell.swift; sourceTree = "<group>"; };
 		FF315D242834031200140B6D /* CartInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CartInfoTableViewCell.xib; sourceTree = "<group>"; };
+		FF4EF3CE283BF21C004913A1 /* CheckoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutViewController.swift; sourceTree = "<group>"; };
+		FF4EF3CF283BF21D004913A1 /* CheckoutViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckoutViewController.xib; sourceTree = "<group>"; };
 		FF522E0F28328B4300892055 /* FoodCategoryHeaderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCategoryHeaderCollectionViewCell.swift; sourceTree = "<group>"; };
 		FF522E1028328B4300892055 /* FoodCategoryHeaderCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodCategoryHeaderCollectionViewCell.xib; sourceTree = "<group>"; };
 		FF68F4C62832CB3D00F28643 /* FoodCategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCategoryViewModel.swift; sourceTree = "<group>"; };
@@ -448,6 +452,15 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		FF4EF3CD283BF1F6004913A1 /* Checkout */ = {
+			isa = PBXGroup;
+			children = (
+				FF4EF3CE283BF21C004913A1 /* CheckoutViewController.swift */,
+				FF4EF3CF283BF21D004913A1 /* CheckoutViewController.xib */,
+			);
+			path = Checkout;
+			sourceTree = "<group>";
+		};
 		FF522E0E28328B2500892055 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -566,6 +579,7 @@
 		FFC77791282E971300AF4E8A /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				FF4EF3CD283BF1F6004913A1 /* Checkout */,
 				FF1A8A602830F6F2009C7815 /* CartPath */,
 				FF1A8A272830187B009C7815 /* QrCode */,
 				FF1A8A09282FEC82009C7815 /* Picker */,
@@ -748,6 +762,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF4EF3D1283BF21D004913A1 /* CheckoutViewController.xib in Resources */,
 				FF1A8A5D2830F25C009C7815 /* TrackOrderTableViewCell.xib in Resources */,
 				FF1A89DF282FB22F009C7815 /* SignInViewController.xib in Resources */,
 				FF1A8A642830F712009C7815 /* CartViewController.xib in Resources */,
@@ -803,6 +818,7 @@
 				FF1A89F4282FC309009C7815 /* UIViewExt.swift in Sources */,
 				FF1A8A3D2830DA13009C7815 /* MainFoodCollectionViewCell.swift in Sources */,
 				FF1A8A22283016C8009C7815 /* HomeViewModel.swift in Sources */,
+				FF4EF3D0283BF21D004913A1 /* CheckoutViewController.swift in Sources */,
 				FF1A8A06282FE811009C7815 /* UITextfieldExt.swift in Sources */,
 				FF1A89DC282FB22F009C7815 /* SignInViewController.swift in Sources */,
 				FF68F4C72832CB3D00F28643 /* FoodCategoryViewModel.swift in Sources */,
