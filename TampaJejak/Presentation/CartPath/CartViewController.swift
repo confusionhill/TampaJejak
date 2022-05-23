@@ -22,6 +22,15 @@ class CartViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupTableView()
+        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .close, target: self, action: #selector(self.didTapExitCart))
+    }
+    
+    @IBAction func didTapCheckout(_ sender: Any) {
+        let vc = CheckoutViewController(nibName: "CheckoutViewController", bundle: nil)
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    @objc func didTapExitCart() {
+        self.delegate?.didTapExit()
     }
     
     private func setupTableView() {

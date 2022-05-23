@@ -32,6 +32,10 @@ class TrackOrderTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    public func hideInfoButton(state: Bool) {
+        self.infoButton.isHidden = state
+    }
+    
     @objc func didTapInfo() {
         self.delegate?.didTapInfo()
     }
