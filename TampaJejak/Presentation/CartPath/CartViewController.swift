@@ -27,8 +27,10 @@ class CartViewController: BaseViewController {
     
     @IBAction func didTapCheckout(_ sender: Any) {
         let vc = CheckoutViewController(nibName: "CheckoutViewController", bundle: nil)
+        vc.delegate = self.delegate
         self.navigationController?.pushViewController(vc, animated: true)
     }
+    
     @objc func didTapExitCart() {
         self.delegate?.didTapExit()
     }

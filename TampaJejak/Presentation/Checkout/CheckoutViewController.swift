@@ -11,6 +11,8 @@ class CheckoutViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var orderButton: UIButton!
+    
+    weak var delegate: HomeViewControllerDelegate?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +26,11 @@ class CheckoutViewController: UIViewController {
         tableView.separatorStyle = .none
         tableView.register(UINib(nibName: OrderTableViewCell.identifier, bundle: nil), forCellReuseIdentifier: OrderTableViewCell.identifier)
         tableView.register(UINib(nibName: TrackOrderTableViewCell.identifier, bundle: nil), forCellReuseIdentifier: TrackOrderTableViewCell.identifier)
+    }
+    
+    @IBAction func didTapPlaceOrder(_ sender: UIButton) {
+        // functionalities
+        self.delegate?.didTapExit()
     }
 }
 

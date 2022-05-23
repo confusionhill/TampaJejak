@@ -36,6 +36,9 @@
                                 <fontDescription key="titleFontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </buttonConfiguration>
+                            <connections>
+                                <action selector="didTapPlaceOrder:" destination="-1" eventType="touchUpInside" id="JVS-Si-lYJ"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
