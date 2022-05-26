@@ -34,7 +34,7 @@ class TrackOrderTableViewCell: UITableViewCell {
     }
     
     public func setContent(price: Int) {
-        self.priceLabel.text = "Rp \(price)"
+        self.priceLabel.text = "Rp \(price.formattedWithSeparator)"
     }
     
     public func hideInfoButton(state: Bool) {

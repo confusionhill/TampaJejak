@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseStorage
 
 protocol FoodInfoViewControllerOutput: AnyObject {
     func didTapAddCart(foodModel: FoodModel)
@@ -57,13 +58,23 @@ class FoodInfoViewController: BaseViewController {
         self.titleLabel.text = viewModel.foodModel.name
         self.descLabel.text = viewModel.foodModel.desc
         self.quantityLabel.text = "\(viewModel.foodModel.quantity)x"
-        self.priceLabel.text = "Rp \(viewModel.foodModel.price)"
+        self.priceLabel.text = "Rp \(viewModel.foodModel.price.formattedWithSeparator)"
         self.buyQuantityLabel.text = "\(viewModel.bought)"
     }
     
     private func setupFoodImageView() {
         foodImageView.layer.cornerRadius = 20
         foodImageView.layer.masksToBounds = true
+        let ref = Storage.storage().reference(withPath: "foods/\(viewModel.foodModel.image)")
+        ref.getData(maxSize: 4 * 1024 * 1024) {[weak self] data, error in
+            guard let self = self else { return }
+            if error != nil {
+                print("error!!!")
+                return
+            }
+            guard let data = data else { return }
+            self.foodImageView.image = UIImage(data: data)
+        }
     }
     
     @objc func didTapAddCart(_ sender: UIButton) {
@@ -93,5 +104,6 @@ extension FoodInfoViewController: FoodInfoViewModelOutput {
         self.setupAddButton()
         self.setupStackView()
         self.setupContent()
+        
     }
 }

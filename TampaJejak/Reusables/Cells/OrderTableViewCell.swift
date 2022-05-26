@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseStorage
 
 class OrderTableViewCell: UITableViewCell {
     
@@ -29,6 +30,17 @@ class OrderTableViewCell: UITableViewCell {
     public func setupContent(foodModel: FoodModel) {
         self.quantityLabel.text = "\(foodModel.quantity)x"
         self.titleLabel.text = foodModel.name
-        self.totalPriceLabel.text = "Rp \(foodModel.quantity * foodModel.price)"
+        self.totalPriceLabel.text = "Rp \((foodModel.quantity * foodModel.price).formattedWithSeparator)"
+        
+        let ref = Storage.storage().reference(withPath: "foods/\(foodModel.image)")
+        ref.getData(maxSize: 4 * 1024 * 1024) {[weak self] data, error in
+            guard let self = self else { return }
+            if error != nil {
+                print("error!!! \(error!.localizedDescription)")
+                return
+            }
+            guard let data = data else { return }
+            self.foodImage.image = UIImage(data: data)
+        }
     }
 }

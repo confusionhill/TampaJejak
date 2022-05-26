@@ -36,6 +36,10 @@ class CarouselTableViewCell: BaseTableViewCell {
 }
 
 extension CarouselTableViewCell: UICollectionViewDelegate {
+    
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+    }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
            return UIEdgeInsets(top: 5, left: 17, bottom: 0, right: 17)
     }
@@ -64,6 +68,10 @@ extension CarouselTableViewCell: UICollectionViewDelegateFlowLayout {
     }
     
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        let OFFSet = scrollView.contentOffset.x
+            let width = scrollView.frame.width
+            let horizontalCenter = width / 2
+            pager.currentPage = Int(OFFSet + horizontalCenter) / Int(width)
         self.collectionView.scrollToNearestVisibleCollectionViewCell()
     }
 
@@ -71,6 +79,10 @@ extension CarouselTableViewCell: UICollectionViewDelegateFlowLayout {
         if !decelerate {
             self.collectionView.scrollToNearestVisibleCollectionViewCell()
         }
+    }
+    
+    @IBAction func pageControllerAction(_ sender: UIPageControl) {
+           self.collectionView.scrollToItem(at: IndexPath(row: sender.currentPage, section: 0), at: .centeredHorizontally, animated: true)
     }
 
 }

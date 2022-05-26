@@ -5,6 +5,7 @@
 //  Created by Farhandika on 17/05/22.
 //
 
+import FirebaseStorage
 import UIKit
 
 protocol CartInfoCellDelegate: AnyObject {
@@ -53,6 +54,16 @@ class CartInfoTableViewCell: UITableViewCell {
     public func setContent(foodModel: FoodModel) {
         self.titleLabel.text = foodModel.name
         self.quantityLabel.text = "\(foodModel.quantity)"
+        let ref = Storage.storage().reference(withPath: "foods/\(foodModel.image)")
+        ref.getData(maxSize: 4 * 1024 * 1024) {[weak self] data, error in
+            guard let self = self else { return }
+            if error != nil {
+                print("error!!!")
+                return
+            }
+            guard let data = data else { return }
+            self.foodImage.image = UIImage(data: data)
+        }
     }
     
 }

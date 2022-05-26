@@ -9,4 +9,5 @@ target 'TampaJejak' do
 	pod 'SnackBar.swift'
 	pod 'FirebaseAuth', '>= 8.1.0'
 	pod 'FirebaseFirestore', '>= 8.1.0'
+	pod 'Firebase/Storage'
 end

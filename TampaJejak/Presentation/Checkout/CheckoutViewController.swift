@@ -76,13 +76,6 @@ extension CheckoutViewController: UITableViewDataSource {
             cell.setupContent(foodModel: model)
             return cell
         }
-        
-        if indexPath.section == 1 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: PaymentTableViewCell.identifier) as! PaymentTableViewCell
-            cell.setContent(paymentType: viewModel.selectedPayment)
-            return cell
-        }
-        
         let cell = tableView.dequeueReusableCell(withIdentifier: PaymentTableViewCell.identifier) as! PaymentTableViewCell
         if indexPath.section == 1 {
             cell.setContent(paymentType: viewModel.selectedPayment)
@@ -102,7 +95,8 @@ extension CheckoutViewController: UITableViewDataSource {
 extension CheckoutViewController: CheckoutViewModelOutput {
     func setupViews() {
         self.setupTableView()
-        self.totalPriceLabel.text = "Rp \(viewModel.totalPrice)"
+        self.totalPriceLabel.text = "Rp \(viewModel.totalPrice.formattedWithSeparator)"
+        orderButton.setRounded()
     }
     
     func didSuccessSubmitOrder() {

@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CartViewController" customModule="TampaJejak" customModuleProvider="target">
             <connections>
+                <outlet property="checkoutButton" destination="hLU-MH-1iN" id="BU9-x3-vrZ"/>
                 <outlet property="tableView" destination="C7L-h1-QZa" id="LQU-W5-Ogy"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>

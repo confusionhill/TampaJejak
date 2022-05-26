@@ -22,6 +22,16 @@ class HomeViewController: BaseViewController {
     
     var viewModel: HomeViewModel!
     
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nil)
+        HomeViewModel.config(vc: self)
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        HomeViewModel.config(vc: self)
+    }
+    
     lazy var tableviewHeader: HeaderView = {
         let header = HeaderView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 25))
         return header
@@ -39,7 +49,7 @@ class HomeViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.setupViews()
+        viewModel.viewDidLoad()
         // Do any additional setup after loading the view.
     }
     
@@ -80,6 +90,18 @@ class HomeViewController: BaseViewController {
 }
 
 extension HomeViewController: HomeViewModelOutput {
+    func didFinnishLoadingForYou() {
+        self.tableView.reloadData()
+    }
+    
+    func didFinnishLoadingTopPicks() {
+        
+    }
+    
+    func didFailLoading(message: String) {
+        
+    }
+    
     func setupViews() {
         self.setupTableView()
     }
@@ -103,7 +125,10 @@ extension HomeViewController: UITableViewDelegate {
 
 extension HomeViewController: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 4
+        if viewModel.isLoaded {
+            return 4
+        }
+        return 1
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 3 {

@@ -9,6 +9,7 @@ import UIKit
 
 class CartViewController: BaseViewController {
     
+    @IBOutlet weak var checkoutButton: UIButton!
     weak var delegate: HomeViewControllerDelegate?
     @IBOutlet weak var tableView: UITableView!
     
@@ -20,6 +21,7 @@ class CartViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupTableView()
+        checkoutButton.setRounded()
         navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .close, target: self, action: #selector(self.didTapExitCart))
     }
     
