@@ -55,7 +55,20 @@ class RegisterViewController: BaseViewController {
     }
 
     @IBAction func didTapRegister(_ sender: UIButton) {
-        self.launchRef?.didTapLogin()
+        if passwordField.text != rePasswordField.text {
+            self.didFailRegister(message: "Both password does not correspond to each other!")
+            return
+        }
+        let main = MainUserModel(
+            fullName: fullNameField.text!,
+            phoneNumber: phoneField.text!,
+            gender: Gender.genderFluid,
+            userName: usernameField.text!)
+        let signUpModel = SignUpUserModel(
+            email: emailField.text!,
+            password: passwordField.text!,
+            main: main)
+        self.viewModel.signUpUser(signUpModel: signUpModel)
     }
     
     @IBAction func didTapGender(_ sender: UIButton) {
@@ -148,6 +161,13 @@ extension RegisterViewController: RegisterVMOutput {
         setupLoginLabel()
     }
     
+    func didSuccessRegister() {
+        self.launchRef?.didTapLogin()
+    }
+    func didFailRegister(message: String) {
+        MainSnackBar.make(in: self.view, message: message, duration: .lengthLong)
+            .show()
+    }
     
 }
 

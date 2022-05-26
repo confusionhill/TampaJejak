@@ -37,6 +37,16 @@ class FakeLaunchScreenViewController: UIViewController {
         viewModel.output = self
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        viewModel.tryListeningAuth()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        viewModel.stopListeningAuth()
+    }
+    
     override func loadView() {
         super.loadView()
         self.authPage.launchRef = self
@@ -48,7 +58,7 @@ class FakeLaunchScreenViewController: UIViewController {
     }
     
     @objc func launchInitScreen() {
-        if viewModel.isLogin {
+        if viewModel.user == nil {
             let navCon = UINavigationController(rootViewController: authPage)
             navCon.modalPresentationStyle = .fullScreen
             self.present(navCon, animated: true, completion: nil)

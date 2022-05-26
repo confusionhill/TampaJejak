@@ -9,6 +9,8 @@ import Foundation
 
 protocol SignInVMOutput: AnyObject {
     func setupViews()
+    func didSuccessAuth()
+    func didFailAuth(message: String)
 }
 
 final class SignInViewModel {
@@ -20,6 +22,8 @@ final class SignInViewModel {
     weak var output: SignInVMOutput?
     var isPassSecure: Bool = true
     
+    private var authService = AuthenticationService()
+    
     private init(output: SignInVMOutput) {
         self.output = output
     }
@@ -30,5 +34,19 @@ final class SignInViewModel {
     
     public func viewDidLoad() {
         
+    }
+    
+    public func tryToLogin(
+        username: String,
+        password: String
+    ) {
+        self.authService.loginUser(username: username, password: password) { [unowned self] res in
+            switch res {
+            case .success(_):
+                self.output?.didSuccessAuth()
+            case .failure(let e):
+                self.output?.didFailAuth(message: e.localizedDescription)
+            }
+        }
     }
 }

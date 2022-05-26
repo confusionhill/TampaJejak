@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SnackBar_swift
 
 class SignInViewController: UIViewController {
     @IBOutlet weak var drawerView: UIView!
@@ -57,7 +58,8 @@ class SignInViewController: UIViewController {
     }
     
     @IBAction func didTapLogin(_ sender: UIButton) {
-        self.launchRef?.didTapLogin()
+        
+        self.viewModel.tryToLogin(username: userNameField.text!, password: passwordField.text!)
     }
     
     private func setupRegisterLabel() {
@@ -134,6 +136,14 @@ extension SignInViewController: SignInVMOutput {
         self.setupPasswordField()
         self.setupUsernameField()
         self.loginButton.setRounded()
+    }
+    
+    func didSuccessAuth() {
+        self.launchRef?.didTapLogin()
+    }
+    func didFailAuth(message: String) {
+        MainSnackBar.make(in: self.view, message: message, duration: .lengthLong)
+            .show()
     }
     
 }

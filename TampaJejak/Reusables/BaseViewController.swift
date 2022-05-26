@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SnackBar_swift
 
 class BaseViewController: UIViewController {
     
@@ -29,6 +30,11 @@ class BaseViewController: UIViewController {
         let textAttributes = [NSAttributedString.Key.foregroundColor:UIColor.dominantgreen]
         navigationController?.navigationBar.titleTextAttributes = textAttributes
         navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.dominantgreen]
+    }
+    
+    func showSnackbar(message: String) {
+        SnackBar.make(in: self.view, message: message, duration: .lengthLong)
+            .show()
     }
 
 

@@ -9,6 +9,8 @@ import Foundation
 
 protocol RegisterVMOutput: AnyObject {
     func setupViews()
+    func didSuccessRegister()
+    func didFailRegister(message: String)
 }
 
 final class RegisterViewModel {
@@ -21,9 +23,22 @@ final class RegisterViewModel {
     }
     fileprivate weak var output: RegisterVMOutput?
     
+    private let authService = AuthenticationService()
+    
     public var isPassSecure: Bool = true
     
     public func viewDidLoad(){
         self.output?.setupViews()
+    }
+    
+    public func signUpUser(signUpModel: SignUpUserModel) {
+        self.authService.registerUser(signUpModel: signUpModel) { [weak self] res in
+            switch res {
+            case .success(_):
+                self?.output?.didSuccessRegister()
+            case .failure(let e):
+                self?.output?.didFailRegister(message: e.localizedDescription)
+            }
+        }
     }
 }

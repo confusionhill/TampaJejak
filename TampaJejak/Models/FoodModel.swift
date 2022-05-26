@@ -8,9 +8,9 @@
 import Foundation
 
 struct FoodModel {
-    let image: String
     let name: String
     let desc: String
-    var quantityLeft: String
+    var quantity: Int
     let price: Int
+    let image: String
 }
