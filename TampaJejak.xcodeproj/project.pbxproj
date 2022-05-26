@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5407AC9136CE31A6E2318F95 /* libPods-TampaJejak.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A732C29C149EF7018BCB1A55 /* libPods-TampaJejak.a */; };
 		FF1A89D7282FB143009C7815 /* UserSharedInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A89D6282FB143009C7815 /* UserSharedInstance.swift */; };
 		FF1A89D8282FB143009C7815 /* UserSharedInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A89D6282FB143009C7815 /* UserSharedInstance.swift */; };
 		FF1A89D9282FB143009C7815 /* UserSharedInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A89D6282FB143009C7815 /* UserSharedInstance.swift */; };
@@ -91,6 +92,7 @@
 		FFC77781282E929500AF4E8A /* TampaJejakUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC77780282E929500AF4E8A /* TampaJejakUITestsLaunchTests.swift */; };
 		FFC7778F282E95E900AF4E8A /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC7778E282E95E900AF4E8A /* Coordinator.swift */; };
 		FFC7779B282E9BBC00AF4E8A /* QRCodeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC7779A282E9BBC00AF4E8A /* QRCodeService.swift */; };
+		FFD4AA52283E386F0084BC2A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FFD4AA51283E386F0084BC2A /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +113,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A732C29C149EF7018BCB1A55 /* libPods-TampaJejak.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TampaJejak.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B431D5F8FEB81394D84491E4 /* Pods-TampaJejak.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TampaJejak.debug.xcconfig"; path = "Target Support Files/Pods-TampaJejak/Pods-TampaJejak.debug.xcconfig"; sourceTree = "<group>"; };
+		BBC1BC51697E8D11F44CDEAF /* Pods-TampaJejak.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TampaJejak.release.xcconfig"; path = "Target Support Files/Pods-TampaJejak/Pods-TampaJejak.release.xcconfig"; sourceTree = "<group>"; };
 		FF1A89D6282FB143009C7815 /* UserSharedInstance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSharedInstance.swift; sourceTree = "<group>"; };
 		FF1A89DA282FB22F009C7815 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		FF1A89DB282FB22F009C7815 /* SignInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
@@ -188,6 +193,7 @@
 		FFC77780282E929500AF4E8A /* TampaJejakUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TampaJejakUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FFC7778E282E95E900AF4E8A /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		FFC7779A282E9BBC00AF4E8A /* QRCodeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeService.swift; sourceTree = "<group>"; };
+		FFD4AA51283E386F0084BC2A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +201,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5407AC9136CE31A6E2318F95 /* libPods-TampaJejak.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,6 +222,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		938AD8CDFFE27A696D3727E4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B431D5F8FEB81394D84491E4 /* Pods-TampaJejak.debug.xcconfig */,
+				BBC1BC51697E8D11F44CDEAF /* Pods-TampaJejak.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CCE1337D0449A90759C6F689 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A732C29C149EF7018BCB1A55 /* libPods-TampaJejak.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FF1A89D5282FB12F009C7815 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
@@ -512,6 +537,8 @@
 				FFC77773282E929500AF4E8A /* TampaJejakTests */,
 				FFC7777D282E929500AF4E8A /* TampaJejakUITests */,
 				FFC7775B282E929300AF4E8A /* Products */,
+				938AD8CDFFE27A696D3727E4 /* Pods */,
+				CCE1337D0449A90759C6F689 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -528,6 +555,7 @@
 		FFC7775C282E929300AF4E8A /* TampaJejak */ = {
 			isa = PBXGroup;
 			children = (
+				FFD4AA51283E386F0084BC2A /* GoogleService-Info.plist */,
 				FF1A8A0A282FF667009C7815 /* Reusables */,
 				FF1A89F2282FC2FD009C7815 /* Extention */,
 				FFC77798282E999700AF4E8A /* Services */,
@@ -665,9 +693,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FFC77784282E929500AF4E8A /* Build configuration list for PBXNativeTarget "TampaJejak" */;
 			buildPhases = (
+				71AEFB3CE5531DDA7064FE27 /* [CP] Check Pods Manifest.lock */,
 				FFC77756282E929200AF4E8A /* Sources */,
 				FFC77757282E929200AF4E8A /* Frameworks */,
 				FFC77758282E929200AF4E8A /* Resources */,
+				CF7897232A93865901A523D7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -763,6 +793,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF4EF3D1283BF21D004913A1 /* CheckoutViewController.xib in Resources */,
+				FFD4AA52283E386F0084BC2A /* GoogleService-Info.plist in Resources */,
 				FF1A8A5D2830F25C009C7815 /* TrackOrderTableViewCell.xib in Resources */,
 				FF1A89DF282FB22F009C7815 /* SignInViewController.xib in Resources */,
 				FF1A8A642830F712009C7815 /* CartViewController.xib in Resources */,
@@ -806,6 +837,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		71AEFB3CE5531DDA7064FE27 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TampaJejak-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF7897232A93865901A523D7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TampaJejak/Pods-TampaJejak-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TampaJejak/Pods-TampaJejak-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TampaJejak/Pods-TampaJejak-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FFC77756282E929200AF4E8A /* Sources */ = {
@@ -1032,6 +1105,7 @@
 		};
 		FFC77785282E929500AF4E8A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B431D5F8FEB81394D84491E4 /* Pods-TampaJejak.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1060,6 +1134,7 @@
 		};
 		FFC77786282E929500AF4E8A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBC1BC51697E8D11F44CDEAF /* Pods-TampaJejak.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
