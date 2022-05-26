@@ -7,8 +7,4 @@
 
 import Foundation
 
-struct FoodStatic {
-    let availFoods: [FoodModel] = [
-        
-    ]
-}
+let imageLink: String = "https://firebasestorage.googleapis.com/v0/b/tampa-jejak.appspot.com/o/foods%2"

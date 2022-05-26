@@ -44,7 +44,7 @@ final class FoodCategoryViewModel {
                 return fm.uuid == self.foodID!
             }
             if selected.isEmpty && foodID != nil {
-                self.output?.showAlert(message: "Food has been deleted from the database")
+                self.output?.showAlert(message: "Food is currently not available")
             }
             if !selected.isEmpty {
                 self.output?.openFoodInfo(model: selected[0])

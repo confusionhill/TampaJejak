@@ -15,6 +15,7 @@ final class RootCoordinator {
     }
     
     public func start() {
+        window?.overrideUserInterfaceStyle = .light
         UITabBar.appearance().tintColor = .dominantgreen
         self.window?.rootViewController = FakeLaunchScreenViewController(nibName: "FakeLaunchScreenViewController", bundle: nil)
         self.window?.makeKeyAndVisible()
