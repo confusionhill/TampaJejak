@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -25,10 +25,10 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginBG" translatesAutoresizingMaskIntoConstraints="NO" id="ku7-Av-qbB">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="888"/>
+                    <rect key="frame" x="0.0" y="0.0" width="390" height="888"/>
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="avC-Dw-hpQ">
-                    <rect key="frame" x="0.0" y="309" width="414" height="587"/>
+                    <rect key="frame" x="0.0" y="309" width="390" height="587"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Welcome back!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZlF-8G-983">
                             <rect key="frame" x="34" y="83" width="243" height="236"/>
@@ -42,7 +42,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="npN-uX-Alu">
-                            <rect key="frame" x="34" y="376" width="346" height="34"/>
+                            <rect key="frame" x="34" y="376" width="322" height="34"/>
                             <constraints>
                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="307" id="OHU-W6-G4q"/>
                                 <constraint firstAttribute="height" constant="43" id="a9C-D5-Yok"/>
@@ -50,8 +50,8 @@
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
-                        <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZqC-bt-2fV">
-                            <rect key="frame" x="34" y="327" width="346" height="34"/>
+                        <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZqC-bt-2fV">
+                            <rect key="frame" x="34" y="327" width="322" height="34"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="43" id="Gxj-yt-Avq"/>
                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="307" id="cKd-xf-1ei"/>
@@ -60,7 +60,7 @@
                             <textInputTraits key="textInputTraits"/>
                         </textField>
                         <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sYK-yQ-klW">
-                            <rect key="frame" x="34" y="441" width="346" height="56"/>
+                            <rect key="frame" x="34" y="441" width="322" height="56"/>
                             <color key="backgroundColor" name="primarygreen"/>
                             <constraints>
                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="307" id="e0S-C8-wL4"/>
@@ -130,7 +130,7 @@
             <color red="0.0" green="0.33000000000000002" blue="0.33000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="primarygreen">
-            <color red="0.02" green="0.59999999999999998" blue="0.56000000000000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.019999999552965164" green="0.60000002384185791" blue="0.56000000238418579" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

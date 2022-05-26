@@ -14,6 +14,9 @@ protocol CartInfoCellDelegate: AnyObject {
 
 class CartInfoTableViewCell: UITableViewCell {
     
+    @IBOutlet weak var quantityLabel: UILabel!
+    @IBOutlet weak var foodImage: UIImageView!
+    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var trashImageView: UIImageView!
     
     static let identifier = "CartInfoTableViewCell"
@@ -45,6 +48,11 @@ class CartInfoTableViewCell: UITableViewCell {
     
     @objc func didTapTrash() {
         self.delegate?.didTapDelete(index: self.cellIndexPath)
+    }
+    
+    public func setContent(foodModel: FoodModel) {
+        self.titleLabel.text = foodModel.name
+        self.quantityLabel.text = "\(foodModel.quantity)"
     }
     
 }

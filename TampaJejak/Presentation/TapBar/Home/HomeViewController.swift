@@ -63,6 +63,7 @@ class HomeViewController: BaseViewController {
             UINib(nibName: CarouselTableViewCell.identifier, bundle: nil),
             forCellReuseIdentifier: CarouselTableViewCell.identifier)
         tableView.register(UINib(nibName: PlainCarouselTableViewCell.identifier, bundle: nil), forCellReuseIdentifier: PlainCarouselTableViewCell.identifier)
+        tableView.register(UINib(nibName: CategoryTableViewCell.identifier, bundle: nil), forCellReuseIdentifier: CategoryTableViewCell.identifier)
         self.tableView.delegate = self
         self.tableView.dataSource = self
         tableView.separatorStyle = .none
@@ -88,6 +89,16 @@ extension HomeViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row == 0 && indexPath.section == 3 {
+            let vc = FoodCategoryViewController(foodID: nil)
+            vc.delegate = self
+            let navCon = UINavigationController(rootViewController: vc)
+            navCon.modalPresentationStyle = .fullScreen
+            self.present(navCon, animated: true, completion: nil)
+        }
+    }
 }
 
 extension HomeViewController: UITableViewDataSource {
@@ -95,6 +106,9 @@ extension HomeViewController: UITableViewDataSource {
         return 4
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if section == 3 {
+            return 2
+        }
         return 1
     }
     
@@ -116,9 +130,13 @@ extension HomeViewController: UITableViewDataSource {
             cell.homeOutput = self
             return cell
         }
-        
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.backgroundColor = .white
+        if indexPath.row == 1 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! UITableViewCell
+            cell.backgroundColor = .clear
+            cell.layer.backgroundColor = UIColor.clear.cgColor
+            return cell
+        }
+        let cell = tableView.dequeueReusableCell(withIdentifier: CategoryTableViewCell.identifier, for: indexPath) as! CategoryTableViewCell
         cell.selectionStyle = .none
         return cell
     }

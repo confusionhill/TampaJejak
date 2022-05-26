@@ -34,5 +34,9 @@ class FoodCategoryHeaderCollectionViewCell: UICollectionViewCell {
         fullString.append(NSAttributedString(string: " Want to explore new dishes?"))
         self.searchButton.setAttributedTitle(fullString, for: .normal)
     }
+    
+    func setTitle(title: String) {
+        self.categoryLabel.text = title
+    }
 
 }

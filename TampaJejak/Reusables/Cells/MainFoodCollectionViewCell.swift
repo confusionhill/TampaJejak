@@ -8,10 +8,21 @@
 import UIKit
 
 class MainFoodCollectionViewCell: UICollectionViewCell {
+    @IBOutlet weak var priceLabel: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var foodImage: UIImageView!
+    
     public static let identifier = "MainFoodCollectionViewCell"
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+    }
+    
+    public func setContent(
+        model: FoodModel
+    ) {
+        self.priceLabel.text = "Rp \(model.price)"
+        self.titleLabel.text = model.name
     }
 
 }

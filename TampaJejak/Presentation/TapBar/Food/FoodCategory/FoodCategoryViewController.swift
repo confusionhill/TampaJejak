@@ -14,6 +14,8 @@ class FoodCategoryViewController: BaseViewController {
     
     weak var delegate: HomeViewControllerDelegate?
     
+    var category: String = "All Category"
+    
     var viewModel: FoodCategoryViewModel!
     
     init(foodID id: String?) {
@@ -44,7 +46,7 @@ class FoodCategoryViewController: BaseViewController {
             UIImage(
                 systemName: "cart.fill")?.withTintColor(.white, renderingMode: .alwaysOriginal),
             for: .normal)
-        //self.cartButton.setCircular()
+        self.cartButton.setCircular()
     }
     
     private func setupCollectionView() {
@@ -72,18 +74,21 @@ class FoodCategoryViewController: BaseViewController {
 
 extension FoodCategoryViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return viewModel.dataCount
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if indexPath.row == 0 {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: FoodCategoryHeaderCollectionViewCell.identifier, for: indexPath) as! FoodCategoryHeaderCollectionViewCell
+            cell.setTitle(title: self.category)
             return cell
         }
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MainFoodCollectionViewCell.identifier, for: indexPath) as! MainFoodCollectionViewCell
         cell.layer.cornerRadius = 20
         cell.layer.masksToBounds = true
         cell.backgroundColor = .white
+        let model = viewModel.foodData[indexPath.row-1]
+        cell.setContent(model: model)
         return cell
     }
 }
@@ -94,7 +99,7 @@ extension FoodCategoryViewController: UICollectionViewDelegate {
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        self.openFoodInfo(foodID: " ")
+        self.openFoodInfo(model: viewModel.foodData[indexPath.row-1])
     }
 }
 
@@ -114,8 +119,8 @@ extension FoodCategoryViewController: FoodCategoryViewModelOutput {
         self.setupCollectionView()
     }
     
-    func openFoodInfo(foodID: String) {
-        let vc = FoodInfoViewController(foodID: foodID,output: self)
+    func openFoodInfo(model: FoodModel){
+        let vc = FoodInfoViewController(foodModel: model,output: self)
         vc.view.backgroundColor = .white
         if let sheet = vc.sheetPresentationController {
             sheet.detents = [.large()]
@@ -125,7 +130,22 @@ extension FoodCategoryViewController: FoodCategoryViewModelOutput {
 }
 
 extension FoodCategoryViewController: FoodInfoViewControllerOutput {
-    func didTapAddCart() {
-        self.dismiss(animated: true, completion: nil)
+    func didTapAddCart(foodModel: FoodModel) {
+        CartService.shared.addFood(model: foodModel)
+        self.dismiss(animated: true) {
+            self.viewModel.fetchFoodData()
+        }
+    }
+    
+    func didSuccessFetchFood() {
+        self.collectionView.reloadData()
+    }
+    
+    func didFailFetchFood(message: String) {
+        self.showSnackbar(message: message)
+    }
+    
+    func showAlert(message:String) {
+        self.showSnackbar(message: message)
     }
 }

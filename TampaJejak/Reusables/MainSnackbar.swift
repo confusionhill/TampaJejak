@@ -12,8 +12,8 @@ class MainSnackBar: SnackBar {
     
     override var style: SnackBarStyle {
         var style = SnackBarStyle()
-        style.background = .primarygreen
-        style.textColor = .white
+        style.background = .alternatejejak
+        style.textColor = .dominantgreen
         return style
     }
 }

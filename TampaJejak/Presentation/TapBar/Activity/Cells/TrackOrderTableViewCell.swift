@@ -8,7 +8,7 @@
 import UIKit
 
 protocol InfoButtonOutput: AnyObject {
-    func didTapInfo()
+    func didTapInfo(indexPath: IndexPath)
 }
 
 class TrackOrderTableViewCell: UITableViewCell {
@@ -19,6 +19,7 @@ class TrackOrderTableViewCell: UITableViewCell {
     public static let identifier =  "TrackOrderTableViewCell"
     
     public weak var delegate: InfoButtonOutput?
+    var indexPath: IndexPath?
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -32,12 +33,16 @@ class TrackOrderTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    public func setContent(price: Int) {
+        self.priceLabel.text = "Rp \(price)"
+    }
+    
     public func hideInfoButton(state: Bool) {
         self.infoButton.isHidden = state
     }
     
     @objc func didTapInfo() {
-        self.delegate?.didTapInfo()
+        self.delegate?.didTapInfo(indexPath: self.indexPath!)
     }
     
 }

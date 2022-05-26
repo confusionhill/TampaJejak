@@ -33,7 +33,7 @@ class BaseViewController: UIViewController {
     }
     
     func showSnackbar(message: String) {
-        SnackBar.make(in: self.view, message: message, duration: .lengthLong)
+        MainSnackBar.make(in: self.view, message: message, duration: .lengthLong)
             .show()
     }
 

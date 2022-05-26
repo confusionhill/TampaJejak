@@ -9,6 +9,7 @@ import UIKit
 
 class OrderCodeTableViewCell: UITableViewCell {
     
+    @IBOutlet weak var orderCodeLabel: UILabel!
     public static let identifier = "OrderCodeTableViewCell"
 
     override func awakeFromNib() {
@@ -18,8 +19,11 @@ class OrderCodeTableViewCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    }
+    
+    public func setupContent(code: String){
+        let codes = code.split(separator: "-")
+        self.orderCodeLabel.text = String(codes[0])
     }
     
 }

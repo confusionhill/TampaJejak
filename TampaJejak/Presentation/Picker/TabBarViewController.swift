@@ -51,7 +51,7 @@ class TabBarViewController: UITabBarController {
                 newVC.tabBarRef = self
                 vc = newVC
             }
-            vc.tabBarItem = UITabBarItem(title: item.title, image: UIImage(systemName: "house.fill"), tag: item.hashValue)
+            vc.tabBarItem = UITabBarItem(title: item.title, image: item.icon, tag: item.hashValue)
             let navCon = UINavigationController(rootViewController: vc)
             vcs.append(navCon)
         }

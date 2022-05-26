@@ -12,8 +12,6 @@ class CartViewController: BaseViewController {
     weak var delegate: HomeViewControllerDelegate?
     @IBOutlet weak var tableView: UITableView!
     
-    var data:[Int] = [1,2,3,4,5]
-    
     override func loadView() {
         super.loadView()
         self.title = "Checkout"
@@ -26,6 +24,10 @@ class CartViewController: BaseViewController {
     }
     
     @IBAction func didTapCheckout(_ sender: Any) {
+        if CartService.shared.itemCount == 0 {
+            self.showSnackbar(message: "There's no item in the Basket")
+            return
+        }
         let vc = CheckoutViewController(nibName: "CheckoutViewController", bundle: nil)
         vc.delegate = self.delegate
         self.navigationController?.pushViewController(vc, animated: true)
@@ -56,7 +58,7 @@ extension CartViewController: UITableViewDelegate {
 
 extension CartViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return data.count
+        return CartService.shared.itemCount
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -66,6 +68,8 @@ extension CartViewController: UITableViewDataSource {
         cell.contentView.layer.masksToBounds = true
         cell.selectionStyle = .none
         cell.setupCell(delegate: self, index: indexPath)
+        let model = CartService.shared.foodAdded[indexPath.row]
+        cell.setContent(foodModel: model)
         return cell
     }
     
@@ -73,7 +77,8 @@ extension CartViewController: UITableViewDataSource {
 
 extension CartViewController: CartInfoCellDelegate {
     func didTapDelete(index: IndexPath) {
-        self.data.remove(at: index.row)
+        let model = CartService.shared.foodAdded[index.row]
+        CartService.shared.deleteFood(foodID: model.uuid)
         tableView.deleteRows(at: [index], with: .automatic)
         tableView.reloadData()
     }

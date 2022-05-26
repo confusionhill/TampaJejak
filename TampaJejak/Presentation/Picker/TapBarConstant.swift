@@ -27,6 +27,13 @@ public enum TapBarConstant: String, CaseIterable {
     
     //WIP
     var icon: UIImage? {
-        return nil
+        switch self {
+        case .Home:
+            return UIImage(systemName: "house.fill")
+        case .Activity:
+            return UIImage(named: "activity")
+        case .Account:
+            return UIImage(systemName: "person.fill")
+        }
     }
 }

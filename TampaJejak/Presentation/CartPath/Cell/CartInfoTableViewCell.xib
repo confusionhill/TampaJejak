@@ -89,6 +89,9 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <color key="backgroundColor" name="secondarygreen"/>
             <connections>
+                <outlet property="foodImage" destination="cj6-V0-4Zz" id="git-0S-z6r"/>
+                <outlet property="quantityLabel" destination="Ey9-rC-jwP" id="0MB-xq-0z0"/>
+                <outlet property="titleLabel" destination="YWn-cb-JRe" id="RkW-T5-zqi"/>
                 <outlet property="trashImageView" destination="qQv-ML-QxY" id="fdi-f6-r7T"/>
             </connections>
             <point key="canvasLocation" x="199.27536231884059" y="102.79017857142857"/>

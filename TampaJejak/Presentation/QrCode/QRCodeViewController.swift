@@ -10,6 +10,8 @@ import UIKit
 class QRCodeViewController: UIViewController {
     var qrCodeService: QRCodeService? = QRCodeService()
     
+    var qrInfo: QRInfo?
+    
     var QRImageView: UIImageView = {
         let view = UIImageView()
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -31,9 +33,19 @@ class QRCodeViewController: UIViewController {
         return label
     }()
     
+    public func setupContent(
+        price: Int,
+        code: String
+    ) {
+        self.codeLabel.text = code
+        self.priceLabel.text = "Rp \(price)"
+    }
+    
     override func loadView() {
         super.loadView()
-        qrCodeService?.generateQRCode(message: "message", completion: { res in
+        qrCodeService?.generateQRCode(
+            message: qrInfo?.uuid ?? "none",
+            completion: { res in
             switch res {
             case .success(let img):
                 self.QRImageView.image = img
@@ -50,7 +62,6 @@ class QRCodeViewController: UIViewController {
         view.addSubview(codeLabel)
         view.addSubview(priceLabel)
         NSLayoutConstraint.activate([
-            
             //QRImageView.widthAnchor.constraint(lessThanOrEqualToConstant: 300),
             QRImageView.heightAnchor.constraint(greaterThanOrEqualToConstant: 300),
             QRImageView.topAnchor.constraint(greaterThanOrEqualTo: view.topAnchor,constant: 30),
