@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		44F75AA5803B2BE48C5634F8 /* Pods_TampaJejak.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC3AD24CDA4151A487A8C239 /* Pods_TampaJejak.framework */; };
+		FF14313C284215E0005C8542 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF14313A284215E0005C8542 /* SearchViewController.swift */; };
+		FF14313D284215E0005C8542 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF14313B284215E0005C8542 /* SearchViewController.xib */; };
+		FF14313F284217C0005C8542 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF14313E284217C0005C8542 /* SearchViewModel.swift */; };
 		FF1A89D7282FB143009C7815 /* UserSharedInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A89D6282FB143009C7815 /* UserSharedInstance.swift */; };
 		FF1A89D8282FB143009C7815 /* UserSharedInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A89D6282FB143009C7815 /* UserSharedInstance.swift */; };
 		FF1A89D9282FB143009C7815 /* UserSharedInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A89D6282FB143009C7815 /* UserSharedInstance.swift */; };
@@ -22,8 +26,79 @@
 		FF1A89EB282FB6A1009C7815 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF1A89E7282FB6A1009C7815 /* RegisterViewController.xib */; };
 		FF1A89EC282FB6A1009C7815 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF1A89E7282FB6A1009C7815 /* RegisterViewController.xib */; };
 		FF1A89ED282FB6A1009C7815 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF1A89E7282FB6A1009C7815 /* RegisterViewController.xib */; };
+		FF1A89F4282FC309009C7815 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A89F3282FC309009C7815 /* UIViewExt.swift */; };
+		FF1A89F6282FC782009C7815 /* UIColorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A89F5282FC782009C7815 /* UIColorExt.swift */; };
+		FF1A89F9282FD061009C7815 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A89F8282FD061009C7815 /* SignInViewModel.swift */; };
+		FF1A8A04282FE34F009C7815 /* UIButtonExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A8A03282FE34F009C7815 /* UIButtonExt.swift */; };
+		FF1A8A06282FE811009C7815 /* UITextfieldExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A8A05282FE811009C7815 /* UITextfieldExt.swift */; };
+		FF1A8A08282FE958009C7815 /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A8A07282FE958009C7815 /* UIViewControllerExt.swift */; };
+		FF1A8A0C282FF678009C7815 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A8A0B282FF678009C7815 /* BaseViewController.swift */; };
+		FF1A8A0F282FFB11009C7815 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A8A0E282FFB11009C7815 /* RegisterViewModel.swift */; };
+		FF1A8A11282FFCC1009C7815 /* PickerDisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A8A10282FFCC1009C7815 /* PickerDisplayViewController.swift */; };
+		FF1A8A1328300242009C7815 /* PickerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A8A1228300242009C7815 /* PickerModel.swift */; };
+		FF1A8A152830153C009C7815 /* TapBarConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A8A142830153C009C7815 /* TapBarConstant.swift */; };
+		FF1A8A17283015C5009C7815 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A8A16283015C5009C7815 /* TabBarViewController.swift */; };
+		FF1A8A1D2830164F009C7815 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A8A1B2830164F009C7815 /* HomeViewController.swift */; };
+		FF1A8A1E2830164F009C7815 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF1A8A1C2830164F009C7815 /* HomeViewController.xib */; };
+		FF1A8A22283016C8009C7815 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A8A21283016C8009C7815 /* HomeViewModel.swift */; };
+		FF1A8A2528301825009C7815 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A8A2328301825009C7815 /* AccountViewController.swift */; };
+		FF1A8A2628301825009C7815 /* AccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF1A8A2428301825009C7815 /* AccountViewController.xib */; };
+		FF1A8A292830188E009C7815 /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A8A282830188D009C7815 /* QRCodeViewController.swift */; };
+		FF1A8A2D28303CBA009C7815 /* HomeHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A8A2B28303CBA009C7815 /* HomeHeaderTableViewCell.swift */; };
+		FF1A8A2E28303CBA009C7815 /* HomeHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF1A8A2C28303CBA009C7815 /* HomeHeaderTableViewCell.xib */; };
+		FF1A8A3128304569009C7815 /* CarouselTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A8A2F28304569009C7815 /* CarouselTableViewCell.swift */; };
+		FF1A8A3228304569009C7815 /* CarouselTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF1A8A3028304569009C7815 /* CarouselTableViewCell.xib */; };
+		FF1A8A342830AF03009C7815 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A8A332830AF03009C7815 /* HeaderView.swift */; };
+		FF1A8A382830C954009C7815 /* CarouselCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A8A362830C954009C7815 /* CarouselCollectionViewCell.swift */; };
+		FF1A8A392830C954009C7815 /* CarouselCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF1A8A372830C954009C7815 /* CarouselCollectionViewCell.xib */; };
+		FF1A8A3D2830DA13009C7815 /* MainFoodCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A8A3B2830DA13009C7815 /* MainFoodCollectionViewCell.swift */; };
+		FF1A8A3E2830DA13009C7815 /* MainFoodCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF1A8A3C2830DA13009C7815 /* MainFoodCollectionViewCell.xib */; };
+		FF1A8A432830DC3A009C7815 /* PlainCarouselTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A8A412830DC3A009C7815 /* PlainCarouselTableViewCell.swift */; };
+		FF1A8A442830DC3A009C7815 /* PlainCarouselTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF1A8A422830DC3A009C7815 /* PlainCarouselTableViewCell.xib */; };
+		FF1A8A462830E662009C7815 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A8A452830E661009C7815 /* BaseTableViewCell.swift */; };
+		FF1A8A482830E717009C7815 /* BaseCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A8A472830E717009C7815 /* BaseCollectionView.swift */; };
+		FF1A8A4C2830E804009C7815 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A8A4A2830E804009C7815 /* ActivityViewController.swift */; };
+		FF1A8A4D2830E804009C7815 /* ActivityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF1A8A4B2830E804009C7815 /* ActivityViewController.xib */; };
+		FF1A8A502830E8AF009C7815 /* ActivityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A8A4F2830E8AF009C7815 /* ActivityViewModel.swift */; };
+		FF1A8A532830EC08009C7815 /* OrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A8A512830EC08009C7815 /* OrderTableViewCell.swift */; };
+		FF1A8A542830EC08009C7815 /* OrderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF1A8A522830EC08009C7815 /* OrderTableViewCell.xib */; };
+		FF1A8A582830EEBA009C7815 /* OrderCodeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A8A562830EEBA009C7815 /* OrderCodeTableViewCell.swift */; };
+		FF1A8A592830EEBA009C7815 /* OrderCodeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF1A8A572830EEBA009C7815 /* OrderCodeTableViewCell.xib */; };
+		FF1A8A5C2830F25C009C7815 /* TrackOrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A8A5A2830F25C009C7815 /* TrackOrderTableViewCell.swift */; };
+		FF1A8A5D2830F25C009C7815 /* TrackOrderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF1A8A5B2830F25C009C7815 /* TrackOrderTableViewCell.xib */; };
+		FF1A8A5F2830F3F1009C7815 /* CartService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A8A5E2830F3F1009C7815 /* CartService.swift */; };
+		FF1A8A632830F712009C7815 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A8A612830F712009C7815 /* CartViewController.swift */; };
+		FF1A8A642830F712009C7815 /* CartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF1A8A622830F712009C7815 /* CartViewController.xib */; };
+		FF1A8A662830F98A009C7815 /* FoodModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A8A652830F98A009C7815 /* FoodModel.swift */; };
+		FF1A8A692830F9F0009C7815 /* FoodStatic.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A8A682830F9F0009C7815 /* FoodStatic.swift */; };
+		FF1A8A6B2830FA20009C7815 /* OrderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A8A6A2830FA20009C7815 /* OrderModel.swift */; };
+		FF1A8A7128318FE9009C7815 /* FoodCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A8A6F28318FE9009C7815 /* FoodCategoryViewController.swift */; };
+		FF1A8A7228318FE9009C7815 /* FoodCategoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF1A8A7028318FE9009C7815 /* FoodCategoryViewController.xib */; };
+		FF315D252834031200140B6D /* CartInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF315D232834031200140B6D /* CartInfoTableViewCell.swift */; };
+		FF315D262834031200140B6D /* CartInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF315D242834031200140B6D /* CartInfoTableViewCell.xib */; };
+		FF4EF3D0283BF21D004913A1 /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4EF3CE283BF21C004913A1 /* CheckoutViewController.swift */; };
+		FF4EF3D1283BF21D004913A1 /* CheckoutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF4EF3CF283BF21D004913A1 /* CheckoutViewController.xib */; };
+		FF522E1128328B4300892055 /* FoodCategoryHeaderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF522E0F28328B4300892055 /* FoodCategoryHeaderCollectionViewCell.swift */; };
+		FF522E1228328B4300892055 /* FoodCategoryHeaderCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF522E1028328B4300892055 /* FoodCategoryHeaderCollectionViewCell.xib */; };
+		FF68F4C72832CB3D00F28643 /* FoodCategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF68F4C62832CB3D00F28643 /* FoodCategoryViewModel.swift */; };
+		FF68F4CA2832D1F400F28643 /* LaunchScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF68F4C92832D1F400F28643 /* LaunchScreenViewModel.swift */; };
+		FF6D8A2C283F7B680082D785 /* MainSnackbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6D8A2B283F7B680082D785 /* MainSnackbar.swift */; };
+		FF6D8A2E283F97CF0082D785 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6D8A2D283F97CF0082D785 /* NetworkService.swift */; };
+		FF6D8A30283FA9940082D785 /* FoodInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6D8A2F283FA9930082D785 /* FoodInfoViewModel.swift */; };
+		FF6D8A32283FAFF90082D785 /* CartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6D8A31283FAFF90082D785 /* CartViewModel.swift */; };
+		FF6D8A34283FB4250082D785 /* CheckoutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6D8A33283FB4250082D785 /* CheckoutViewModel.swift */; };
+		FF6D8A38283FBA9A0082D785 /* PaymentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6D8A36283FBA9A0082D785 /* PaymentTableViewCell.swift */; };
+		FF6D8A39283FBA9B0082D785 /* PaymentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF6D8A37283FBA9A0082D785 /* PaymentTableViewCell.xib */; };
+		FF6D8A3B283FC4790082D785 /* ActivityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6D8A3A283FC4790082D785 /* ActivityModel.swift */; };
+		FF6D8A3E283FEE730082D785 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6D8A3C283FEE730082D785 /* CategoryTableViewCell.swift */; };
+		FF6D8A3F283FEE730082D785 /* CategoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF6D8A3D283FEE730082D785 /* CategoryTableViewCell.xib */; };
 		FF872B96282FAF90009D6604 /* FakeLaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF872B94282FAF90009D6604 /* FakeLaunchScreenViewController.swift */; };
 		FF872B97282FAF90009D6604 /* FakeLaunchScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF872B95282FAF90009D6604 /* FakeLaunchScreenViewController.xib */; };
+		FFB07E7E2833F89A001F9773 /* FoodInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB07E7C2833F89A001F9773 /* FoodInfoViewController.swift */; };
+		FFB07E7F2833F89A001F9773 /* FoodInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFB07E7D2833F89A001F9773 /* FoodInfoViewController.xib */; };
+		FFB0B4AB283F584400975D04 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB0B4AA283F584400975D04 /* AuthenticationService.swift */; };
+		FFB0B4AD283F616600975D04 /* UserInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB0B4AC283F616600975D04 /* UserInfoModel.swift */; };
+		FFB0B4AF283F72C600975D04 /* FoundationExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB0B4AE283F72C600975D04 /* FoundationExt.swift */; };
 		FFC7775E282E929300AF4E8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC7775D282E929300AF4E8A /* AppDelegate.swift */; };
 		FFC77760282E929300AF4E8A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC7775F282E929300AF4E8A /* SceneDelegate.swift */; };
 		FFC77767282E929500AF4E8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFC77766282E929500AF4E8A /* Assets.xcassets */; };
@@ -33,6 +108,7 @@
 		FFC77781282E929500AF4E8A /* TampaJejakUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC77780282E929500AF4E8A /* TampaJejakUITestsLaunchTests.swift */; };
 		FFC7778F282E95E900AF4E8A /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC7778E282E95E900AF4E8A /* Coordinator.swift */; };
 		FFC7779B282E9BBC00AF4E8A /* QRCodeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC7779A282E9BBC00AF4E8A /* QRCodeService.swift */; };
+		FFD4AA52283E386F0084BC2A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FFD4AA51283E386F0084BC2A /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,13 +129,90 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		34C9B6611959C2C302A153D3 /* Pods-TampaJejak.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TampaJejak.release.xcconfig"; path = "Target Support Files/Pods-TampaJejak/Pods-TampaJejak.release.xcconfig"; sourceTree = "<group>"; };
+		85109AD1EF39BB14DC908B97 /* Pods-TampaJejak.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TampaJejak.debug.xcconfig"; path = "Target Support Files/Pods-TampaJejak/Pods-TampaJejak.debug.xcconfig"; sourceTree = "<group>"; };
+		CC3AD24CDA4151A487A8C239 /* Pods_TampaJejak.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TampaJejak.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF14313A284215E0005C8542 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		FF14313B284215E0005C8542 /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		FF14313E284217C0005C8542 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		FF1A89D6282FB143009C7815 /* UserSharedInstance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSharedInstance.swift; sourceTree = "<group>"; };
 		FF1A89DA282FB22F009C7815 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		FF1A89DB282FB22F009C7815 /* SignInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
 		FF1A89E6282FB6A1009C7815 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		FF1A89E7282FB6A1009C7815 /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		FF1A89F3282FC309009C7815 /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
+		FF1A89F5282FC782009C7815 /* UIColorExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExt.swift; sourceTree = "<group>"; };
+		FF1A89F8282FD061009C7815 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		FF1A8A03282FE34F009C7815 /* UIButtonExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExt.swift; sourceTree = "<group>"; };
+		FF1A8A05282FE811009C7815 /* UITextfieldExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextfieldExt.swift; sourceTree = "<group>"; };
+		FF1A8A07282FE958009C7815 /* UIViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
+		FF1A8A0B282FF678009C7815 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		FF1A8A0E282FFB11009C7815 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		FF1A8A10282FFCC1009C7815 /* PickerDisplayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerDisplayViewController.swift; sourceTree = "<group>"; };
+		FF1A8A1228300242009C7815 /* PickerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerModel.swift; sourceTree = "<group>"; };
+		FF1A8A142830153C009C7815 /* TapBarConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TapBarConstant.swift; path = TampaJejak/Presentation/Picker/TapBarConstant.swift; sourceTree = SOURCE_ROOT; };
+		FF1A8A16283015C5009C7815 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TabBarViewController.swift; path = TampaJejak/Presentation/Picker/TabBarViewController.swift; sourceTree = SOURCE_ROOT; };
+		FF1A8A1B2830164F009C7815 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		FF1A8A1C2830164F009C7815 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		FF1A8A21283016C8009C7815 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		FF1A8A2328301825009C7815 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		FF1A8A2428301825009C7815 /* AccountViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountViewController.xib; sourceTree = "<group>"; };
+		FF1A8A282830188D009C7815 /* QRCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
+		FF1A8A2B28303CBA009C7815 /* HomeHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		FF1A8A2C28303CBA009C7815 /* HomeHeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeHeaderTableViewCell.xib; sourceTree = "<group>"; };
+		FF1A8A2F28304569009C7815 /* CarouselTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselTableViewCell.swift; sourceTree = "<group>"; };
+		FF1A8A3028304569009C7815 /* CarouselTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarouselTableViewCell.xib; sourceTree = "<group>"; };
+		FF1A8A332830AF03009C7815 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		FF1A8A362830C954009C7815 /* CarouselCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselCollectionViewCell.swift; sourceTree = "<group>"; };
+		FF1A8A372830C954009C7815 /* CarouselCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarouselCollectionViewCell.xib; sourceTree = "<group>"; };
+		FF1A8A3B2830DA13009C7815 /* MainFoodCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFoodCollectionViewCell.swift; sourceTree = "<group>"; };
+		FF1A8A3C2830DA13009C7815 /* MainFoodCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainFoodCollectionViewCell.xib; sourceTree = "<group>"; };
+		FF1A8A412830DC3A009C7815 /* PlainCarouselTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlainCarouselTableViewCell.swift; sourceTree = "<group>"; };
+		FF1A8A422830DC3A009C7815 /* PlainCarouselTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlainCarouselTableViewCell.xib; sourceTree = "<group>"; };
+		FF1A8A452830E661009C7815 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
+		FF1A8A472830E717009C7815 /* BaseCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionView.swift; sourceTree = "<group>"; };
+		FF1A8A4A2830E804009C7815 /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
+		FF1A8A4B2830E804009C7815 /* ActivityViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivityViewController.xib; sourceTree = "<group>"; };
+		FF1A8A4F2830E8AF009C7815 /* ActivityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewModel.swift; sourceTree = "<group>"; };
+		FF1A8A512830EC08009C7815 /* OrderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewCell.swift; sourceTree = "<group>"; };
+		FF1A8A522830EC08009C7815 /* OrderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderTableViewCell.xib; sourceTree = "<group>"; };
+		FF1A8A562830EEBA009C7815 /* OrderCodeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCodeTableViewCell.swift; sourceTree = "<group>"; };
+		FF1A8A572830EEBA009C7815 /* OrderCodeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderCodeTableViewCell.xib; sourceTree = "<group>"; };
+		FF1A8A5A2830F25C009C7815 /* TrackOrderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackOrderTableViewCell.swift; sourceTree = "<group>"; };
+		FF1A8A5B2830F25C009C7815 /* TrackOrderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrackOrderTableViewCell.xib; sourceTree = "<group>"; };
+		FF1A8A5E2830F3F1009C7815 /* CartService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartService.swift; sourceTree = "<group>"; };
+		FF1A8A612830F712009C7815 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		FF1A8A622830F712009C7815 /* CartViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CartViewController.xib; sourceTree = "<group>"; };
+		FF1A8A652830F98A009C7815 /* FoodModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodModel.swift; sourceTree = "<group>"; };
+		FF1A8A682830F9F0009C7815 /* FoodStatic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodStatic.swift; sourceTree = "<group>"; };
+		FF1A8A6A2830FA20009C7815 /* OrderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderModel.swift; sourceTree = "<group>"; };
+		FF1A8A6F28318FE9009C7815 /* FoodCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCategoryViewController.swift; sourceTree = "<group>"; };
+		FF1A8A7028318FE9009C7815 /* FoodCategoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodCategoryViewController.xib; sourceTree = "<group>"; };
+		FF315D232834031200140B6D /* CartInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartInfoTableViewCell.swift; sourceTree = "<group>"; };
+		FF315D242834031200140B6D /* CartInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CartInfoTableViewCell.xib; sourceTree = "<group>"; };
+		FF4EF3CE283BF21C004913A1 /* CheckoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutViewController.swift; sourceTree = "<group>"; };
+		FF4EF3CF283BF21D004913A1 /* CheckoutViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckoutViewController.xib; sourceTree = "<group>"; };
+		FF522E0F28328B4300892055 /* FoodCategoryHeaderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCategoryHeaderCollectionViewCell.swift; sourceTree = "<group>"; };
+		FF522E1028328B4300892055 /* FoodCategoryHeaderCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodCategoryHeaderCollectionViewCell.xib; sourceTree = "<group>"; };
+		FF68F4C62832CB3D00F28643 /* FoodCategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCategoryViewModel.swift; sourceTree = "<group>"; };
+		FF68F4C92832D1F400F28643 /* LaunchScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewModel.swift; sourceTree = "<group>"; };
+		FF6D8A2B283F7B680082D785 /* MainSnackbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSnackbar.swift; sourceTree = "<group>"; };
+		FF6D8A2D283F97CF0082D785 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		FF6D8A2F283FA9930082D785 /* FoodInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodInfoViewModel.swift; sourceTree = "<group>"; };
+		FF6D8A31283FAFF90082D785 /* CartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewModel.swift; sourceTree = "<group>"; };
+		FF6D8A33283FB4250082D785 /* CheckoutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutViewModel.swift; sourceTree = "<group>"; };
+		FF6D8A36283FBA9A0082D785 /* PaymentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentTableViewCell.swift; sourceTree = "<group>"; };
+		FF6D8A37283FBA9A0082D785 /* PaymentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentTableViewCell.xib; sourceTree = "<group>"; };
+		FF6D8A3A283FC4790082D785 /* ActivityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityModel.swift; sourceTree = "<group>"; };
+		FF6D8A3C283FEE730082D785 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
+		FF6D8A3D283FEE730082D785 /* CategoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryTableViewCell.xib; sourceTree = "<group>"; };
 		FF872B94282FAF90009D6604 /* FakeLaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeLaunchScreenViewController.swift; sourceTree = "<group>"; };
 		FF872B95282FAF90009D6604 /* FakeLaunchScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FakeLaunchScreenViewController.xib; sourceTree = "<group>"; };
+		FFB07E7C2833F89A001F9773 /* FoodInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodInfoViewController.swift; sourceTree = "<group>"; };
+		FFB07E7D2833F89A001F9773 /* FoodInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodInfoViewController.xib; sourceTree = "<group>"; };
+		FFB0B4AA283F584400975D04 /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
+		FFB0B4AC283F616600975D04 /* UserInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoModel.swift; sourceTree = "<group>"; };
+		FFB0B4AE283F72C600975D04 /* FoundationExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundationExt.swift; sourceTree = "<group>"; };
 		FFC7775A282E929300AF4E8A /* TampaJejak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TampaJejak.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFC7775D282E929300AF4E8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFC7775F282E929300AF4E8A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +225,8 @@
 		FFC77780282E929500AF4E8A /* TampaJejakUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TampaJejakUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FFC7778E282E95E900AF4E8A /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		FFC7779A282E9BBC00AF4E8A /* QRCodeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeService.swift; sourceTree = "<group>"; };
+		FFC7FB33283F555F00276819 /* libFirebaseCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libFirebaseCore.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFD4AA51283E386F0084BC2A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +234,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44F75AA5803B2BE48C5634F8 /* Pods_TampaJejak.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,17 +255,328 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		938AD8CDFFE27A696D3727E4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				85109AD1EF39BB14DC908B97 /* Pods-TampaJejak.debug.xcconfig */,
+				34C9B6611959C2C302A153D3 /* Pods-TampaJejak.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CCE1337D0449A90759C6F689 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FFC7FB33283F555F00276819 /* libFirebaseCore.a */,
+				CC3AD24CDA4151A487A8C239 /* Pods_TampaJejak.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF143139284215C2005C8542 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				FF14313A284215E0005C8542 /* SearchViewController.swift */,
+				FF14313B284215E0005C8542 /* SearchViewController.xib */,
+				FF14313E284217C0005C8542 /* SearchViewModel.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
 		FF1A89D5282FB12F009C7815 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
 				FF1A89D6282FB143009C7815 /* UserSharedInstance.swift */,
+				FFB0B4AA283F584400975D04 /* AuthenticationService.swift */,
 			);
 			path = Auth;
+			sourceTree = "<group>";
+		};
+		FF1A89F2282FC2FD009C7815 /* Extention */ = {
+			isa = PBXGroup;
+			children = (
+				FF1A89F3282FC309009C7815 /* UIViewExt.swift */,
+				FF1A89F5282FC782009C7815 /* UIColorExt.swift */,
+				FF1A8A03282FE34F009C7815 /* UIButtonExt.swift */,
+				FF1A8A05282FE811009C7815 /* UITextfieldExt.swift */,
+				FF1A8A07282FE958009C7815 /* UIViewControllerExt.swift */,
+				FFB0B4AE283F72C600975D04 /* FoundationExt.swift */,
+			);
+			path = Extention;
+			sourceTree = "<group>";
+		};
+		FF1A89F7282FD03B009C7815 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FF1A89F8282FD061009C7815 /* SignInViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FF1A8A09282FEC82009C7815 /* Picker */ = {
+			isa = PBXGroup;
+			children = (
+				FF1A8A10282FFCC1009C7815 /* PickerDisplayViewController.swift */,
+				FF1A8A1228300242009C7815 /* PickerModel.swift */,
+			);
+			path = Picker;
+			sourceTree = "<group>";
+		};
+		FF1A8A0A282FF667009C7815 /* Reusables */ = {
+			isa = PBXGroup;
+			children = (
+				FF1A8A3A2830D9EB009C7815 /* Cells */,
+				FF1A8A0B282FF678009C7815 /* BaseViewController.swift */,
+				FF1A8A452830E661009C7815 /* BaseTableViewCell.swift */,
+				FF1A8A472830E717009C7815 /* BaseCollectionView.swift */,
+				FF6D8A2B283F7B680082D785 /* MainSnackbar.swift */,
+			);
+			path = Reusables;
+			sourceTree = "<group>";
+		};
+		FF1A8A0D282FFB03009C7815 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FF1A8A0E282FFB11009C7815 /* RegisterViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FF1A8A18283015D1009C7815 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				FF1A8A20283016BC009C7815 /* ViewModel */,
+				FF1A8A1F283016B4009C7815 /* Cells */,
+				FF1A8A1B2830164F009C7815 /* HomeViewController.swift */,
+				FF1A8A1C2830164F009C7815 /* HomeViewController.xib */,
+				FF1A8A332830AF03009C7815 /* HeaderView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		FF1A8A19283015D8009C7815 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				FF1A8A2328301825009C7815 /* AccountViewController.swift */,
+				FF1A8A2428301825009C7815 /* AccountViewController.xib */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		FF1A8A1A283015F9009C7815 /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+				FF1A8A552830EEAA009C7815 /* Cells */,
+				FF1A8A4E2830E8A3009C7815 /* ViewModel */,
+				FF1A8A4A2830E804009C7815 /* ActivityViewController.swift */,
+				FF1A8A4B2830E804009C7815 /* ActivityViewController.xib */,
+			);
+			path = Activity;
+			sourceTree = "<group>";
+		};
+		FF1A8A1F283016B4009C7815 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FF1A8A492830E768009C7815 /* Category */,
+				FF1A8A3F2830DC19009C7815 /* PlainCarousel */,
+				FF1A8A352830C938009C7815 /* Carousel */,
+				FF1A8A2B28303CBA009C7815 /* HomeHeaderTableViewCell.swift */,
+				FF1A8A2C28303CBA009C7815 /* HomeHeaderTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		FF1A8A20283016BC009C7815 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FF1A8A21283016C8009C7815 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FF1A8A272830187B009C7815 /* QrCode */ = {
+			isa = PBXGroup;
+			children = (
+				FF1A8A282830188D009C7815 /* QRCodeViewController.swift */,
+			);
+			path = QrCode;
+			sourceTree = "<group>";
+		};
+		FF1A8A2A28303C8C009C7815 /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				FF1A8A5E2830F3F1009C7815 /* CartService.swift */,
+			);
+			path = Cart;
+			sourceTree = "<group>";
+		};
+		FF1A8A352830C938009C7815 /* Carousel */ = {
+			isa = PBXGroup;
+			children = (
+				FF1A8A2F28304569009C7815 /* CarouselTableViewCell.swift */,
+				FF1A8A3028304569009C7815 /* CarouselTableViewCell.xib */,
+				FF1A8A362830C954009C7815 /* CarouselCollectionViewCell.swift */,
+				FF1A8A372830C954009C7815 /* CarouselCollectionViewCell.xib */,
+			);
+			path = Carousel;
+			sourceTree = "<group>";
+		};
+		FF1A8A3A2830D9EB009C7815 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FF1A8A3B2830DA13009C7815 /* MainFoodCollectionViewCell.swift */,
+				FF1A8A3C2830DA13009C7815 /* MainFoodCollectionViewCell.xib */,
+				FF1A8A512830EC08009C7815 /* OrderTableViewCell.swift */,
+				FF1A8A522830EC08009C7815 /* OrderTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		FF1A8A3F2830DC19009C7815 /* PlainCarousel */ = {
+			isa = PBXGroup;
+			children = (
+				FF1A8A412830DC3A009C7815 /* PlainCarouselTableViewCell.swift */,
+				FF1A8A422830DC3A009C7815 /* PlainCarouselTableViewCell.xib */,
+			);
+			path = PlainCarousel;
+			sourceTree = "<group>";
+		};
+		FF1A8A492830E768009C7815 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				FF6D8A3C283FEE730082D785 /* CategoryTableViewCell.swift */,
+				FF6D8A3D283FEE730082D785 /* CategoryTableViewCell.xib */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		FF1A8A4E2830E8A3009C7815 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FF1A8A4F2830E8AF009C7815 /* ActivityViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FF1A8A552830EEAA009C7815 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FF1A8A562830EEBA009C7815 /* OrderCodeTableViewCell.swift */,
+				FF1A8A572830EEBA009C7815 /* OrderCodeTableViewCell.xib */,
+				FF1A8A5A2830F25C009C7815 /* TrackOrderTableViewCell.swift */,
+				FF1A8A5B2830F25C009C7815 /* TrackOrderTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		FF1A8A602830F6F2009C7815 /* CartPath */ = {
+			isa = PBXGroup;
+			children = (
+				FF315D22283402F800140B6D /* Cell */,
+				FF1A8A612830F712009C7815 /* CartViewController.swift */,
+				FF6D8A31283FAFF90082D785 /* CartViewModel.swift */,
+				FF1A8A622830F712009C7815 /* CartViewController.xib */,
+			);
+			path = CartPath;
+			sourceTree = "<group>";
+		};
+		FF1A8A672830F9E1009C7815 /* StaticData */ = {
+			isa = PBXGroup;
+			children = (
+				FF1A8A682830F9F0009C7815 /* FoodStatic.swift */,
+			);
+			path = StaticData;
+			sourceTree = "<group>";
+		};
+		FF1A8A6C28318EEC009C7815 /* Food */ = {
+			isa = PBXGroup;
+			children = (
+				FF1A8A6E28318FD8009C7815 /* FoodInfo */,
+				FF1A8A6D28318FC6009C7815 /* FoodCategory */,
+			);
+			path = Food;
+			sourceTree = "<group>";
+		};
+		FF1A8A6D28318FC6009C7815 /* FoodCategory */ = {
+			isa = PBXGroup;
+			children = (
+				FF522E132832CAE800892055 /* ViewModel */,
+				FF522E0E28328B2500892055 /* Cells */,
+				FF1A8A6F28318FE9009C7815 /* FoodCategoryViewController.swift */,
+				FF1A8A7028318FE9009C7815 /* FoodCategoryViewController.xib */,
+			);
+			path = FoodCategory;
+			sourceTree = "<group>";
+		};
+		FF1A8A6E28318FD8009C7815 /* FoodInfo */ = {
+			isa = PBXGroup;
+			children = (
+				FFB07E7C2833F89A001F9773 /* FoodInfoViewController.swift */,
+				FFB07E7D2833F89A001F9773 /* FoodInfoViewController.xib */,
+				FF6D8A2F283FA9930082D785 /* FoodInfoViewModel.swift */,
+			);
+			path = FoodInfo;
+			sourceTree = "<group>";
+		};
+		FF315D22283402F800140B6D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FF315D232834031200140B6D /* CartInfoTableViewCell.swift */,
+				FF315D242834031200140B6D /* CartInfoTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		FF4EF3CD283BF1F6004913A1 /* Checkout */ = {
+			isa = PBXGroup;
+			children = (
+				FF6D8A35283FBA860082D785 /* Cells */,
+				FF4EF3CE283BF21C004913A1 /* CheckoutViewController.swift */,
+				FF4EF3CF283BF21D004913A1 /* CheckoutViewController.xib */,
+				FF6D8A33283FB4250082D785 /* CheckoutViewModel.swift */,
+			);
+			path = Checkout;
+			sourceTree = "<group>";
+		};
+		FF522E0E28328B2500892055 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FF522E0F28328B4300892055 /* FoodCategoryHeaderCollectionViewCell.swift */,
+				FF522E1028328B4300892055 /* FoodCategoryHeaderCollectionViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		FF522E132832CAE800892055 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FF68F4C62832CB3D00F28643 /* FoodCategoryViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FF68F4C82832D1E800F28643 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FF68F4C92832D1F400F28643 /* LaunchScreenViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FF6D8A35283FBA860082D785 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FF6D8A36283FBA9A0082D785 /* PaymentTableViewCell.swift */,
+				FF6D8A37283FBA9A0082D785 /* PaymentTableViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		FF77B6FF282EA53A008503BD /* TapBarComponent */ = {
 			isa = PBXGroup;
 			children = (
+				FF1A8A142830153C009C7815 /* TapBarConstant.swift */,
+				FF1A8A16283015C5009C7815 /* TabBarViewController.swift */,
 			);
 			path = TapBarComponent;
 			sourceTree = "<group>";
@@ -117,6 +584,7 @@
 		FF872B93282FAF79009D6604 /* LaunchScreen */ = {
 			isa = PBXGroup;
 			children = (
+				FF68F4C82832D1E800F28643 /* ViewModel */,
 				FF872B94282FAF90009D6604 /* FakeLaunchScreenViewController.swift */,
 				FF872B95282FAF90009D6604 /* FakeLaunchScreenViewController.xib */,
 			);
@@ -130,6 +598,8 @@
 				FFC77773282E929500AF4E8A /* TampaJejakTests */,
 				FFC7777D282E929500AF4E8A /* TampaJejakUITests */,
 				FFC7775B282E929300AF4E8A /* Products */,
+				938AD8CDFFE27A696D3727E4 /* Pods */,
+				CCE1337D0449A90759C6F689 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -146,6 +616,9 @@
 		FFC7775C282E929300AF4E8A /* TampaJejak */ = {
 			isa = PBXGroup;
 			children = (
+				FFD4AA51283E386F0084BC2A /* GoogleService-Info.plist */,
+				FF1A8A0A282FF667009C7815 /* Reusables */,
+				FF1A89F2282FC2FD009C7815 /* Extention */,
 				FFC77798282E999700AF4E8A /* Services */,
 				FFC77791282E971300AF4E8A /* Presentation */,
 				FFC77790282E970F00AF4E8A /* Models */,
@@ -186,6 +659,10 @@
 		FFC77790282E970F00AF4E8A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				FF1A8A652830F98A009C7815 /* FoodModel.swift */,
+				FF1A8A6A2830FA20009C7815 /* OrderModel.swift */,
+				FFB0B4AC283F616600975D04 /* UserInfoModel.swift */,
+				FF6D8A3A283FC4790082D785 /* ActivityModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -193,6 +670,11 @@
 		FFC77791282E971300AF4E8A /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				FF143139284215C2005C8542 /* Search */,
+				FF4EF3CD283BF1F6004913A1 /* Checkout */,
+				FF1A8A602830F6F2009C7815 /* CartPath */,
+				FF1A8A272830187B009C7815 /* QrCode */,
+				FF1A8A09282FEC82009C7815 /* Picker */,
 				FF872B93282FAF79009D6604 /* LaunchScreen */,
 				FFC77796282E973400AF4E8A /* TapBar */,
 				FFC77793282E972100AF4E8A /* Auth */,
@@ -203,6 +685,7 @@
 		FFC77792282E971900AF4E8A /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				FF6D8A2D283F97CF0082D785 /* NetworkService.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -219,6 +702,7 @@
 		FFC77794282E972600AF4E8A /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				FF1A89F7282FD03B009C7815 /* ViewModel */,
 				FF1A89DA282FB22F009C7815 /* SignInViewController.swift */,
 				FF1A89DB282FB22F009C7815 /* SignInViewController.xib */,
 			);
@@ -228,6 +712,7 @@
 		FFC77795282E972B00AF4E8A /* Register */ = {
 			isa = PBXGroup;
 			children = (
+				FF1A8A0D282FFB03009C7815 /* ViewModel */,
 				FF1A89E6282FB6A1009C7815 /* RegisterViewController.swift */,
 				FF1A89E7282FB6A1009C7815 /* RegisterViewController.xib */,
 			);
@@ -237,6 +722,10 @@
 		FFC77796282E973400AF4E8A /* TapBar */ = {
 			isa = PBXGroup;
 			children = (
+				FF1A8A6C28318EEC009C7815 /* Food */,
+				FF1A8A1A283015F9009C7815 /* Activity */,
+				FF1A8A19283015D8009C7815 /* Account */,
+				FF1A8A18283015D1009C7815 /* Home */,
 				FF77B6FF282EA53A008503BD /* TapBarComponent */,
 			);
 			path = TapBar;
@@ -245,6 +734,8 @@
 		FFC77798282E999700AF4E8A /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				FF1A8A672830F9E1009C7815 /* StaticData */,
+				FF1A8A2A28303C8C009C7815 /* Cart */,
 				FF1A89D5282FB12F009C7815 /* Auth */,
 				FFC77799282E999E00AF4E8A /* QRCode */,
 				FFC77792282E971900AF4E8A /* Network */,
@@ -267,9 +758,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FFC77784282E929500AF4E8A /* Build configuration list for PBXNativeTarget "TampaJejak" */;
 			buildPhases = (
+				023DCA7E6907A8081CB363F5 /* [CP] Check Pods Manifest.lock */,
 				FFC77756282E929200AF4E8A /* Sources */,
 				FFC77757282E929200AF4E8A /* Frameworks */,
 				FFC77758282E929200AF4E8A /* Resources */,
+				9FF0CF4FB2091C36D49CCE0E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -364,11 +857,32 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF4EF3D1283BF21D004913A1 /* CheckoutViewController.xib in Resources */,
+				FF6D8A3F283FEE730082D785 /* CategoryTableViewCell.xib in Resources */,
+				FFD4AA52283E386F0084BC2A /* GoogleService-Info.plist in Resources */,
+				FF1A8A5D2830F25C009C7815 /* TrackOrderTableViewCell.xib in Resources */,
 				FF1A89DF282FB22F009C7815 /* SignInViewController.xib in Resources */,
+				FF1A8A642830F712009C7815 /* CartViewController.xib in Resources */,
+				FF315D262834031200140B6D /* CartInfoTableViewCell.xib in Resources */,
+				FF1A8A2E28303CBA009C7815 /* HomeHeaderTableViewCell.xib in Resources */,
+				FF1A8A592830EEBA009C7815 /* OrderCodeTableViewCell.xib in Resources */,
+				FF1A8A392830C954009C7815 /* CarouselCollectionViewCell.xib in Resources */,
+				FF522E1228328B4300892055 /* FoodCategoryHeaderCollectionViewCell.xib in Resources */,
+				FF1A8A3228304569009C7815 /* CarouselTableViewCell.xib in Resources */,
+				FF14313D284215E0005C8542 /* SearchViewController.xib in Resources */,
+				FF1A8A2628301825009C7815 /* AccountViewController.xib in Resources */,
 				FF1A89EB282FB6A1009C7815 /* RegisterViewController.xib in Resources */,
 				FF872B97282FAF90009D6604 /* FakeLaunchScreenViewController.xib in Resources */,
+				FF1A8A4D2830E804009C7815 /* ActivityViewController.xib in Resources */,
+				FF1A8A3E2830DA13009C7815 /* MainFoodCollectionViewCell.xib in Resources */,
+				FF1A8A442830DC3A009C7815 /* PlainCarouselTableViewCell.xib in Resources */,
+				FFB07E7F2833F89A001F9773 /* FoodInfoViewController.xib in Resources */,
+				FF6D8A39283FBA9B0082D785 /* PaymentTableViewCell.xib in Resources */,
 				FFC7776A282E929500AF4E8A /* LaunchScreen.storyboard in Resources */,
+				FF1A8A7228318FE9009C7815 /* FoodCategoryViewController.xib in Resources */,
 				FFC77767282E929500AF4E8A /* Assets.xcassets in Resources */,
+				FF1A8A542830EC08009C7815 /* OrderTableViewCell.xib in Resources */,
+				FF1A8A1E2830164F009C7815 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,19 +906,115 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		023DCA7E6907A8081CB363F5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TampaJejak-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9FF0CF4FB2091C36D49CCE0E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TampaJejak/Pods-TampaJejak-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TampaJejak/Pods-TampaJejak-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TampaJejak/Pods-TampaJejak-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FFC77756282E929200AF4E8A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF14313C284215E0005C8542 /* SearchViewController.swift in Sources */,
+				FF1A8A382830C954009C7815 /* CarouselCollectionViewCell.swift in Sources */,
+				FF1A8A7128318FE9009C7815 /* FoodCategoryViewController.swift in Sources */,
+				FF1A8A582830EEBA009C7815 /* OrderCodeTableViewCell.swift in Sources */,
+				FF1A89F4282FC309009C7815 /* UIViewExt.swift in Sources */,
+				FF1A8A3D2830DA13009C7815 /* MainFoodCollectionViewCell.swift in Sources */,
+				FF1A8A22283016C8009C7815 /* HomeViewModel.swift in Sources */,
+				FF4EF3D0283BF21D004913A1 /* CheckoutViewController.swift in Sources */,
+				FF1A8A06282FE811009C7815 /* UITextfieldExt.swift in Sources */,
 				FF1A89DC282FB22F009C7815 /* SignInViewController.swift in Sources */,
+				FF68F4C72832CB3D00F28643 /* FoodCategoryViewModel.swift in Sources */,
+				FF1A8A5F2830F3F1009C7815 /* CartService.swift in Sources */,
+				FF1A8A1328300242009C7815 /* PickerModel.swift in Sources */,
+				FF1A8A0F282FFB11009C7815 /* RegisterViewModel.swift in Sources */,
+				FF1A8A6B2830FA20009C7815 /* OrderModel.swift in Sources */,
+				FFB0B4AF283F72C600975D04 /* FoundationExt.swift in Sources */,
+				FF68F4CA2832D1F400F28643 /* LaunchScreenViewModel.swift in Sources */,
+				FF1A8A1D2830164F009C7815 /* HomeViewController.swift in Sources */,
+				FF315D252834031200140B6D /* CartInfoTableViewCell.swift in Sources */,
 				FF1A89D7282FB143009C7815 /* UserSharedInstance.swift in Sources */,
+				FF1A8A5C2830F25C009C7815 /* TrackOrderTableViewCell.swift in Sources */,
+				FF522E1128328B4300892055 /* FoodCategoryHeaderCollectionViewCell.swift in Sources */,
+				FF1A8A4C2830E804009C7815 /* ActivityViewController.swift in Sources */,
+				FFB0B4AD283F616600975D04 /* UserInfoModel.swift in Sources */,
+				FF14313F284217C0005C8542 /* SearchViewModel.swift in Sources */,
+				FF1A89F6282FC782009C7815 /* UIColorExt.swift in Sources */,
+				FF1A8A3128304569009C7815 /* CarouselTableViewCell.swift in Sources */,
+				FF6D8A30283FA9940082D785 /* FoodInfoViewModel.swift in Sources */,
+				FF1A8A11282FFCC1009C7815 /* PickerDisplayViewController.swift in Sources */,
+				FF1A8A17283015C5009C7815 /* TabBarViewController.swift in Sources */,
+				FF1A8A0C282FF678009C7815 /* BaseViewController.swift in Sources */,
+				FF1A8A632830F712009C7815 /* CartViewController.swift in Sources */,
+				FF6D8A38283FBA9A0082D785 /* PaymentTableViewCell.swift in Sources */,
 				FF872B96282FAF90009D6604 /* FakeLaunchScreenViewController.swift in Sources */,
 				FF1A89E8282FB6A1009C7815 /* RegisterViewController.swift in Sources */,
+				FF1A8A692830F9F0009C7815 /* FoodStatic.swift in Sources */,
 				FFC7778F282E95E900AF4E8A /* Coordinator.swift in Sources */,
+				FF6D8A3E283FEE730082D785 /* CategoryTableViewCell.swift in Sources */,
+				FF1A8A04282FE34F009C7815 /* UIButtonExt.swift in Sources */,
+				FF1A8A2528301825009C7815 /* AccountViewController.swift in Sources */,
+				FF6D8A34283FB4250082D785 /* CheckoutViewModel.swift in Sources */,
+				FF1A8A462830E662009C7815 /* BaseTableViewCell.swift in Sources */,
+				FF1A8A482830E717009C7815 /* BaseCollectionView.swift in Sources */,
+				FF6D8A2C283F7B680082D785 /* MainSnackbar.swift in Sources */,
+				FF6D8A3B283FC4790082D785 /* ActivityModel.swift in Sources */,
+				FF1A8A502830E8AF009C7815 /* ActivityViewModel.swift in Sources */,
 				FFC7775E282E929300AF4E8A /* AppDelegate.swift in Sources */,
+				FF6D8A2E283F97CF0082D785 /* NetworkService.swift in Sources */,
+				FF1A8A342830AF03009C7815 /* HeaderView.swift in Sources */,
+				FF1A8A292830188E009C7815 /* QRCodeViewController.swift in Sources */,
+				FF6D8A32283FAFF90082D785 /* CartViewModel.swift in Sources */,
+				FF1A89F9282FD061009C7815 /* SignInViewModel.swift in Sources */,
+				FF1A8A432830DC3A009C7815 /* PlainCarouselTableViewCell.swift in Sources */,
 				FFC7779B282E9BBC00AF4E8A /* QRCodeService.swift in Sources */,
+				FF1A8A2D28303CBA009C7815 /* HomeHeaderTableViewCell.swift in Sources */,
+				FF1A8A662830F98A009C7815 /* FoodModel.swift in Sources */,
+				FF1A8A532830EC08009C7815 /* OrderTableViewCell.swift in Sources */,
+				FF1A8A152830153C009C7815 /* TapBarConstant.swift in Sources */,
+				FF1A8A08282FE958009C7815 /* UIViewControllerExt.swift in Sources */,
 				FFC77760282E929300AF4E8A /* SceneDelegate.swift in Sources */,
+				FFB07E7E2833F89A001F9773 /* FoodInfoViewController.swift in Sources */,
+				FFB0B4AB283F584400975D04 /* AuthenticationService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -576,9 +1186,11 @@
 		};
 		FFC77785282E929500AF4E8A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85109AD1EF39BB14DC908B97 /* Pods-TampaJejak.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = BLGCGGKJB5;
@@ -589,11 +1201,12 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jejak.tampa.TampaJejak;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -604,9 +1217,11 @@
 		};
 		FFC77786282E929500AF4E8A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34C9B6611959C2C302A153D3 /* Pods-TampaJejak.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = BLGCGGKJB5;
@@ -617,11 +1232,12 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jejak.tampa.TampaJejak;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

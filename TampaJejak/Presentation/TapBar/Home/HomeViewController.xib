@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="TampaJejak" customModuleProvider="target">
+            <connections>
+                <outlet property="cartButton" destination="cBA-FX-cLu" id="COU-hv-ymB"/>
+                <outlet property="tableView" destination="oNY-b8-eGf" id="fG9-8y-BYP"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="oNY-b8-eGf">
+                    <rect key="frame" x="0.0" y="44" width="375" height="768"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cBA-FX-cLu">
+                    <rect key="frame" x="299" y="698" width="60" height="60"/>
+                    <color key="backgroundColor" name="primarygreen"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="3Pf-DZ-1IF"/>
+                        <constraint firstAttribute="width" constant="60" id="k8r-ia-vno"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                    <connections>
+                        <action selector="didTapCartButton:" destination="-1" eventType="touchUpInside" id="NSI-4p-C5U"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="oNY-b8-eGf" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="99d-se-FxO"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="cBA-FX-cLu" secondAttribute="bottom" constant="20" id="d5K-2b-ps8"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="cBA-FX-cLu" secondAttribute="trailing" constant="16" id="tUY-Kh-Uwg"/>
+                <constraint firstAttribute="bottom" secondItem="oNY-b8-eGf" secondAttribute="bottom" id="vbe-A6-Vad"/>
+                <constraint firstItem="oNY-b8-eGf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="zGJ-hE-NDt"/>
+                <constraint firstItem="oNY-b8-eGf" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="zJo-L1-fvx"/>
+            </constraints>
+            <point key="canvasLocation" x="136.80000000000001" y="79.064039408867004"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="primarygreen">
+            <color red="0.019999999552965164" green="0.60000002384185791" blue="0.56000000238418579" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

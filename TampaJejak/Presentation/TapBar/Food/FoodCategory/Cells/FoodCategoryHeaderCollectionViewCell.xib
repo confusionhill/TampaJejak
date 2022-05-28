@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="FoodCategoryHeaderCollectionViewCell" customModule="TampaJejak" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="348" height="123"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="348" height="123"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All Category" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ToM-tg-R7j">
+                        <rect key="frame" x="0.0" y="11" width="348" height="41"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="41" id="93j-3c-RYD"/>
+                            <constraint firstAttribute="width" constant="348" id="ZuK-bU-wfN"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                        <color key="textColor" name="DominantGreen"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iRb-4p-bFD">
+                        <rect key="frame" x="0.0" y="53" width="348" height="39"/>
+                        <color key="backgroundColor" systemColor="quaternarySystemFillColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="39" id="IbS-Rc-uGZ"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" title="Search...">
+                            <color key="baseForegroundColor" systemColor="opaqueSeparatorColor"/>
+                        </buttonConfiguration>
+                        <connections>
+                            <action selector="didTapSearch:" destination="gTV-IL-0wX" eventType="touchUpInside" id="eF3-Nn-69E"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" name="Color"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="iRb-4p-bFD" secondAttribute="trailing" id="3px-Sc-cXV"/>
+                <constraint firstItem="ToM-tg-R7j" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="11" id="NkH-RO-pu5"/>
+                <constraint firstItem="iRb-4p-bFD" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="g2Z-oL-yxm"/>
+                <constraint firstAttribute="trailing" secondItem="ToM-tg-R7j" secondAttribute="trailing" id="iMN-aM-Oy8"/>
+                <constraint firstAttribute="bottom" relation="lessThanOrEqual" secondItem="iRb-4p-bFD" secondAttribute="bottom" constant="31" id="lGg-oV-A1d"/>
+                <constraint firstItem="iRb-4p-bFD" firstAttribute="top" secondItem="ToM-tg-R7j" secondAttribute="bottom" constant="1" id="rg9-sD-Ti3"/>
+                <constraint firstItem="ToM-tg-R7j" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ypr-if-u7M"/>
+            </constraints>
+            <size key="customSize" width="348" height="123"/>
+            <connections>
+                <outlet property="categoryLabel" destination="ToM-tg-R7j" id="ZUa-hW-a5E"/>
+                <outlet property="searchButton" destination="iRb-4p-bFD" id="t8I-M8-mGD"/>
+            </connections>
+            <point key="canvasLocation" x="353.62318840579712" y="110.15625"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="Color">
+            <color red="0.95999999999999996" green="0.95999999999999996" blue="0.95999999999999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="DominantGreen">
+            <color red="0.0" green="0.33000001311302185" blue="0.33000001311302185" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="quaternarySystemFillColor">
+            <color red="0.45490196078431372" green="0.45490196078431372" blue="0.50196078431372548" alpha="0.080000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

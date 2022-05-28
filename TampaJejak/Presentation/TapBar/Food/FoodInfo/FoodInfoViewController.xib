@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FoodInfoViewController" customModule="TampaJejak" customModuleProvider="target">
+            <connections>
+                <outlet property="addButton" destination="LHS-jt-Pem" id="Oga-Hi-5fo"/>
+                <outlet property="buyQuantityLabel" destination="twD-iy-90a" id="uWB-wL-cOA"/>
+                <outlet property="descLabel" destination="22c-FS-fab" id="dLT-IT-bsz"/>
+                <outlet property="foodImageView" destination="MKp-N9-7ru" id="ceh-kk-yod"/>
+                <outlet property="minusButton" destination="h7U-Wn-5s5" id="6at-3m-yd0"/>
+                <outlet property="plusButton" destination="Ria-fe-lf5" id="Ihh-A2-pTx"/>
+                <outlet property="priceLabel" destination="VgS-dV-Irf" id="0WS-ck-VyQ"/>
+                <outlet property="quantityLabel" destination="PPV-62-pwr" id="wur-rF-a6G"/>
+                <outlet property="stackView" destination="2Ca-KR-1OO" id="DUR-wf-fDr"/>
+                <outlet property="titleLabel" destination="NZC-JL-MSa" id="ESr-Da-gsZ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ayam" translatesAutoresizingMaskIntoConstraints="NO" id="MKp-N9-7ru">
+                    <rect key="frame" x="23" y="69" width="368" height="216"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="216" id="uij-2w-Iiu"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5x left" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PPV-62-pwr">
+                    <rect key="frame" x="23" y="300" width="368" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="d9o-l6-kBt"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" name="primarygreen"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ayam Geprek" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NZC-JL-MSa">
+                    <rect key="frame" x="23" y="324" width="368" height="41"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="41" id="mln-y8-zL5"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                    <color key="textColor" name="DominantGreen"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ayam geprek dengan sambal yang pedas cocok untuk penyuka pedas.sjkbhsdjkgajgdskjadhgsdajkhgsakgjhsdsda" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="22c-FS-fab">
+                    <rect key="frame" x="23" y="373" width="368" height="81.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="368" id="Cdq-sW-pM8"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="26" id="QoT-OR-Bez"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="2Ca-KR-1OO">
+                    <rect key="frame" x="23" y="471.5" width="135" height="33.5"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h7U-Wn-5s5">
+                            <rect key="frame" x="0.0" y="0.0" width="33" height="33.5"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="-">
+                                <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
+                                <color key="baseForegroundColor" systemColor="systemPinkColor"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="didTapMinus:" destination="-1" eventType="touchUpInside" id="Hc3-Yi-MnV"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="twD-iy-90a">
+                            <rect key="frame" x="51" y="0.0" width="33" height="33.5"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <color key="textColor" name="DominantGreen"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ria-fe-lf5">
+                            <rect key="frame" x="102" y="0.0" width="33" height="33.5"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="+">
+                                <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
+                                <color key="baseForegroundColor" name="primarygreen"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="didTapPlus:" destination="-1" eventType="touchUpInside" id="GlG-hd-f1u"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="33.5" id="7eP-E8-vHU"/>
+                        <constraint firstAttribute="width" constant="135" id="y9r-FY-bIQ"/>
+                    </constraints>
+                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rp 999.999" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VgS-dV-Irf">
+                    <rect key="frame" x="273" y="478.5" width="118" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="AqI-Jn-jFy"/>
+                        <constraint firstAttribute="width" constant="118" id="OmY-7j-dwn"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <color key="textColor" name="DominantGreen"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LHS-jt-Pem">
+                    <rect key="frame" x="23" y="561.5" width="368" height="53"/>
+                    <color key="backgroundColor" name="primarygreen"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="53" id="KcC-Kh-RKJ"/>
+                        <constraint firstAttribute="width" constant="368" id="zQg-qF-kF1"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Add to cart">
+                        <fontDescription key="titleFontDescription" type="boldSystem" pointSize="17"/>
+                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </buttonConfiguration>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="baseColor"/>
+            <constraints>
+                <constraint firstItem="LHS-jt-Pem" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="23" id="0pc-oQ-qh9"/>
+                <constraint firstItem="MKp-N9-7ru" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="23" id="449-LC-f1g"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="PPV-62-pwr" secondAttribute="trailing" constant="23" id="6rz-bJ-Ztg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="LHS-jt-Pem" secondAttribute="trailing" constant="23" id="BZK-8L-7o4"/>
+                <constraint firstItem="2Ca-KR-1OO" firstAttribute="top" secondItem="22c-FS-fab" secondAttribute="bottom" constant="17" id="F3L-pK-FiC"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="LHS-jt-Pem" secondAttribute="bottom" constant="288" id="HO9-gX-U3d"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="22c-FS-fab" secondAttribute="trailing" constant="23" id="Lhf-s1-0X2"/>
+                <constraint firstItem="22c-FS-fab" firstAttribute="top" secondItem="NZC-JL-MSa" secondAttribute="bottom" constant="8" id="MJz-to-Uz0"/>
+                <constraint firstItem="MKp-N9-7ru" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="25" id="Nb0-Lg-BT5"/>
+                <constraint firstItem="22c-FS-fab" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="23" id="Smr-Iv-Yho"/>
+                <constraint firstItem="VgS-dV-Irf" firstAttribute="leading" relation="lessThanOrEqual" secondItem="2Ca-KR-1OO" secondAttribute="trailing" constant="115" id="UFp-14-Si9"/>
+                <constraint firstItem="VgS-dV-Irf" firstAttribute="top" secondItem="22c-FS-fab" secondAttribute="bottom" constant="24" id="USL-Dt-jWh"/>
+                <constraint firstItem="PPV-62-pwr" firstAttribute="top" secondItem="MKp-N9-7ru" secondAttribute="bottom" constant="15" id="ZKX-xt-C3M"/>
+                <constraint firstItem="NZC-JL-MSa" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="23" id="Zek-ki-hqK"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="NZC-JL-MSa" secondAttribute="trailing" constant="23" id="b63-qU-TmO"/>
+                <constraint firstItem="PPV-62-pwr" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="23" id="bUs-aY-cKx"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="MKp-N9-7ru" secondAttribute="trailing" constant="23" id="br1-vl-Own"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="VgS-dV-Irf" secondAttribute="trailing" constant="23" id="bxe-LR-hDv"/>
+                <constraint firstItem="LHS-jt-Pem" firstAttribute="top" secondItem="2Ca-KR-1OO" secondAttribute="bottom" constant="56.5" id="mvc-73-0hs"/>
+                <constraint firstItem="2Ca-KR-1OO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="23" id="qIb-d4-rvB"/>
+                <constraint firstItem="NZC-JL-MSa" firstAttribute="top" secondItem="PPV-62-pwr" secondAttribute="bottom" constant="3" id="uP3-93-2Q8"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="79.6875"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ayam" width="256" height="256"/>
+        <namedColor name="DominantGreen">
+            <color red="0.0" green="0.33000001311302185" blue="0.33000001311302185" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="baseColor">
+            <color red="0.95999997854232788" green="0.95999997854232788" blue="0.95999997854232788" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primarygreen">
+            <color red="0.019999999552965164" green="0.60000002384185791" blue="0.56000000238418579" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

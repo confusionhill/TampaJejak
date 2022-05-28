@@ -18,23 +18,52 @@ class FakeLaunchScreenViewController: UIViewController {
         return vc
     }()
     
+    private let viewModel = LaunchScreenViewModel()
+    
+    private var tabBar: TabBarViewController = {
+        let vc = TabBarViewController()
+        vc.modalPresentationStyle = .fullScreen
+        vc.modalTransitionStyle = .crossDissolve
+        return vc
+    }()
+    
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        super.init(nibName: "FakeLaunchScreenViewController", bundle: nil)
+        viewModel.output = self
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        viewModel.output = self
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        viewModel.tryListeningAuth()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        viewModel.stopListeningAuth()
+    }
+    
     override func loadView() {
         super.loadView()
         self.authPage.launchRef = self
+        self.tabBar.launchRef = self
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.launchInitScreen), userInfo: nil, repeats: false)
+        viewModel.viewDidLoad()
     }
     
     @objc func launchInitScreen() {
-        let state: Bool = true
-        if state {
+        if viewModel.user == nil {
             let navCon = UINavigationController(rootViewController: authPage)
             navCon.modalPresentationStyle = .fullScreen
             self.present(navCon, animated: true, completion: nil)
         } else {
-            
+            self.present(self.tabBar, animated: true, completion: nil)
         }
     }
 }
@@ -42,13 +71,9 @@ class FakeLaunchScreenViewController: UIViewController {
 extension FakeLaunchScreenViewController: FakeLaunchOuput {
     func didTapLogin() {
         self.dismiss(animated: true, completion: nil)
-        
-        //TODO: Change to Home VC
-        let vc = RegisterViewController()
-        vc.modalPresentationStyle = .fullScreen
-        vc.modalTransitionStyle = .crossDissolve
+
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-            self.present(vc, animated: true, completion: nil)
+            self.present(self.tabBar, animated: true, completion: nil)
         }
     }
     
@@ -57,5 +82,11 @@ extension FakeLaunchScreenViewController: FakeLaunchOuput {
         let navCon = UINavigationController(rootViewController: authPage)
         navCon.modalPresentationStyle = .fullScreen
         self.present(navCon, animated: true, completion: nil)
+    }
+}
+
+extension FakeLaunchScreenViewController: LaunchScreenViewModelOutput {
+    func navigateInitialViewController() {
+        Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.launchInitScreen), userInfo: nil, repeats: false)
     }
 }
