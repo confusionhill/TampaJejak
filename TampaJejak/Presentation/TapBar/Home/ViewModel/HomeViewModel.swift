@@ -22,6 +22,10 @@ final class HomeViewModel {
     
     private(set) var isLoaded: Bool = false
     
+    private(set) var foodModels: [FoodModel] = []
+    
+    let networkService = NetworkService()
+    
     fileprivate init(output: HomeViewModelOutput) {
         self.output = output
     }
@@ -30,7 +34,23 @@ final class HomeViewModel {
     
     public func viewDidLoad() {
         self.output?.setupViews()
-        self.isLoaded = true
-        self.output?.didFinnishLoadingForYou()
+        self.getAllFoods()
+    }
+    
+    func getAllFoods() {
+        self.networkService.fetchAllFood { [weak self] res in
+            if let self = self {
+                switch res {
+                case .failure(let e):
+                    self.output?.didFailLoading(message: e.localizedDescription)
+                case .success(let foods):
+                    foods.forEach { fm in
+                        self.foodModels.addOrReplace(fm)
+                    }
+                    self.isLoaded = true
+                    self.output?.didFinnishLoadingTopPicks()
+                }
+            }
+        }
     }
 }

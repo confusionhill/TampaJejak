@@ -13,6 +13,7 @@ protocol HomeViewControllerDelegate: AnyObject {
 
 protocol HomeViewControllerOutput: AnyObject {
     func didTapFood(foodID id: String)
+    func didTapFood(indexPath: IndexPath)
 }
 
 class HomeViewController: BaseViewController {
@@ -95,11 +96,11 @@ extension HomeViewController: HomeViewModelOutput {
     }
     
     func didFinnishLoadingTopPicks() {
-        
+        self.tableView.reloadData()
     }
     
     func didFailLoading(message: String) {
-        
+        self.showSnackbar(message: message)
     }
     
     func setupViews() {
@@ -114,7 +115,7 @@ extension HomeViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.row == 0 && indexPath.section == 3 {
-            let vc = FoodCategoryViewController(foodID: nil)
+            let vc = FoodCategoryViewController(loadFood: nil)
             vc.delegate = self
             let navCon = UINavigationController(rootViewController: vc)
             navCon.modalPresentationStyle = .fullScreen
@@ -141,18 +142,21 @@ extension HomeViewController: UITableViewDataSource {
         if indexPath.section == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: HomeHeaderTableViewCell.identifier, for: indexPath) as! HomeHeaderTableViewCell
             cell.selectionStyle = .none
+            cell.delegate = self
             return cell
         }
         if indexPath.section == 1 {
             let cell = tableView.dequeueReusableCell(withIdentifier: CarouselTableViewCell.identifier, for: indexPath) as! CarouselTableViewCell
             cell.selectionStyle = .none
             cell.homeOutput = self
+            cell.foods = viewModel.foodModels
             return cell
         }
         if indexPath.section == 2 {
             let cell = tableView.dequeueReusableCell(withIdentifier: PlainCarouselTableViewCell.identifier, for: indexPath) as! PlainCarouselTableViewCell
             cell.selectionStyle = .none
             cell.homeOutput = self
+            cell.foods = viewModel.foodModels
             return cell
         }
         if indexPath.row == 1 {
@@ -189,7 +193,13 @@ extension HomeViewController: UITableViewDataSource {
 
 extension HomeViewController: HomeViewControllerOutput {
     func didTapFood(foodID id: String) {
-        let vc = FoodCategoryViewController(foodID: id)
+        print("not used")
+    }
+    
+    func didTapFood(indexPath: IndexPath) {
+        print(viewModel.foodModels[indexPath.row].uuid)
+        let model = viewModel.foodModels[indexPath.row]
+        let vc = FoodCategoryViewController(loadFood: model)
         vc.delegate = self
         let navCon = UINavigationController(rootViewController: vc)
         navCon.modalPresentationStyle = .fullScreen
@@ -200,5 +210,15 @@ extension HomeViewController: HomeViewControllerOutput {
 extension HomeViewController: HomeViewControllerDelegate {
     func didTapExit() {
         self.dismiss(animated: true, completion: nil)
+    }
+}
+
+extension HomeViewController: HomeHeaderDelegate {
+    func didTapSearch() {
+        let vc = FoodCategoryViewController(loadSearch: true)
+        vc.delegate = self
+        let navCon = UINavigationController(rootViewController: vc)
+        navCon.modalPresentationStyle = .fullScreen
+        self.present(navCon, animated: true, completion: nil)
     }
 }

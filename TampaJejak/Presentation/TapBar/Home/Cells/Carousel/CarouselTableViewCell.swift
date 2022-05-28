@@ -15,6 +15,8 @@ class CarouselTableViewCell: BaseTableViewCell {
     weak var homeOutput: HomeViewControllerOutput?
     
     public static let identifier = "CarouselTableViewCell"
+    
+    var foods: [FoodModel] = []
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -45,17 +47,22 @@ extension CarouselTableViewCell: UICollectionViewDelegate {
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        self.homeOutput?.didTapFood(foodID: "")
+        let uuid = foods[indexPath.row].uuid
+        
+        self.homeOutput?.didTapFood(indexPath: indexPath)
+        //self.homeOutput?.didTapFood(foodID: "uuid")
     }
 }
 
 extension CarouselTableViewCell: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 3
+        return self.foods.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CarouselCollectionViewCell.identifier, for: indexPath) as! CarouselCollectionViewCell
+        let model = foods[indexPath.row]
+        cell.setContent(model: model)
         return cell
     }
     

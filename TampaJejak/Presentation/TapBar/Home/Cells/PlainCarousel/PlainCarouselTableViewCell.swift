@@ -13,6 +13,7 @@ class PlainCarouselTableViewCell: BaseTableViewCell {
     public static let identifier = "PlainCarouselTableViewCell"
     
     weak var homeOutput: HomeViewControllerOutput?
+    var foods: [FoodModel] = []
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -34,13 +35,13 @@ extension PlainCarouselTableViewCell: UICollectionViewDelegate {
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        self.homeOutput?.didTapFood(foodID: "")
+        self.homeOutput?.didTapFood(indexPath: indexPath)
     }
 }
 
 extension PlainCarouselTableViewCell: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 3
+        return self.foods.count
     }
     
     
@@ -49,6 +50,8 @@ extension PlainCarouselTableViewCell: UICollectionViewDataSource {
         cell.layer.cornerRadius = 20
         cell.layer.masksToBounds = true
         cell.backgroundColor = .white
+        let model = foods[indexPath.row]
+        cell.setContent(model: model)
         return cell
     }
     

@@ -17,7 +17,11 @@ class CartService {
     }
     
     public func addFood(model: FoodModel){
+        foodAdded = foodAdded.filter({ fm in
+            return fm.uuid != model.uuid
+        })
         foodAdded.addOrReplace(model)
+        
     }
     
     public func getFoodAdded() -> [FoodModel] {
@@ -30,6 +34,10 @@ class CartService {
     
     public func clearCart() {
         self.foodAdded = []
+    }
+    
+    public func updateQuantity(newVal: Int, indexPath: IndexPath){
+        foodAdded[indexPath.row].quantity = newVal
     }
     
 }

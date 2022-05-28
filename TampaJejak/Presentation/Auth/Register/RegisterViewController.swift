@@ -85,6 +85,8 @@ class RegisterViewController: BaseViewController {
     private func setupGenderButton() {
         self.genderButton.contentHorizontalAlignment = .left
         self.genderButton.backgroundColor = .secondarySystemBackground
+        self.genderButton.layer.cornerRadius = 20
+        self.genderButton.layer.masksToBounds = true
     }
     
     private func setupFields() {
@@ -173,11 +175,12 @@ extension RegisterViewController: RegisterVMOutput {
 
 extension RegisterViewController: PickerDisplayDelegate {
     func didFinnishPickItem(name: String) {
-        print("Finnished \(name)")
         if name != "" {
             self.genderButton.setTitle(name, for: .normal)
+            self.genderButton.setTitleColor(UIColor.black, for: .normal)
         } else {
             self.genderButton.setTitle("Gender", for: .normal)
+            self.genderButton.setTitleColor(UIColor.placeholderText, for: .normal)
         }
     }
     func didTapClosePicker() {

@@ -52,7 +52,7 @@ final class NetworkService {
                         let decoded = try JSONDecoder().decode(OrderInfo.self, from: jsonData)
                         return decoded
                     }.filter({ info in
-                        return info.uid == self.getUser?.uid
+                        return info.uid == self.getUser?.uid && info.taken != true
                     })
                     
                     let qrInfos = try docs.map({ childData -> QRInfo in
@@ -60,7 +60,7 @@ final class NetworkService {
                         let decoded = try JSONDecoder().decode(QRInfo.self, from: jsonData)
                         return decoded
                     }).filter({ info in
-                        return info.uid == self.getUser?.uid
+                        return info.uid == self.getUser?.uid && info.taken != true
                     })
                     
                     var orderModels = [OrderModel]()
@@ -94,7 +94,8 @@ final class NetworkService {
             "qrInfo": [
                 "userID": self.getUser?.uid ?? "",
                 "message": orderModel.qrInfo.message,
-                "uuid": orderModel.qrInfo.uuid
+                "uuid": orderModel.qrInfo.uuid,
+                "taken": orderModel.qrInfo.taken
             ],
             "info": [
                 "userID": self.getUser?.uid ?? "",
@@ -103,6 +104,7 @@ final class NetworkService {
                 "paymentType": orderModel.info.paymentType.rawValue,
                 "address": orderModel.info.address,
                 "pickupType": orderModel.info.pickupType.rawValue,
+                "taken": orderModel.info.taken
             ],
         ])
         completion(.success("success"))

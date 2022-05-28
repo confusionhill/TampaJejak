@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol HomeHeaderDelegate: AnyObject {
+    func didTapSearch()
+}
+
 class HomeHeaderTableViewCell: BaseTableViewCell {
     
     @IBOutlet weak var searchButton: UIButton!
@@ -17,11 +21,15 @@ class HomeHeaderTableViewCell: BaseTableViewCell {
         super.awakeFromNib()
         self.setupButton()
     }
+    
+    weak var delegate: HomeHeaderDelegate?
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    }
+    
+    @IBAction func didTapSearch(_ sender: UIButton) {
+        self.delegate?.didTapSearch()
     }
     
     private func setupButton() {

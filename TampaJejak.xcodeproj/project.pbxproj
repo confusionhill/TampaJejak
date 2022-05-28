@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		44F75AA5803B2BE48C5634F8 /* Pods_TampaJejak.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC3AD24CDA4151A487A8C239 /* Pods_TampaJejak.framework */; };
+		FF14313C284215E0005C8542 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF14313A284215E0005C8542 /* SearchViewController.swift */; };
+		FF14313D284215E0005C8542 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF14313B284215E0005C8542 /* SearchViewController.xib */; };
+		FF14313F284217C0005C8542 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF14313E284217C0005C8542 /* SearchViewModel.swift */; };
 		FF1A89D7282FB143009C7815 /* UserSharedInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A89D6282FB143009C7815 /* UserSharedInstance.swift */; };
 		FF1A89D8282FB143009C7815 /* UserSharedInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A89D6282FB143009C7815 /* UserSharedInstance.swift */; };
 		FF1A89D9282FB143009C7815 /* UserSharedInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A89D6282FB143009C7815 /* UserSharedInstance.swift */; };
@@ -129,6 +132,9 @@
 		34C9B6611959C2C302A153D3 /* Pods-TampaJejak.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TampaJejak.release.xcconfig"; path = "Target Support Files/Pods-TampaJejak/Pods-TampaJejak.release.xcconfig"; sourceTree = "<group>"; };
 		85109AD1EF39BB14DC908B97 /* Pods-TampaJejak.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TampaJejak.debug.xcconfig"; path = "Target Support Files/Pods-TampaJejak/Pods-TampaJejak.debug.xcconfig"; sourceTree = "<group>"; };
 		CC3AD24CDA4151A487A8C239 /* Pods_TampaJejak.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TampaJejak.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF14313A284215E0005C8542 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		FF14313B284215E0005C8542 /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		FF14313E284217C0005C8542 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		FF1A89D6282FB143009C7815 /* UserSharedInstance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSharedInstance.swift; sourceTree = "<group>"; };
 		FF1A89DA282FB22F009C7815 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		FF1A89DB282FB22F009C7815 /* SignInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
@@ -265,6 +271,16 @@
 				CC3AD24CDA4151A487A8C239 /* Pods_TampaJejak.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF143139284215C2005C8542 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				FF14313A284215E0005C8542 /* SearchViewController.swift */,
+				FF14313B284215E0005C8542 /* SearchViewController.xib */,
+				FF14313E284217C0005C8542 /* SearchViewModel.swift */,
+			);
+			path = Search;
 			sourceTree = "<group>";
 		};
 		FF1A89D5282FB12F009C7815 /* Auth */ = {
@@ -654,6 +670,7 @@
 		FFC77791282E971300AF4E8A /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				FF143139284215C2005C8542 /* Search */,
 				FF4EF3CD283BF1F6004913A1 /* Checkout */,
 				FF1A8A602830F6F2009C7815 /* CartPath */,
 				FF1A8A272830187B009C7815 /* QrCode */,
@@ -852,6 +869,7 @@
 				FF1A8A392830C954009C7815 /* CarouselCollectionViewCell.xib in Resources */,
 				FF522E1228328B4300892055 /* FoodCategoryHeaderCollectionViewCell.xib in Resources */,
 				FF1A8A3228304569009C7815 /* CarouselTableViewCell.xib in Resources */,
+				FF14313D284215E0005C8542 /* SearchViewController.xib in Resources */,
 				FF1A8A2628301825009C7815 /* AccountViewController.xib in Resources */,
 				FF1A89EB282FB6A1009C7815 /* RegisterViewController.xib in Resources */,
 				FF872B97282FAF90009D6604 /* FakeLaunchScreenViewController.xib in Resources */,
@@ -935,6 +953,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF14313C284215E0005C8542 /* SearchViewController.swift in Sources */,
 				FF1A8A382830C954009C7815 /* CarouselCollectionViewCell.swift in Sources */,
 				FF1A8A7128318FE9009C7815 /* FoodCategoryViewController.swift in Sources */,
 				FF1A8A582830EEBA009C7815 /* OrderCodeTableViewCell.swift in Sources */,
@@ -958,6 +977,7 @@
 				FF522E1128328B4300892055 /* FoodCategoryHeaderCollectionViewCell.swift in Sources */,
 				FF1A8A4C2830E804009C7815 /* ActivityViewController.swift in Sources */,
 				FFB0B4AD283F616600975D04 /* UserInfoModel.swift in Sources */,
+				FF14313F284217C0005C8542 /* SearchViewModel.swift in Sources */,
 				FF1A89F6282FC782009C7815 /* UIColorExt.swift in Sources */,
 				FF1A8A3128304569009C7815 /* CarouselTableViewCell.swift in Sources */,
 				FF6D8A30283FA9940082D785 /* FoodInfoViewModel.swift in Sources */,
@@ -1170,6 +1190,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = BLGCGGKJB5;
@@ -1200,6 +1221,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = BLGCGGKJB5;

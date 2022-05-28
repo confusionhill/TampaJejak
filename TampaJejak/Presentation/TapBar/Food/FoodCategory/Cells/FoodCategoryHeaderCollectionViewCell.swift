@@ -7,12 +7,18 @@
 
 import UIKit
 
+protocol HeaderDelegate: AnyObject {
+    func didTapSearch()
+}
+
 class FoodCategoryHeaderCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var searchButton: UIButton!
     @IBOutlet weak var categoryLabel: UILabel!
     
     public static let identifier = "FoodCategoryHeaderCollectionViewCell"
+    
+    weak var delegate: HeaderDelegate?
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -33,6 +39,9 @@ class FoodCategoryHeaderCollectionViewCell: UICollectionViewCell {
         fullString.append(image1String)
         fullString.append(NSAttributedString(string: " Want to explore new dishes?"))
         self.searchButton.setAttributedTitle(fullString, for: .normal)
+    }
+    @IBAction func didTapSearch(_ sender: UIButton) {
+        self.delegate?.didTapSearch()
     }
     
     func setTitle(title: String) {

@@ -13,13 +13,23 @@ protocol FoodCategoryViewModelOutput: AnyObject {
     func didSuccessFetchFood()
     func didFailFetchFood(message: String)
     func showAlert(message:String)
+    func openSearch()
 }
 
 final class FoodCategoryViewModel {
-    static func config(vc: FoodCategoryViewController, foodID: String?) {
-        let vm = FoodCategoryViewModel(output: vc, foodID: foodID)
+    static func config(vc: FoodCategoryViewController, food: FoodModel?) {
+        let vm = FoodCategoryViewModel(output: vc, food:food)
+        vm.loadSearch = false
         vc.viewModel = vm
     }
+    
+    static func config(vc: FoodCategoryViewController) {
+        let vm = FoodCategoryViewModel(output: vc, food:nil)
+        vm.loadSearch = true
+        vc.viewModel = vm
+    }
+    
+    private var loadSearch: Bool = false
     
     private(set) var foodData: [FoodModel] = []
     
@@ -27,30 +37,37 @@ final class FoodCategoryViewModel {
         return self.foodData.count + 1
     }
     
+    private var initial = true
+    
     private let networkService = NetworkService()
     
-    init(output: FoodCategoryViewModelOutput, foodID: String?) {
+    init(output: FoodCategoryViewModelOutput, food: FoodModel?) {
         self.output = output
-        self.foodID = foodID
+        self.food = food
     }
     weak var output: FoodCategoryViewModelOutput?
-    private var foodID: String?
+    private var food: FoodModel?
     
     func viewDidLoad() {
         self.output?.setupViews()
         self.fetchFoodData()
-        if self.foodID != nil {
+    }
+    
+    public func filter(){
+        if self.food != nil {
             let selected = self.foodData.filter { fm in
-                return fm.uuid == self.foodID!
+                return fm == food
             }
-            if selected.isEmpty && foodID != nil {
+            if selected.isEmpty {
                 self.output?.showAlert(message: "Food is currently not available")
-            }
-            if !selected.isEmpty {
+            } else {
                 self.output?.openFoodInfo(model: selected[0])
             }
         }
         
+        if loadSearch {
+            self.output?.openSearch()
+        }
     }
     
     public func fetchFoodData() {
@@ -61,6 +78,10 @@ final class FoodCategoryViewModel {
                 self.output?.didFailFetchFood(message: e.localizedDescription)
             case .success(let foods):
                 foods.forEach {self.foodData.addOrReplace($0)}
+                if self.initial {
+                    self.filter()
+                    self.initial = false
+                }
                 self.output?.didSuccessFetchFood()
             }
         }

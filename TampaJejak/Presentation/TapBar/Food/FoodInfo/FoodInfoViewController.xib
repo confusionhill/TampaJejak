@@ -66,15 +66,15 @@
                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="2Ca-KR-1OO">
                     <rect key="frame" x="23" y="471.5" width="135" height="33.5"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ria-fe-lf5">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h7U-Wn-5s5">
                             <rect key="frame" x="0.0" y="0.0" width="33" height="33.5"/>
                             <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="plain" title="+">
+                            <buttonConfiguration key="configuration" style="plain" title="-">
                                 <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
-                                <color key="baseForegroundColor" name="primarygreen"/>
+                                <color key="baseForegroundColor" systemColor="systemPinkColor"/>
                             </buttonConfiguration>
                             <connections>
-                                <action selector="didTapPlus:" destination="-1" eventType="touchUpInside" id="GlG-hd-f1u"/>
+                                <action selector="didTapMinus:" destination="-1" eventType="touchUpInside" id="Hc3-Yi-MnV"/>
                             </connections>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="twD-iy-90a">
@@ -83,15 +83,15 @@
                             <color key="textColor" name="DominantGreen"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h7U-Wn-5s5">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ria-fe-lf5">
                             <rect key="frame" x="102" y="0.0" width="33" height="33.5"/>
                             <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="plain" title="-">
+                            <buttonConfiguration key="configuration" style="plain" title="+">
                                 <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
-                                <color key="baseForegroundColor" systemColor="systemPinkColor"/>
+                                <color key="baseForegroundColor" name="primarygreen"/>
                             </buttonConfiguration>
                             <connections>
-                                <action selector="didTapMinus:" destination="-1" eventType="touchUpInside" id="Hc3-Yi-MnV"/>
+                                <action selector="didTapPlus:" destination="-1" eventType="touchUpInside" id="GlG-hd-f1u"/>
                             </connections>
                         </button>
                     </subviews>
@@ -154,7 +154,7 @@
         </view>
     </objects>
     <resources>
-        <image name="ayam" width="337" height="174"/>
+        <image name="ayam" width="256" height="256"/>
         <namedColor name="DominantGreen">
             <color red="0.0" green="0.33000001311302185" blue="0.33000001311302185" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

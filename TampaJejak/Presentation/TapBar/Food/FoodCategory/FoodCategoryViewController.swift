@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol CategoryDelegate: AnyObject {
+    func didTapCell(foodModel: FoodModel)
+}
+
 class FoodCategoryViewController: BaseViewController {
     
     @IBOutlet weak var cartButton: UIButton!
@@ -18,14 +22,19 @@ class FoodCategoryViewController: BaseViewController {
     
     var viewModel: FoodCategoryViewModel!
     
-    init(foodID id: String?) {
+    init(loadFood food: FoodModel?) {
         super.init(nibName: "FoodCategoryViewController", bundle: nil)
-        FoodCategoryViewModel.config(vc: self, foodID: id)
+        FoodCategoryViewModel.config(vc: self, food: food)
+    }
+    
+    init(loadSearch: Bool) {
+        super.init(nibName: "FoodCategoryViewController", bundle: nil)
+        FoodCategoryViewModel.config(vc: self)
     }
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
-        FoodCategoryViewModel.config(vc: self, foodID: nil)
+        FoodCategoryViewModel.config(vc: self, food: nil)
     }
     
     override func loadView() {
@@ -81,6 +90,7 @@ extension FoodCategoryViewController: UICollectionViewDataSource {
         if indexPath.row == 0 {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: FoodCategoryHeaderCollectionViewCell.identifier, for: indexPath) as! FoodCategoryHeaderCollectionViewCell
             cell.setTitle(title: self.category)
+            cell.delegate = self
             return cell
         }
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MainFoodCollectionViewCell.identifier, for: indexPath) as! MainFoodCollectionViewCell
@@ -113,6 +123,10 @@ extension FoodCategoryViewController: UICollectionViewDelegateFlowLayout {
 }
 
 extension FoodCategoryViewController: FoodCategoryViewModelOutput {
+    func openSearch() {
+        self.didTapSearch()
+    }
+    
     func setupViews() {
         self.navigationController?.navigationBar.prefersLargeTitles = false
         self.setupCart()
@@ -147,5 +161,19 @@ extension FoodCategoryViewController: FoodInfoViewControllerOutput {
     
     func showAlert(message:String) {
         self.showSnackbar(message: message)
+    }
+}
+
+extension FoodCategoryViewController: HeaderDelegate {
+    func didTapSearch() {
+        let vc = SearchViewController(foods: viewModel.foodData, delegate: self)
+        self.present(vc, animated: true)
+    }
+}
+
+extension FoodCategoryViewController: CategoryDelegate {
+    func didTapCell(foodModel: FoodModel) {
+        self.dismiss(animated: true)
+        self.openFoodInfo(model: foodModel)
     }
 }

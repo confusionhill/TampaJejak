@@ -17,9 +17,10 @@ struct QRInfo: Decodable {
     let message: String
     let uuid: String
     let uid: String?
+    var taken: Bool = false
     
     enum CodingKeys: String, CodingKey {
-        case message, uuid
+        case message, uuid, taken
         case uid = "userID"
     }
 }
@@ -31,10 +32,12 @@ struct OrderInfo: Decodable {
     var paymentType: PaymentSystem
     var address: String
     var pickupType: PickupType
+    var taken: Bool
     
     private enum CodingKeys : String, CodingKey {
         case uid = "userID"
         case foods,totalPrice = "totalPrice", paymentType, address, pickupType
+        case taken
     }
     
     init(
@@ -49,6 +52,7 @@ struct OrderInfo: Decodable {
         self.paymentType = paymentType
         self.address = address
         self.pickupType = pickupType
+        self.taken = false
     }
     
      init(from decoder: Decoder) throws {
@@ -61,5 +65,6 @@ struct OrderInfo: Decodable {
         self.address = try values.decode(String.self, forKey: .address)
         let pickup = try values.decode(String.self, forKey: .pickupType)
         self.pickupType = PickupType(rawValue: pickup) ?? .me
+        self.taken = try values.decode(Bool.self, forKey: .taken)
     }
 }

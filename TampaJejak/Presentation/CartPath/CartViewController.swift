@@ -84,4 +84,8 @@ extension CartViewController: CartInfoCellDelegate {
         tableView.deleteRows(at: [index], with: .automatic)
         tableView.reloadData()
     }
+    
+    func didChangeQuantity(newVal: Int, index: IndexPath) {
+        CartService.shared.updateQuantity(newVal: newVal, indexPath: index)
+    }
 }
